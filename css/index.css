@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
+/*ESTILIZAÇAO HOME*/
 body{
     display: flex;
     justify-content: center;
@@ -44,7 +44,7 @@ button{
 button:hover{
     font-size: 30px;
     color: rgb(0, 0, 0);
-    background: rgb(18, 236, 225);
+    background-color:lightseagreen;
 }
 
 #botoes {
@@ -73,4 +73,42 @@ footer{
     color: rgba(255, 255, 255, 1);
     font-family: 'Inter';
     font-size: 15px;
+}
+
+/* ESTILIZAÇAO PAGINA DE NORMAS*/
+.norma{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
+}
+
+.bot_normas {
+    display: flex;
+    font-family: 'Inter';
+    font-size: 10px;
+    font-weight: bold;
+    width: 25vw;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    background: transparent;
+
+}
+
+.bot_normas:hover {
+    background-color:lightseagreen;
+}
+
+#estiliza_normas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+}
+
+.livro:hover{
+    background-color:lightseagreen;
+    border-radius: 10px;
 }
