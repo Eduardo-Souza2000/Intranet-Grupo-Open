@@ -18,7 +18,7 @@ body{
 }
 
 .logo-grupo{
-    width: 20vw;
+    width: 30vw;
 }
 
 h1{
@@ -28,6 +28,7 @@ h1{
 }
 
 button{
+    cursor: pointer;
     font-family: 'Inter';
     font-size:20px;
     font-weight: bold;
@@ -48,6 +49,7 @@ button:hover{
 }
 
 #botoes {
+    cursor: pointer;
     width: 1000px;
     height: 700px;
     display: flex;
@@ -68,15 +70,17 @@ footer{
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 150px;
+    height: 200px;
     background: #1B1C1D;
     color: rgba(255, 255, 255, 1);
     font-family: 'Inter';
     font-size: 15px;
+    margin: 100px;
 }
 
 /* ESTILIZAÇAO PAGINA DE NORMAS*/
 .norma{
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -85,6 +89,7 @@ footer{
 }
 
 .bot_normas {
+    cursor: pointer;
     display: flex;
     font-family: 'Inter';
     font-size: 10px;
@@ -98,6 +103,7 @@ footer{
 }
 
 .bot_normas:hover {
+    cursor: pointer;
     background-color:lightseagreen;
 }
 
@@ -109,6 +115,11 @@ footer{
 }
 
 .livro:hover{
+    cursor: pointer;
     background-color:lightseagreen;
     border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
 }
