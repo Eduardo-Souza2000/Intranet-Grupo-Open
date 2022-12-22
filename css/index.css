@@ -69,6 +69,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100vw;
     height: 200px;
     background: #1B1C1D;
@@ -78,6 +79,35 @@ footer{
     margin: 100px;
 }
 
+p {
+    color: azure;
+}
+
+#contatos{
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Inter';
+    font-size: 10px;
+}
+
+.rede_social{
+    cursor: pointer;
+    width: 60px;
+}
+
+.rede_social:hover{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    width: 80px;
+}
+
+.contato_img{
+    display: flex;
+    align-items: center;
+}
 /* ESTILIZAÇAO PAGINA DE NORMAS*/
 .norma{
     margin-top: 30px;
