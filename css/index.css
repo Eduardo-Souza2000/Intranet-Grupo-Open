@@ -153,3 +153,57 @@ p {
 a {
     text-decoration: none;
 }
+
+/* ESTILIZAÇAO PAGINA DE CONVENIO*/
+
+.convenio{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
+}
+
+#estiliza_convenio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+}
+
+.img_conv{
+    cursor: pointer;
+    border-radius: 10px;
+    width: 80px;
+}
+
+.img_conv:hover{
+    cursor: pointer;
+    background-color:rgb(255, 255, 255);
+}
+
+.bot_conv {
+    cursor: pointer;
+    display: flex;
+    font-family: 'Inter';
+    font-size: 10px;
+    font-weight: bold;
+    width: 25vw;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    background: transparent;
+
+}
+
+.bot_conv:hover {
+    cursor: pointer;
+    background-color:rgb(255, 255, 255);
+}
+
+.titulo_convenio{
+    font-family:'Inter';
+    font: bold;
+    font-size: 80px;
+}
