@@ -223,3 +223,54 @@ a {
     font: bold;
     font-size: 80px;
 }
+
+/* ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
+
+#estiliza_menu-ramal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    height: 900px;
+}
+
+.opc_ramal{
+    display: flex;
+    flex-direction: column;
+}
+
+#open{
+    margin: 10px;
+    background-color: rgba(228, 228, 8, 0.678);
+    color: #000000;
+}
+
+#open:hover{
+    background-color: rgb(9, 100, 16);
+    color: #ececec;
+}
+
+#vetor{
+    margin: 10px;
+    background-color: rgb(8, 122, 228);
+    color: #000000;
+}
+
+#vetor:hover{
+    background-color: rgb(9, 100, 16);
+    color: #ececec;
+
+}
+
+#brizza{
+    margin: 10px;
+    background-color: rgb(228, 8, 8);
+    color: #000000;
+}
+
+#brizza:hover{
+    background-color: rgb(9, 100, 16);
+    color: #ececec;
+
+}
+
