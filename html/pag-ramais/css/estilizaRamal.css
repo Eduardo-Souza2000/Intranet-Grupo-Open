@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+th{
+    width: 40vw;
+    background-color: #fce300;
+    font-family: 'Inter';
+    font-size: 20px;
+}
+
+td{
+    align-items: center;
+    font-family: "Inter";
+    background-color: rgb(40, 43, 43);
+    color: #FFFFFF;
+    width: 40vw;
+    font-size: 20px;
+}
