@@ -1,18 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
-th{
+#titulo_ramal-open{
     width: 40vw;
     background-color: #fce300;
     font-family: 'Inter';
-    font-size: 20px;
+    font-size: 30px;
+}
+
+#table_open{
+    width: 1000px;
+    height: 900px;
 }
 
 td{
     align-items: center;
     font-family: "Inter";
-    background-color: rgb(40, 43, 43);
-    color: #FFFFFF;
+    background-color: #bbbab3;
+    color: #000000;
     width: 40vw;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 600;
+   
+}
+
+
+caption{
+    font-family: 'Inter';
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 40px;
+}
+
+
+#titulo_ramal-vetor{
+    width: 40vw;
+    background-color:  rgb(8, 122, 228);
+    font-family: 'Inter';
+    font-size: 30px;
 }
