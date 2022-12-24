@@ -11,6 +11,8 @@
 #table_open{
     width: 1000px;
     height: 900px;
+    border-spacing: 10px;
+
 }
 
 td{
@@ -43,5 +45,20 @@ caption{
 #table_vetor{
     width: 80vw;
     height: 720px;
+    border-spacing: 10px;
+}
+
+
+#titulo_ramal-briza{
+    width: 40vw;
+    background-color: #fc0000;
+    font-family: 'Inter';
+    font-size: 30px;
+}
+
+#table_brizza{
+    width: 1000px;
+    height: 1500px;
+    border-spacing: 10px;
 }
 
