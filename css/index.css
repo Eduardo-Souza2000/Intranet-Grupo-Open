@@ -41,17 +41,18 @@ button{
     width: 20vw;
     height: 100px;
     padding: 10px;
-    color: azure;
-    background: green;
+    color: rgb(0, 0, 0);
+    background: rgb(8, 184, 8);
     border-radius: 15px;
-    border: 1px solid #063a1a;
-    box-shadow: 0px 4px 4px rgba(2, 92, 36, 0.55);
+    border: 2px solid #063a1a;
+    box-shadow: 10px 10px 10px rgba(2, 92, 36, 0.75);
 }
 
 button:hover{
     font-size: 30px;
-    color: rgb(0, 0, 0);
-    background-color:lightseagreen;
+    color: rgb(255, 255, 255);
+    background-color:rgba(3, 3, 3, 0.815);
+    box-shadow: 10px 20px 20px rgb(0, 255, 13);
 }
 
 #botoes {
@@ -203,10 +204,10 @@ a {
     cursor: pointer;
     display: flex;
     font-family: 'Inter';
-    font-size: 10px;
+    font-size: 20px;
     font-weight: bold;
-    width: 25vw;
-    height: 50px;
+    width: 40vw;
+    height: 60px;
     border-radius: 15px;
     border: 1px solid transparent;
     background: transparent;
@@ -239,38 +240,115 @@ a {
     flex-direction: column;
 }
 
+.organiza_menu-ramal{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+
 #open{
+    background: green;
+    border-radius: 15px;
+    border: 2px solid #063a1a;
+    box-shadow: 10px 20px 20px rgba(2, 92, 36, 0.75);
     margin: 10px;
-    background-color: #fce300;
     color: #000000;
 }
 
 #open:hover{
-    background-color: rgb(9, 100, 16);
-    color: #ececec;
+    background-color: rgb(250, 246, 2);
+    box-shadow: 10px 20px 20px rgb(0, 255, 13);
+    color: #000000;
 }
 
 #vetor{
+    background: green;
+    border-radius: 15px;
+    border: 2px solid #063a1a;
+    box-shadow: 10px 20px 20px rgba(2, 92, 36, 0.75);
     margin: 10px;
-    background-color: rgb(8, 122, 228);
     color: #000000;
 }
 
 #vetor:hover{
-    background-color: rgb(9, 100, 16);
-    color: #ececec;
+    background-color: #3365AC;
+    box-shadow: 10px 20px 20px rgb(0, 255, 13);
+    color: #f8f8f8;
 
 }
 
 #brizza{
+    background: green;
+    border-radius: 15px;
+    border: 2px solid #063a1a;
+    box-shadow: 10px 20px 20px rgba(2, 92, 36, 0.75);
     margin: 10px;
-    background-color: rgb(228, 8, 8);
     color: #000000;
 }
 
 #brizza:hover{
-    background-color: rgb(9, 100, 16);
-    color: #ececec;
-
+    background-color: rgb(228, 8, 8);
+    color: #fffdfd;
+    box-shadow: 10px 20px 20px rgb(0, 255, 13);
 }
 
+/* ESTILIZAÇAO PAGINA DE LINK MITSUBISH*/
+
+#estiliza_LinkMit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    height: 800px;
+}
+
+/* ESTILIZAÇAO PAGINA DE LINK RENAULT*/
+
+#estiliza_LinkRENAULT{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    height: 800px;
+}
+
+
+/* ESTILIZAÇAO PAGINA DE LINK hYUNDAI*/
+
+#estiliza_LinkHYUNDAI{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    height: 800px;
+}
+
+.img_estrela{
+    width: 40px;
+    height: 40px;
+}
+
+.img_estrela:hover{
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+}
+
+.bot_link{
+    cursor: pointer;
+    display: flex;
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: bold;
+    width: 25vw;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    background: transparent;
+}
+
+.bot_link:hover{
+    cursor: pointer;
+    background-color:rgb(255, 255, 255);
+}
