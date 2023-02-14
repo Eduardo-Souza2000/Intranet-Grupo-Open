@@ -61,3 +61,12 @@ caption{
     border-spacing: 10px;
 }
 
+.logo-grupo{
+    cursor: pointer;
+    width: 400px;
+}
+
+.logo-grupo:hover{
+    background-color: #9b9b9bec;
+    border-radius: 30px;
+}

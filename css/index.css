@@ -257,6 +257,7 @@ a {
 }
 
 #open:hover{
+    font-size: 25px;
     background-color: rgb(250, 246, 2);
     box-shadow: 20px 30px 30px rgb(0, 255, 13);
     color: #000000;
@@ -272,6 +273,7 @@ a {
 }
 
 #vetor:hover{
+    font-size: 25px;
     background-color: #063372;
     box-shadow: 20px 30px 30px rgb(0, 255, 13);
     color: #f8f8f8;
@@ -288,6 +290,7 @@ a {
 }
 
 #brizza:hover{
+    font-size: 25px;
     background-color: rgb(255, 0, 0);
     color: #fffdfd;
     box-shadow: 20px 30px 30px rgb(0, 255, 13);
