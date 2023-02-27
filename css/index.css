@@ -24,7 +24,7 @@ body{
 .logo-grupo:hover{
     background-color: #d3cacaec;
     border-radius: 15px;
-    
+
 }
 
 header{
@@ -96,7 +96,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     background: #1B1C1D;
-    width: 100vw;
+    height: 50px;
     color: rgba(255, 255, 255, 1);
     font-family: 'Inter';
     font-size: 15px;  
