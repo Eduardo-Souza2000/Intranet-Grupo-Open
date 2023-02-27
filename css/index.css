@@ -85,7 +85,6 @@ button:hover{
     width: 30vw;
     display: flex;
     justify-content: space-evenly;
-
 }
 
 footer{
@@ -99,7 +98,6 @@ footer{
     font-family: 'Inter';
     font-size: 15px;  
     margin-top: 2vw;
-
 }
 
 p {
