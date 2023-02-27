@@ -177,6 +177,7 @@ p {
     align-items: center;
     justify-content: space-between;
     width: 30vw;
+    
 }
 
 .bot_normas {
@@ -190,6 +191,7 @@ p {
     border-radius: 15px;
     border: 1px solid transparent;
     background: transparent;
+    color: rgb(255, 255, 255);
 
 }
 
