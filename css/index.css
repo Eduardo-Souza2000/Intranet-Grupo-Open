@@ -141,6 +141,33 @@ p {
     align-items: center;
 }
 
+@media (min-width: 1400px){
+
+    h1{   
+        font-size: 50px;
+    }
+
+    button{  
+        font-size: 22px;
+        width: 200px;
+        height: 90px;
+    }
+    
+    #botoes {
+        width: 750px;
+    }
+
+    #icone{
+        width: 40px;
+        height: 40px;
+    }
+
+    .linha_01, .linha_02, .linha_03 {
+        width: 750px;
+    }
+    
+}
+
 /* ESTILIZAÇAO PAGINA DE NORMAS*/
 .norma{
     margin-top: 30px;
