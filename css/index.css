@@ -51,7 +51,7 @@ button{
     font-family: 'Rapa Sans';
     font-size:15px;
     width: 8vw;
-    height: 60px;
+    height: 70px;
     color: rgb(255, 255, 255);
     background: #0c408800;
     border-radius: 10px;
@@ -373,3 +373,4 @@ a {
     cursor: pointer;
     background-color:rgb(255, 255, 255);
 }
+
