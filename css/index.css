@@ -24,6 +24,7 @@ body{
 .logo-grupo:hover{
     background-color: #d3cacaec;
     border-radius: 15px;
+    
 }
 
 header{
@@ -32,6 +33,7 @@ header{
     justify-content:center;
     align-items: center;
 }
+
 
 h1{
     
