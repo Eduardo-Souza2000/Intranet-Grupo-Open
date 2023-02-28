@@ -28,7 +28,7 @@ body{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    background:#1D4F65;
+    background:#bbcad144;
 }
 
 .logo-grupo{
@@ -37,7 +37,7 @@ body{
 }
 
 .logo-grupo:hover{
-    background-color: #d3cacaec;
+    background-color:#05364b;;
     border-radius: 15px;
 
 }
@@ -417,7 +417,7 @@ a {
 
 
 
-@media (max-width: 850px){
+@media (max-width: 500px){
     .logo-grupo{
         width: 90vw;
     }
@@ -512,6 +512,100 @@ a {
 
 }
 
+@media (max-width: 768px) {
+    .logo-grupo{
+        width: 90vw;
+    }
+
+    h1{   
+        font-size: 5vw;
+    }
+
+    #botaoAjuda {
+        width: 7vw;
+        height: 7vw;
+        font-size: 5vw;
+    }
+
+    button{  
+        font-size: 3.5vw;
+        width: 25vw;
+        height: 70px;
+        border-radius: 5px;
+        border: 1px solid #fdfdfd;
+    
+    }
+    
+    #botoes {
+        width: 85vw;
+        height: 350px;
+        border-radius: 10px;
+    }
+
+    #icone{
+        width: 6vw;
+        height: 20px;
+    }
+
+    .linha_01, .linha_02, .linha_03 {
+        width: 85vw;
+    }
+
+    footer{
+        height: 30px;
+        font-size: 1px;  
+        margin-top: 60vw;
+        clear: both;
+    }
+   
+    #contatos{
+        width: 100vw;
+        height: 20px;
+        font-size: 5px;
+    }
+
+    .rede_social{
+        cursor: pointer;
+        width: 10px;
+    }
+
+
+    /* ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
+
+#estiliza_menu-ramal{
+    width: 800px;
+    height: 600px; 
+}
+
+.opc_ramal{
+    width: 800px;
+    height: 600px;
+}
+
+.organiza_menu-ramal{
+    width: 800px;
+}
+
+
+#open{
+    font-size: 20px;
+    width: 220px;
+    height: 120px;
+}
+
+#vetor{
+    font-size: 20px;
+    width: 220px;
+    height: 120px;
+}
+
+#brizza{
+    font-size: 20px;
+    width: 220px;
+    height: 120px;
+}
+
+}
 
 @media (min-width: 1400px){
 
