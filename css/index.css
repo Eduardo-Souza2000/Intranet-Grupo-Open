@@ -96,6 +96,8 @@ button:hover{
     height: 20px;
 }
 
+
+
 .linha_01, .linha_02, .linha_03 {
     width: 40vw;
     display: flex;
@@ -289,6 +291,10 @@ a {
     width: 40vw;
 }
 
+#iconeramal{
+    width: 20px;
+    height: 20px;
+}
 
 #open{
     display: flex;
@@ -476,36 +482,45 @@ a {
     /* ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
 
     #estiliza_menu-ramal{
-        width: 800px;
-        height: 600px; 
+        width: 80vw;
+        height: 450px; 
     }
 
     .opc_ramal{
-        width: 800px;
-        height: 600px;
+        width: 80vw;
+        height: 450px;
     }
 
     .organiza_menu-ramal{
-        width: 800px;
+        width: 80vw;
     }
 
+    #iconeramal{
+        width: 5vw;
+        height: 30px;
+    }
 
     #open{
-        font-size: 20px;
-        width: 220px;
-        height: 120px;
+        font-size: 2vw;
+        width: 20vw;
+        height: 50px;
     }
 
     #vetor{
-        font-size: 20px;
-        width: 220px;
-        height: 120px;
+        font-size: 2vw;
+        width: 20vw;
+        height: 50px;
     }
 
     #brizza{
-        font-size: 20px;
-        width: 220px;
-        height: 120px;
+        font-size: 2vw;
+        width: 20vw;
+        height: 50px;
+    }
+
+    #icone{
+        width: 8vw;
+        height: 20px;
     }
 
 }
