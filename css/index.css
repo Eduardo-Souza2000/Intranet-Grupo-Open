@@ -416,6 +416,99 @@ a {
 
 
 
+
+@media (max-width: 810px){
+
+    h1{   
+        font-size: 10px;
+    }
+
+    #botaoAjuda {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    button{  
+        font-size: 5px;
+        width: 50px;
+        height: 35px;
+        border-radius: 3px;
+        border: 1px solid #fdfdfd;
+    
+    }
+    
+    #botoes {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    #icone{
+        width: 10px;
+        height: 10px;
+    }
+
+    .linha_01, .linha_02, .linha_03 {
+        width: 200px;
+    }
+
+    footer{
+        height: 30px;
+        font-size: 1px;  
+        margin-top: 2vw;
+    }
+   
+    #contatos{
+        width: 100vw;
+        height: 20px;
+        font-size: 5px;
+    }
+
+    .rede_social{
+        cursor: pointer;
+        width: 10px;
+    }
+
+
+    /* ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
+
+#estiliza_menu-ramal{
+    width: 800px;
+    height: 600px; 
+}
+
+.opc_ramal{
+    width: 800px;
+    height: 600px;
+}
+
+.organiza_menu-ramal{
+    width: 800px;
+}
+
+
+#open{
+    font-size: 20px;
+    width: 220px;
+    height: 120px;
+}
+
+#vetor{
+    font-size: 20px;
+    width: 220px;
+    height: 120px;
+}
+
+#brizza{
+    font-size: 20px;
+    width: 220px;
+    height: 120px;
+}
+
+}
+
+
 @media (min-width: 1400px){
 
     h1{   
