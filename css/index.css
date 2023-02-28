@@ -247,8 +247,7 @@ a {
 
 /* ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
 
-#estiliza_menu-ramal{
-    
+#estiliza_menu-ramal{   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -427,5 +426,40 @@ a {
     .linha_01, .linha_02, .linha_03 {
         width: 1000px;
     }
-    
+
+    /* ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
+
+#estiliza_menu-ramal{
+    width: 800px;
+    height: 600px; 
+}
+
+.opc_ramal{
+    width: 800px;
+    height: 600px;
+}
+
+.organiza_menu-ramal{
+    width: 800px;
+}
+
+
+#open{
+    font-size: 20px;
+    width: 220px;
+    height: 120px;
+}
+
+#vetor{
+    font-size: 20px;
+    width: 220px;
+    height: 120px;
+}
+
+#brizza{
+    font-size: 20px;
+    width: 220px;
+    height: 120px;
+}
+
 }
