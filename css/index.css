@@ -141,34 +141,6 @@ p {
     align-items: center;
 }
 
-@media (min-width: 1400px){
-
-    h1{   
-        font-size: 80px;
-    }
-
-    button{  
-        font-size: 30px;
-        width: 300px;
-        height: 120px;
-    }
-    
-    #botoes {
-        width: 1000px;
-        height: 600px;
-    }
-
-    #icone{
-        width: 50px;
-        height: 50px;
-    }
-
-    .linha_01, .linha_02, .linha_03 {
-        width: 1000px;
-    }
-    
-}
-
 /* ESTILIZAÇAO PAGINA DE NORMAS*/
 .norma{
     margin-top: 30px;
@@ -280,8 +252,9 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50vw;
-    height: 400px;
+    width: 38vw;
+    height: 350px;
+    border-radius: 20px;
     background-color: #809ba749; 
 }
 
@@ -426,3 +399,32 @@ a {
     background-color:rgb(255, 255, 255);
 }
 
+
+
+@media (min-width: 1400px){
+
+    h1{   
+        font-size: 80px;
+    }
+
+    button{  
+        font-size: 30px;
+        width: 300px;
+        height: 120px;
+    }
+    
+    #botoes {
+        width: 1000px;
+        height: 600px;
+    }
+
+    #icone{
+        width: 50px;
+        height: 50px;
+    }
+
+    .linha_01, .linha_02, .linha_03 {
+        width: 1000px;
+    }
+    
+}
