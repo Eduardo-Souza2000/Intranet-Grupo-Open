@@ -5,8 +5,7 @@ body{
     font-family:'Arial';
     display: flex;
     justify-content: center;
-    /*background: #1D4F65;*/
-    background:#bbcad144;
+    background: #1D4F65;
 }
 
 #botaoAjuda {
@@ -38,7 +37,7 @@ body{
 }
 
 .logo-grupo:hover{
-    background-color:#05364b;;
+    background-color: #809ba749; 
     border-radius: 15px;
 
 }
