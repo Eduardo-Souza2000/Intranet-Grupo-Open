@@ -36,7 +36,7 @@ header{
 
 
 h1{   
-    font-family: 'Rapa Sans';
+    font-family:'Arial';
     font: bold;
     font-size: 30px;
     color: #f8f8f8;
@@ -48,14 +48,14 @@ button{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-family: 'Rapa Sans';
+    font-family:'Arial';
     font-size:15px;
     width: 10vw;
     height: 70px;
     color: rgb(255, 255, 255);
     background: #0c408800;
     border-radius: 10px;
-    border: 2px solid #fdfdfd;
+    border: 3px solid #fdfdfd;
 
 }
 
@@ -283,7 +283,7 @@ a {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-family: 'Rapa Sans';
+    font-family:'Arial';
     font-size:15px;
     width: 10vw;
     height: 70px;
@@ -303,7 +303,7 @@ a {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-family: 'Rapa Sans';
+    font-family:'Arial';
     font-size:15px;
     width: 10vw;
     height: 70px;
@@ -324,7 +324,7 @@ a {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-family: 'Rapa Sans';
+    font-family:'Arial';
     font-size:15px;
     width: 10vw;
     height: 70px;
