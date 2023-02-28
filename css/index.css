@@ -418,45 +418,49 @@ a {
 
 
 @media (max-width: 810px){
+    .logo-grupo{
+        width: 90vw;
+    }
 
     h1{   
-        font-size: 3vw;
+        font-size: 5vw;
     }
 
     #botaoAjuda {
-        width: 5vw;
-        height: 5vw;
-        font-size: 3vw;
+        width: 7vw;
+        height: 7vw;
+        font-size: 5vw;
     }
 
     button{  
-        font-size: 1.5vw;
-        width: 10vw;
-        height: 50px;
-        border-radius: 3px;
+        font-size: 3.5vw;
+        width: 25vw;
+        height: 70px;
+        border-radius: 5px;
         border: 1px solid #fdfdfd;
     
     }
     
     #botoes {
-        width: 50vw;
-        height: 50vw;
+        width: 85vw;
+        height: 350px;
         border-radius: 10px;
     }
 
     #icone{
-        width: 2vw;
-        height: 15px;
+        width: 6vw;
+        height: 20px;
     }
 
     .linha_01, .linha_02, .linha_03 {
-        width: 50vw;
+        width: 85vw;
     }
 
     footer{
+
         height: 30px;
         font-size: 1px;  
-        margin-top: 2vw;
+        margin-top: 40vw;
     }
    
     #contatos{
