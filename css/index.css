@@ -482,17 +482,17 @@ a {
     /* ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
 
     #estiliza_menu-ramal{
-        width: 80vw;
-        height: 450px; 
+        width: 85vw;
+        height: 250px; 
     }
 
     .opc_ramal{
-        width: 80vw;
-        height: 450px;
+        width: 85vw;
+        height: 250px;
     }
 
     .organiza_menu-ramal{
-        width: 80vw;
+        width: 85vw;
     }
 
     #iconeramal{
@@ -502,25 +502,25 @@ a {
 
     #open{
         font-size: 2vw;
-        width: 20vw;
-        height: 50px;
+        width: 25vw;
+        height: 60px;
     }
 
     #vetor{
         font-size: 2vw;
-        width: 20vw;
-        height: 50px;
+        width: 25vw;
+        height: 60px;
     }
 
     #brizza{
         font-size: 2vw;
-        width: 20vw;
-        height: 50px;
+        width: 25vw;
+        height: 60px;
     }
 
     #icone{
-        width: 8vw;
-        height: 20px;
+        width: 7vw;
+        height: 18px;
     }
 
 }
