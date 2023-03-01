@@ -4,14 +4,12 @@
     background-color:  rgb(0, 4, 7);
     color: #f8f8f8;
     font-family:'Arial';
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #table_open{
-    width: 1000px;
-    height: 900px;
-    border-spacing: 10px;
-
+    width: 70vw;
+    border-spacing: 4px;
 }
 
 td{
@@ -19,8 +17,7 @@ td{
     font-family:'Arial';
     color: #ffffff;
     width: 40vw;
-    font-size: 20px;
-    font-weight: 100;
+    font-size: 1.5vw;
     background-color: #809ba749;  
     border-bottom: 2px solid #fffFff;
     padding: 0.5%;
@@ -36,7 +33,7 @@ tr:hover {
 
 caption{
     font-family:'Arial';
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bolder;
     margin: 40px;
     color: #fffFff;
@@ -48,13 +45,12 @@ caption{
     background-color:  rgb(0, 4, 7);
     color: #f8f8f8;
     font-family:'Arial';
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #table_vetor{
-    width: 80vw;
-    height: 720px;
-    border-spacing: 10px;
+    width: 70vw;
+    border-spacing: 4px;
 }
 
 
@@ -63,13 +59,12 @@ caption{
     background-color:  rgb(0, 4, 7);
     color: #f8f8f8;
     font-family:'Arial';
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #table_brizza{
-    width: 1000px;
-    height: 1500px;
-    border-spacing: 10px;
+    width: 70vw;
+    border-spacing: 4px;
 }
 
 .logo-grupo{
@@ -91,17 +86,14 @@ caption{
     }
     
     #table_open{
-        width: 85vw;
-        height: 550px;
+        width: 80vw;
         border-spacing: 1px;
     
     }
     
     td{
-        width: 8vw;
-        color: #000000;
-        font-size: 3vw;
-        font-weight: 300;
+        width: 5vw;
+        font-size: 1.5vw;
        
     }
     
@@ -116,20 +108,17 @@ caption{
     }
     
     #table_vetor{
-        width: 5vw;
-        height: 550px;
+        width: 80vw;
         border-spacing: 1px;
     }
     
     
     #titulo_ramal-briza{
-        width: 6vw;
-        font-size: 10px;
+        font-size: 2vw;
     }
     
     #table_brizza{
-        width: 5vw;
-        height: 550px;
+        width: 80vw;
         border-spacing: 1px;
     }
     
