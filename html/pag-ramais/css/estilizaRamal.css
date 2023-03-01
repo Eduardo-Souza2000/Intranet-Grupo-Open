@@ -16,13 +16,10 @@ td{
     align-items: center;
     font-family:'Arial';
     color: #ffffff;
-    width: 40vw;
-    font-size: 1.5vw;
+    font-size:2vw;
     background-color: #809ba749;  
     border-bottom: 2px solid #fffFff;
-    padding: 0.5%;
-    
-   
+    padding: 0.5%; 
 }
 
 
