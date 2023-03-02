@@ -1,11 +1,4 @@
 /*ESTILIZAÇAO HOME*/
-body{
-    font-family:'Arial';
-    display: flex;
-    justify-content: center;
-    background: #1D4F65;
-}
-
 .ajuda {
     position: fixed;
     bottom: 20px;
@@ -21,12 +14,15 @@ body{
 }
 
 #principal {
+
     display: flex;
     justify-items: center;
+    justify-content: center;
     align-items: center;
+    font-family:'Arial';
     flex-direction: column;
     width: 100vw;
-    background:#bbcad144;
+    background: #466d7e;
 }
 
 .logo-grupo{
@@ -62,7 +58,7 @@ button{
     justify-content: center;
     cursor: pointer;
     font-family:'Arial';
-    font-size:12px;
+    font-size:0.8vw;
     width: 10vw;
     height: 70px;
     color: rgb(255, 255, 255);
