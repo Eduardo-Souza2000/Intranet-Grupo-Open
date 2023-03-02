@@ -16,9 +16,10 @@ td{
     align-items: center;
     font-family:'Arial';
     color: #ffffff;
+    font-weight:normal;
     font-size:1.5vw;
     background-color: #809ba749;  
-    border-bottom: 2px solid #fffFff;
+    border-bottom: 1px solid #fffFff;
     padding: 0.5%;  
 }
 
