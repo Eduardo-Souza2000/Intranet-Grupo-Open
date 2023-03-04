@@ -24,7 +24,7 @@
     font-family: 'Karla';
     flex-direction: column;
     width: 100vw;
-    background: #ff0080;
+    background: #466d7e;
 
 }
 
@@ -34,7 +34,7 @@
 }
 
 .logo-grupo:hover{
-    background-color: #fc089e49; 
+    background-color: #809ba749; 
     border-radius: 15px;
 
 }
