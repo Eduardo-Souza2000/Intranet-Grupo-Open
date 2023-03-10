@@ -49,8 +49,8 @@
 
 .risco {
     position: absolute;
-    border-left: 2px solid white;
-    border-bottom: 2px solid white;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
     width: 10px;
     height: 10px;
     transform: rotate(-45deg);
