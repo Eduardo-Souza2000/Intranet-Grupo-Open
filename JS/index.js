@@ -27,6 +27,7 @@ function alerta(){
 }
     
 
+
 // Cria um objeto com os IDs dos elementos navegáveis
 const targetIds = {
     'ramal': 'ponto-mais',
