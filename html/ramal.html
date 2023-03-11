@@ -29,19 +29,19 @@
 
                 
                 <section class="organiza_menu-ramal">
-                    <a href="../html/pag-ramais/ramal-cascavel.html.html"><button id="open"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Open Cascavel </button></a>
-                    <a href="../html/pag-ramais/ramal-foz.html"><button id="open"><img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Open Foz </button></a>
-                    <a href="../html/pag-ramais/ramal-toledo.html"><button id="open"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Open Toledo</button></a>
+                    <a href="../html/pag-ramais/ramal-cascavel.html.html"><button id="open" data-voice="Open Cascavel"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Open Cascavel </button></a>
+                    <a href="../html/pag-ramais/ramal-foz.html"><button id="open" data-voice="Open Foz"><img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Open Foz </button></a>
+                    <a href="../html/pag-ramais/ramal-toledo.html"><button id="open" data-voice="Open Toledo"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Open Toledo</button></a>
                 </section>
 
                 <section class="organiza_menu-ramal">
-                    <a href="../html/pag-ramais/ramal-vetor-cascavel.html"><button id="vetor"><img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Vetor Cascavel  </button></a>
-                    <a href="../html/pag-ramais/ramal-vetor-foz.html"><button id="vetor"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Vetor Foz </button></a>
-                    <a href="../html/pag-ramais/ramal-vetor-umuarama.html"><button id="vetor"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Vetor Umuarama </button></a>
+                    <a href="../html/pag-ramais/ramal-vetor-cascavel.html"><button id="vetor" data-voice="Cascavel"><img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Vetor Cascavel  </button></a>
+                    <a href="../html/pag-ramais/ramal-vetor-foz.html"><button id="vetor" data-voice="Foz"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Vetor Foz </button></a>
+                    <a href="../html/pag-ramais/ramal-vetor-umuarama.html"><button id="vetor" data-voice="Umuarama"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Vetor Umuarama </button></a>
                 </section>
 
                 <section class="organiza_menu-ramal">
-                    <a href="../html/pag-ramais/ramal-brizza.html"><button id="brizza"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Brizza Cascavel </button></a>
+                    <a href="../html/pag-ramais/ramal-brizza.html"><button id="briza" data-voice="brisa"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Brizza Cascavel </button></a>
                 </section>
 
             </section> 
@@ -69,9 +69,36 @@
         
     </footer>
 
+
     <button id="botramal" class="ajuda">?</button>
+    <button id="reconhecimentoHome" class="reconhecimento"><i class="fa fa-microphone"></i> </button>
+
+    <div id="pop-up-ajuda" class="pop-up">
+
+        <div class="pop-up-conteudo">
+            <h2 class="pop-up-enunciado">Para utilizar o reconhecimento de voz, clique no ícone do microfone e fale a opção desejada conforme texto em negrito: </h2>
+            <p class="pop-up-texto">
+                Ramais Open Cascavel = <b>OPEN CASCAVEL</b>; <br> 
+                Ramais Open Foz = <b>OPEN FOZ</b>; <br> 
+                Ramais Open Toledo = <b>OPEN TOLEDO</b>; <br> 
+                Ramais Vetor Cascavel = <b>CASCAVEL</b>; <br> 
+                Ramais Vetor Foz = <b>FOZ</b>; <br> 
+                Ramais Vetor Umuarama= <b> UMUARAMA </b>; <br> 
+                Ramais Brizza Cascavel = <b>BRIZZA</b>.
+                    
+            </p>
+            
+            <button id="botao-fechar">X</button>
+        </div>
+        <div class="risco"></div>
+       
+        
+    </div>
+    
+    
 
     <script type="text/javascript" src="../JS/ajudaRamal.js"></script>
+    <script type="text/javascript" src="../JS/vozRamal.js"></script>
      
 
 </body>
