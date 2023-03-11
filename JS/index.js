@@ -30,8 +30,8 @@ function alerta(){
 // Cria um objeto com os IDs dos elementos navegáveis
 const targetIds = {
     'ramal': 'ponto-mais',
-    'sobre': 'section-sobre',
-    'contato': 'section-contato'
+    'convenio': 'normas',
+    'sobre-Nos': 'section-contato'
   };
   
   // Define um evento para quando o usuário clicar no botão de comando de voz
@@ -62,8 +62,10 @@ const targetIds = {
         // Seleciona o botão correspondente
         button.click();
         break;
-      }
+      } 
+      
     }
+    
   };
   
   
