@@ -22,6 +22,24 @@
 
         <main>
 
+            <!-- Criação do botão de pesquisa -->
+            <div class="search">
+
+                <!-- Ícone de lupa -->
+                <span class="fa fa-search"></span>
+
+                <!-- Caixa de seleção do filtro de pesquisa -->
+                <select id="filtro">
+                    <option value="nome">Nome</option>
+                    <option value="departamento">Departamento</option>
+                    <option value="ramal">Ramal</option>
+                </select>
+
+                <!-- Campo de pesquisa -->
+                <input type="text" id="pesquisa" placeholder="Pesquisar">
+                
+            </div>
+
             <table id="table_brizza">
                 
                 <caption>Lista de Ramais<br> Brizza Mitsubishi Cascavel</caption>
@@ -214,7 +232,7 @@
 
     </section>
 
-    <script type="text/javascript" src="..js/index.js"></script>
+    <script type="text/javascript" src="../pag-ramais/JS-Ramais/indexRamaisBrizza.js"></script>
 
 </body>
 
