@@ -4,6 +4,7 @@ const targetIds = {
     'Open Toledo': 'Cascavel',
     'Foz': 'Umuarama', 
     'brisa': 'home',
+    'seminovos': 'geral',
     
  };
   
