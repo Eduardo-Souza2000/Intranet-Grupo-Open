@@ -1,3 +1,4 @@
+// Seleciona os elementos HTML com os IDs correspondentes e adiciona um evento de clique a eles que executa a função 'alerta'
 let botsobre = document.getElementById("sobre-nos");
 botsobre.addEventListener("click", alerta);
 
@@ -21,21 +22,21 @@ botcon.addEventListener("click", alerta);
 
 
 
-
+// Função que exibe uma janela de alerta com o texto "Em Desenvolvimento
 function alerta(){
     window.alert("Em Desenvolvimento");
 }
     
 
 
-// Cria um objeto com os IDs dos elementos navegáveis
+// Cria um objeto com os IDs dos elementos HTML navegáveis
 const targetIds = {
     'ramal': 'ponto-mais',
     'convenio': 'normas',
     'sobre-Nos': 'section-contato'
   };
   
-  // Define um evento para quando o usuário clicar no botão de comando de voz
+  // Seleciona o elemento HTML com o ID 'reconhecimentoHome' e adiciona um evento de clique que executa uma função anônima
   document.getElementById('reconhecimentoHome').addEventListener('click', () => {
 
     // Toca um som para indicar que o sistema está ouvindo
