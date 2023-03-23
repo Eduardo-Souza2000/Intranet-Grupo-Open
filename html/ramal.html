@@ -25,6 +25,7 @@
 
     <main>
 
+  
         <section id="estiliza_menu-ramal">
 
             <section class="opc_ramal">
@@ -32,8 +33,8 @@
                 
                 <section class="organiza_menu-ramal">
                     <a href="#ramal-open-Cascavel-Novos"><button id="open" data-voice="Open Cascavel"  data-target="ramal-open-Cascavel-Novos"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Open Novos Cascavel</button></a>
-                    <a href="#ramal-openfoz"><button id="open" data-voice="Open Foz" data-target="ramal-openfoz"><img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Open Foz </button></a>
-                    <a href="#ramal-toledo"><button id="open" data-voice="Open Toledo" data-target="ramal-toledo"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Open Toledo</button></a>
+                    <a href="#ramal-openfoz"><button id="open"  data-target="ramal-openfoz" data-voice="Open Foz"><img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Open Foz </button></a>
+                    <a href="#ramal-toledo"><button id="open"  data-target="ramal-toledo" data-voice="Open Toledo"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Open Toledo</button></a>
                 </section>
 
                 <section class="organiza_menu-ramal">
@@ -51,12 +52,12 @@
             </section> 
 
         </section>
-
+    
         <section id="ramal-toledo" class="ramal-section">
              
 
-             <!-- Criação do botão de pesquisa -->
-             <div class="search">
+            <!-- Criação do botão de pesquisa -->
+            <div class="search">
 
                 <!-- Ícone de lupa -->
                 <span class="fa fa-search"></span>
@@ -72,78 +73,80 @@
                 <input type="text" id="pesquisa" placeholder="Pesquisar">
                 
             </div>
+            
+            <tbody>
+                <table id="table_open">
+                    <caption>Lista de Ramais<br> Open Renault Toledo</caption>
+                    
+                    <tr id="titulo_ramal-open">
+                        <th>Nome</th>
+                        <th>Setor</th>
+                        <th>Ramal</th>
+                    </tr>
 
-            <table id="table_open">
-                <caption>Lista de Ramais<br> Open Renault Toledo</caption>
-                
-                <tr id="titulo_ramal-open">
-                    <th>Nome</th>
-                    <th>Setor</th>
-                    <th>Ramal</th>
-                </tr>
+                    <tr>
+                        <td>Amanda</td>
+                        <td>Entrega Técnica</td>
+                        <td>214</td>
+                    </tr>
 
-                <tr>
-                    <td>Amanda</td>
-                    <td>Entrega Técnica</td>
-                    <td>214</td>
-                </tr>
+            
+                    <tr>
+                        <td>Adilson</td>
+                        <td>Gerente</td>
+                        <td>201</td>
+                    </tr>
 
-        
-                <tr>
-                    <td>Adilson</td>
-                    <td>Gerente</td>
-                    <td>201</td>
-                </tr>
+                    <tr>
+                        <td>Ana</td>
+                        <td>Recepção</td>
+                        <td>201</td>
+                    </tr>
 
-                <tr>
-                    <td>Ana</td>
-                    <td>Recepção</td>
-                    <td>201</td>
-                </tr>
+                    <tr>
+                        <td>Anderson</td>
+                        <td>Peças</td>
+                        <td>211</td>
+                    </tr>
 
-                <tr>
-                    <td>Anderson</td>
-                    <td>Peças</td>
-                    <td>211</td>
-                </tr>
+                    <tr>
+                        <td>Clarice</td>
+                        <td>Financeiro</td>
+                        <td>205</td>
+                    </tr>
 
-                <tr>
-                    <td>Clarice</td>
-                    <td>Financeiro</td>
-                    <td>205</td>
-                </tr>
+                    <tr>
+                        <td>Edson</td>
+                        <td>Consultor de Vendas</td>
+                        <td>202</td>
+                    </tr>
 
-                <tr>
-                    <td>Edson</td>
-                    <td>Consultor de Vendas</td>
-                    <td>202</td>
-                </tr>
+                    <tr>
+                        <td>Fermanda</td>
+                        <td>Consultor de Vendas Pro+</td>
+                        <td>202</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Gabriel<br>Jeziel</td>
+                        <td>Consultor Pos Vendas</td>
+                        <td>213</td>
+                    </tr>
 
-                <tr>
-                    <td>Fermanda</td>
-                    <td>Consultor de Vendas Pro+</td>
-                    <td>202</td>
-                </tr>
-                
-                <tr>
-                    <td>Gabriel<br>Jeziel</td>
-                    <td>Consultor Pos Vendas</td>
-                    <td>213</td>
-                </tr>
+                    <tr>
+                        <td>Mauro</td>
+                        <td>Consultor de Vendas</td>
+                        <td>203</td>
+                    </tr>
 
-                <tr>
-                    <td>Mauro</td>
-                    <td>Consultor de Vendas</td>
-                    <td>203</td>
-                </tr>
+                    <tr>
+                        <td>Vanderson</td>
+                        <td>Peças</td>
+                        <td>200</td>
+                    </tr>
 
-                <tr>
-                    <td>Vanderson</td>
-                    <td>Peças</td>
-                    <td>200</td>
-                </tr>
-
-            </table>
+                </table>
+            </tbody>
 
         </section>
 
@@ -938,9 +941,10 @@
     <script type="text/javascript" src="../JS/ajudaRamal.js"></script>
     <script type="text/javascript" src="../JS/vozRamal.js"></script>
     <script type="text/javascript" src="../JS/selecionaRamal.js"></script>
+    <!--
     <script type="text/javascript" src="../html//pag-ramais/JS-Ramais/indexRamaisBrizza.js"></script>
     <script type="text/javascript" src="../html//pag-ramais/JS-Ramais/indexRamaisVetor.js"></script>
-    <script type="text/javascript" src="../html/pag-ramais/JS-Ramais/indexRamais.js"></script>
+    <script type="text/javascript" src="../html/pag-ramais/JS-Ramais/indexRamais.js"></script>-->
     
      
 
