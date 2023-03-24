@@ -8,66 +8,946 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../html/pag-ramais/css/estilizaRamal.css">
+    <link rel="stylesheet" href="../html/pag-ramais/css/estilizaRamal.css">
     <title>Intranet Grupo Open</title>
     <link rel="icon" href="../img/logo-grupo.png">
 </head>
 
-<body>
+<body id="principal">
+
+   
+
+    <header>
+        <a href="../html/home.html"> <img class="logo-grupo" src="../img/logo-grupo.png" alt="Logo"></a>
+        <h1> Escolha a loja: </h1>
+    </header>
+
+    <main>
+
+  
+        <section id="estiliza_menu-ramal">
+
+            <section class="opc_ramal">
+
+                
+                <section class="organiza_menu-ramal">
+                    <a href="#ramal-open-Cascavel-Novos"><button id="open" data-voice="Open Cascavel"  data-target="ramal-open-Cascavel-Novos"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Open Novos Cascavel</button></a>
+                    <a href="#ramal-openfoz"><button id="open"  data-target="ramal-openfoz" data-voice="Open Foz"><img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Open Foz </button></a>
+                    <a href="#ramal-toledo"><button id="open"  data-target="ramal-toledo" data-voice="Open Toledo"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Open Toledo</button></a>
+                </section>
+
+                <section class="organiza_menu-ramal">
+                    <a href="../html/pag-ramais/ramal-vetor-cascavel.html"><button id="vetor" data-voice="Cascavel"><img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Vetor Cascavel  </button></a>
+                    <a href="../html/pag-ramais/ramal-vetor-foz.html"><button id="vetor" data-voice="Foz"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Vetor Foz </button></a>
+                    <a href="../html/pag-ramais/ramal-vetor-umuarama.html"><button id="vetor" data-voice="Umuarama"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Vetor Umuarama </button></a>
+                </section>
+
+                <section class="organiza_menu-ramal">
+                    <a href="#opc-Brizza"><button id="brizza" data-voice="brisa"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Brizza Cascavel </button></a>
+                    <a href=""><button id="open" data-voice="seminovos"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Open Semi Novos Cascavel</button></a>
+                    <a href=""><button id="open" data-voice="geral"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Geral </button></a>
+                </section>
+
+            </section> 
+
+        </section>
     
-    <section id="principal">
+        <section id="ramal-toledo" class="ramal-section">
+             
 
-        <header>
-            <a href="../html/home.html"> <img class="logo-grupo" src="../img/logo-grupo.png" alt="Logo"></a>
-        </header>
+            <!-- Criação do botão de pesquisa -->
+            <div class="search">
 
-        <main>
+                <!-- Ícone de lupa -->
+                <span class="fa fa-search"></span>
 
-            <section id="estiliza_menu-ramal">
+                <!-- Caixa de seleção do filtro de pesquisa -->
+                <select id="filtro">
+                    <option value="nome">Nome</option>
+                    <option value="departamento">Departamento</option>
+                    <option value="ramal">Ramal</option>
+                </select>
 
-                <h1> Escolha a loja: </h1>
+                <!-- Campo de pesquisa -->
+                <input type="text" id="pesquisa" placeholder="Pesquisar">
+                
+            </div>
+            
+            <tbody>
+                <table id="table_open">
+                    <caption>Lista de Ramais<br> Open Renault Toledo</caption>
+                    
+                    <tr id="titulo_ramal-open">
+                        <th>Nome</th>
+                        <th>Setor</th>
+                        <th>Ramal</th>
+                    </tr>
 
-                <section class="opc_ramal">
+                    <tr>
+                        <td>Amanda</td>
+                        <td>Entrega Técnica</td>
+                        <td>214</td>
+                    </tr>
 
-                    <section class="organiza_menu-ramal">
-                        <a href="../html/pag-ramais/ramal-brizza.html"><button id="brizza"> Ramais<br> Brizza Cascavel</button></a>
-                        <a href="../html/pag-ramais/ramal-cascavel.html.html"><button id="open"> Ramais<br> Open Cascavel </button></a>
-                        <a href="../html/pag-ramais/ramal-foz.html"><button id="open"> Ramais<br> Open Foz</button></a>
-                        <a href="../html/pag-ramais/ramal-toledo.html"><button id="open"> Ramais<br> Open Toledo</button></a>
-                    </section>
+            
+                    <tr>
+                        <td>Adilson</td>
+                        <td>Gerente</td>
+                        <td>201</td>
+                    </tr>
 
-                    <section class="organiza_menu-ramal">
-                        <a href="../html/pag-ramais/ramal-vetor-cascavel.html"><button id="vetor"> Ramais<br> Vetor Cascavel </button></a>
-                        <a href="../html/pag-ramais/ramal-vetor-foz.html"><button id="vetor"> Ramais<br> Vetor Foz</button></a>
-                        <a href="../html/pag-ramais/ramal-vetor-umuarama.html"><button id="vetor"> Ramais<br> Vetor Umuarama</button></a>
-                    </section>
+                    <tr>
+                        <td>Ana</td>
+                        <td>Recepção</td>
+                        <td>201</td>
+                    </tr>
 
-                </section> 
+                    <tr>
+                        <td>Anderson</td>
+                        <td>Peças</td>
+                        <td>211</td>
+                    </tr>
 
-            </section>
+                    <tr>
+                        <td>Clarice</td>
+                        <td>Financeiro</td>
+                        <td>205</td>
+                    </tr>
+
+                    <tr>
+                        <td>Edson</td>
+                        <td>Consultor de Vendas</td>
+                        <td>202</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fermanda</td>
+                        <td>Consultor de Vendas Pro+</td>
+                        <td>202</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Gabriel<br>Jeziel</td>
+                        <td>Consultor Pos Vendas</td>
+                        <td>213</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mauro</td>
+                        <td>Consultor de Vendas</td>
+                        <td>203</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vanderson</td>
+                        <td>Peças</td>
+                        <td>200</td>
+                    </tr>
+
+                </table>
+            </tbody>
+
+        </section>
+
+        <section id="ramal-openfoz" class="ramal-section">
+            <!-- Criação do botão de pesquisa -->
+            <div class="search">
+                <!-- Ícone de lupa -->
+                <span class="fa fa-search"></span>
+
+                <!-- Caixa de seleção do filtro de pesquisa -->
+                <select id="filtro">
+                    <option value="nome">Nome</option>
+                    <option value="departamento">Departamento</option>
+                    <option value="ramal">Ramal</option>
+                </select>
+
+                <!-- Campo de pesquisa -->
+                <input type="text" id="pesquisa" placeholder="Pesquisar">
+                
+            </div>
+
+            <!-- Tabela de ramais -->
+
+            <table id="table_open">
+                
+                <caption>Lista de Ramais<br> Open Renault Foz do Iguaçu</caption>
+              
+               <thead>
+                    <tr id="titulo_ramal-open">
+                        <th>Nome</th>
+                        <th>Departamento</th>
+                        <th>Ramal</th>
+                        <th>Email</th>
+                        <th>Loja</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Anderson</td>
+                        <td>Consultor de Vendas</td>
+                        <td>302</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+
+                    </tr>
+                    
+                    <tr>
+                        <td>Eduardo</td>
+                        <td>TI</td>
+                        <td>309</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Elisete</td>
+                        <td>Financeiro</td>
+                        <td>318</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Elvis</td>
+                        <td>Gerente</td>
+                        <td>310</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Giovana</td>
+                        <td>Entrega Técnica</td>
+                        <td>324</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Igor</td>
+                        <td>Peças</td>
+                        <td>316</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Joao Victor</td>
+                        <td>Consultor de Pos vendas</td>
+                        <td>322</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Joao Vitor</td>
+                        <td>Consultor de vendas PRO +</td>
+                        <td>305</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Kairo</td>
+                        <td>Cotech</td>
+                        <td>321</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Leia</td>
+                        <td>Consultor de Pos vendas</td>
+                        <td>323</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Marcio</td>
+                        <td>Consultor de vendas</td>
+                        <td>303</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Marina</td>
+                        <td>Aprendiz Financeiro</td>
+                        <td>330</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Monica/Everson</td>
+                        <td>Posto de Lavagem</td>
+                        <td>319</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pedro</td>
+                        <td>Avaliador</td>
+                        <td>314</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Robson</td>
+                        <td>Peças</td>
+                        <td>320</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sabrina</td>
+                        <td>Consultor de Vendas</td>
+                        <td>308</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tatielen</td>
+                        <td>Consultor Pos Vendas</td>
+                        <td>326</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thaynara</td>
+                        <td>Consultor de Vendas</td>
+                        <td>306</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Victoria / Monica</td>
+                        <td>Recepcao</td>
+                        <td>301</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vikthor</td>
+                        <td>Consultor de Vendas</td>
+                        <td>307</td>
+                        <td>Email</td>
+                        <td>Loja</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
         
-        </main>
+        <section id="ramal-open-Cascavel-Novos" class="ramal-section">
+            <!-- Criação do botão de pesquisa -->
+            <div class="search">
+
+                <!-- Ícone de lupa -->
+                <span class="fa fa-search"></span>
+
+                <!-- Caixa de seleção do filtro de pesquisa -->
+                <select id="filtro">
+                    <option value="nome">Nome</option>
+                    <option value="departamento">Departamento</option>
+                    <option value="ramal">Ramal</option>
+                </select>
+
+                <!-- Campo de pesquisa -->
+                <input type="text" id="pesquisa" placeholder="Pesquisar">
+                
+            </div>
+
+            <table id="table_open">
+                <caption>Lista de Ramais<br> Open Renault Cascavel</caption>
+                
+                <tr id="titulo_ramal-open">
+                    <th>Nome</th>
+                    <th>Setor</th>
+                    <th>Ramal</th>
+                    <th>Email</th>
+                    <th>Loja</th>
+                </tr>
+
+                <tr>
+                    <td>Adilson </td>
+                    <td>Pos Vendas</td>
+                    <td>172</td>
+                    <td>adilsonvesohoski@gmail.com</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Alexandre Serra</td>
+                    <td>Diretoria</td>
+                    <td>111</td>
+                    <td>diretoria@openveiculos.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Aline </td>
+                    <td>Garantia</td>
+                    <td>184</td>
+                    <td>garantia03@brizza.com.br </td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Amabily </td>
+                    <td>Contabilidade</td>
+                    <td>167</td>
+                    <td>contabil05@hundaiopen.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Ana </td>
+                    <td>Financiero</td>
+                    <td>115</td>
+                    <td>caixaatendimento@brizza.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Andressa </td>
+                    <td>RH</td>
+                    <td>110</td>
+                    <td>rh2@brizza.com.br </td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Andressa </td>
+                    <td>Faturamento</td>
+                    <td>102</td>
+                    <td>faturamentocvel2@openveiculos.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Andrey </td>
+                    <td>DHO</td>
+                    <td>159</td>
+                    <td>rh3@brizza.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+                
+                <tr>
+                    <td>Angelica </td>
+                    <td>Contabilidade</td>
+                    <td>125</td>
+                    <td>contabil03@brizza.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Bruna </td>
+                    <td>Financeiro</td>
+                    <td>115</td>
+                    <td>-----------------</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Bruno Wesley</td>
+                    <td>Consultor Vendas Semi-Novos</td>
+                    <td>624</td>
+                    <td>Vendas12@openveiculos.com.br</td>
+                    <td> Open Semi Novos</td>
+                </tr>
+                
+                <tr>
+                    <td>Caroline </td>
+                    <td>Gestor Marketing</td>
+                    <td>635</td>
+                    <td>mkt@openveiculos.net.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Celso</td>
+                    <td>Controladoria</td>
+                    <td>126</td>
+                    <td>assistentecontro@openveiculos.net.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Christopher </td>
+                    <td>Contabilidade</td>
+                    <td>112</td>
+                    <td>fiscal2@openveiculos.com.br </td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Cris </td>
+                    <td>DHO Supervisora</td>
+                    <td>156</td>
+                    <td>treinamento@openveiculos.com.br </td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Divaldo </td>
+                    <td>Assistente TI</td>
+                    <td>121 </td>
+                    <td>cpd02@openveiculos.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Dyohana </td>
+                    <td>Faturamento</td>
+                    <td>101</td>
+                    <td>faturamentocvel1@openveiculos.com.br </td>
+                    <td> Open Novos</td>
+                </tr>
+                
+                <tr>
+                    <td>Edina </td>
+                    <td> Caixa Open Renault Cascavel</td>
+                    <td>114</td>
+                    <td>caixacvl@openveiculos.com.br </td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Elizandra </td>
+                    <td>Faturamento</td>
+                    <td>108</td>
+                    <td>faturamento@openveiculos.net.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Elson </td>
+                    <td>Estoque Peças</td>
+                    <td>130</td>
+                    <td>estoque@openveiculos.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Fernanda </td>
+                    <td>estor Garantia</td>
+                    <td>178</td>
+                    <td>fernanda@openveiculos.com.br </td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Frank </td>
+                    <td>Consultor Vendas Peças</td>
+                    <td>192</td>
+                    <td>pecasvendas2@openveiculos.net.br </td>
+                    <td> Open Novos</td>
+                </tr>
+                
+                <tr>
+                    <td>Haltieres </td>
+                    <td>Avaliador</td>
+                    <td>620</td>
+                    <td>avaliadorcvel@openveiculos.com.br</td>
+                    <td> Open Semi Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Hamilly </td>
+                    <td>Marketing</td>
+                    <td>636</td>
+                    <td>rh4@brizza.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Hanna </td>
+                    <td>Marketing</td>
+                    <td>636</td>
+                    <td>mkt3@brizza.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+                
+                <tr>
+                    <td>Helio </td>
+                    <td>Consultor Vendas Semi-Novos</td>
+                    <td>621</td>
+                    <td>vendas13@openveiculos.net.br</td>
+                    <td> Open Semi Novo</td>
+                </tr>
+
+                <tr>
+                    <td>Heverton </td>
+                    <td>Gestor Vendas Pro+</td>
+                    <td>190</td>
+                    <td>gerentevd@openveiculos.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Fabio </td>
+                    <td>Gestor Peças</td>
+                    <td>177</td>
+                    <td>elias@openveiculos.com.br </td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>João </td>
+                    <td>Vendas PRO+</td>
+                    <td>107</td>
+                    <td>-------------------</td>
+                    <td> Open Novos</td>
+
+                </tr>
+
+                <tr>
+                    <td>Katia </td>
+                    <td>Gestor F&I</td>
+                    <td>158</td>
+                    <td>centralfi@openveiculos.com.br </td>
+                    <td> Open Novos</td>
+                </tr>
+                
+                <tr>
+                    <td>Kellin </td>
+                    <td>Consultora Pós Vendas</td>
+                    <td>185</td>
+                    <td></td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Lavadores</td>
+                    <td>Pós Vendas</td>
+                    <td>1098</td>
+                    <td>-----------------</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Leonardo </td>
+                    <td>Garantia</td>
+                    <td>1091</td>
+                    <td>garantia04@brizza.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+                
+                <tr>
+                    <td>Anne </td>
+                    <td>Entrega Técnica</td>
+                    <td>140</td>
+                    <td>entregatecnicacvel@openveiculos.com.br </td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Lincoln </td>
+                    <td>Contabilidade</td>
+                    <td>113</td>
+                    <td></td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Lucas </td>
+                    <td>Qualidade</td>
+                    <td>1093</td>
+                    <td>agendamento3@openveiculos.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+                
+                <tr>
+                    <td>Lucas </td>
+                    <td>F&i</td>
+                    <td>138</td>
+                    <td>faturamento1@brizza.com.br </td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Luccas </td>
+                    <td>Gerente Vendas</td>
+                    <td>122 </td>
+                    <td>gerenciacvel@openveiculos.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Maglo </td>
+                    <td>Consultor Vendas Novos</td>
+                    <td>160</td>
+                    <td>vendas15@openveiculos.net.br</td>
+                    <td> Open Novos</td>
+                </tr>
+                
+                <tr>
+                    <td>Marcos Urio</td>
+                    <td>Diretoria</td>
+                    <td>111</td>
+                    <td>marcos@openveiculos.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Mario </td>
+                    <td>Preparador de Veiculos Novos</td>
+                    <td>182</td>
+                    <td>--------------------</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Mateus </td>
+                    <td>F&I</td>
+                    <td>158</td>
+                    <td>centralfi2@hyundaiopen.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+                
+                <tr>
+                    <td>Matheus </td>
+                    <td>Consultor Vendas Novos</td>
+                    <td>144</td>
+                    <td>vendas09@openveiculos.net.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Nei </td>
+                    <td>Consultor Serviços</td>
+                    <td>181</td>
+                    <td>consultor2@openveiculos.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+                
+                <tr>
+                    <td>Nicolas </td>
+                    <td>Suporte TI</td>
+                    <td>141</td>
+                    <td>suporte03@hyundaiopen.com.br </td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Pereira </td>
+                    <td>Gerente Pós Vendas</td>
+                    <td>189</td>
+                    <td>---------------------------</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Rafael </td>
+                    <td>Posto de Lavagem</td>
+                    <td>1098</td>
+                    <td></td>
+                    <td> Open Novos</td>
+                </tr>
+                
+                <tr>
+                    <td>Raquel </td>
+                    <td>Agendamento</td>
+                    <td>633</td>
+                    <td></td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Recepção</td>
+                    <td>Recepção</td>
+                    <td>136</td>
+                    <td>recepcaocvel@openveiculos.net.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Ricardo </td>
+                    <td>Consultor Vendas Peças</td>
+                    <td>161</td>
+                    <td></td>
+                    <td> Open Novos</td>
+                </tr>
+                
+                <tr>
+                    <td>Roberto </td>
+                    <td>Consultor Vendas Semi-Novo</td>
+                    <td>623</td>
+                    <td>vendas10@openveiculos.net.br</td>
+                    <td> Open Semi Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Roberto </td>
+                    <td>Cotech</td>
+                    <td>175</td>
+                    <td>cotech1@openveiculos.net.br </td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Rosana </td>
+                    <td>Financeiro</td>
+                    <td>106</td>
+                    <td>financeiro.cp@openveiculos.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+                
+                <tr>
+                    <td>Sandra </td>
+                    <td> Gestor RH</td>
+                    <td>151</td>
+                    <td>sandrarh@openveiculos.com.br </td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Evelyn </td>
+                    <td>Compras</td>
+                    <td>693</td>
+                    <td>cotacoes@openveiculos.net.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Silvana </td>
+                    <td>Agendamento</td>
+                    <td>149</td>
+                    <td>assispvcvel@brizza.com.br </td>
+                    <td> Open Novos</td>
+                </tr>
+                
+                <tr>
+                    <td>Silvana </td>
+                    <td>RH</td>
+                    <td>150</td>
+                    <td>silvana.santos@openveiculos.net.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Susete </td>
+                    <td>Consultor Vendas Novos</td>
+                    <td>145</td>
+                    <td>susete@openveiculos.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Thatyane </td>
+                    <td>Getor Contabilidade</td>
+                    <td>191</td>
+                    <td>contabilidade@openveiculos.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+                
+                <tr>
+                    <td>Valderes</td>
+                    <td>Agendamento</td>
+                    <td>632</td>
+                    <td>agendamento1@openveiculos.com.br </td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Valmir </td>
+                    <td>Consultor Peças</td>
+                    <td>188</td>
+                    <td>vendaspecas@openveiculos.net.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Vinicius </td>
+                    <td>Consultor Vendas Peças</td>
+                    <td>173</td>
+                    <td>vendasweb@openveiculos.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+                
+                <tr>
+                    <td>Viviane </td>
+                    <td>Gestor Faturamento</td>
+                    <td>138</td>
+                    <td>viviane@openveiculos.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+    </main>
         
-        <footer>
+    <footer>
 
-            <section id="contatos">
+        <section id="contatos">
 
-              <p> Desenvolvido por Eduardo Souza </p>
-
-              <div class="redes_sociais">
-                <article> Redes Sociais:</article>
+            <div class="redes_sociais">
+            
                 <section class="contato_img">
                     <a href="https://www.linkedin.com/in/eduardo-souza-0b471a241/"><img class="rede_social" src="../img/Linkedin.png" alt="Linkedin"></a>
                     <a href="https://github.com/Eduardo-Souza2000"><img class="rede_social" src="../img/Git.png" alt="Linkedin"></a>
+                    
                 </section>
-              </div>
-          
-          </section>
-          
-        </footer>
+                
+                <p>&copy; 2023 Desenvolvido por Eduardo Souza. Todos os direitos reservados. </p>
+            </div>
+        
+        </section>
+        
+    </footer>
 
-    </section>
 
-    <script type="text/javascript" src="..js/index.js"></script>
+    <button id="botramal" class="ajuda">?</button>
+    <button id="reconhecimentoHome" class="reconhecimento"><i class="fa fa-microphone"></i> </button>
+
+    <div id="pop-up-ajuda" class="pop-up">
+
+        <div class="pop-up-conteudo">
+            <h2 class="pop-up-enunciado">Para utilizar o reconhecimento de voz, clique no ícone do microfone e fale a opção desejada conforme texto em negrito: </h2>
+            <p class="pop-up-texto">
+                Ramais Open Cascavel = <b>OPEN CASCAVEL</b>; <br> 
+                Ramais Open Foz = <b>OPEN FOZ</b>; <br> 
+                Ramais Open Toledo = <b>OPEN TOLEDO</b>; <br> 
+                Ramais Vetor Cascavel = <b>CASCAVEL</b>; <br> 
+                Ramais Vetor Foz = <b>FOZ</b>; <br> 
+                Ramais Vetor Umuarama= <b> UMUARAMA </b>; <br> 
+                Ramais Brizza Cascavel = <b>BRIZZA</b>.
+                    
+            </p>
+            
+            <button id="botao-fechar">X</button>
+        </div>
+        <div class="risco"></div>
+       
+        
+    </div>
+    
+    
+
+    <script type="text/javascript" src="../JS/ajudaRamal.js"></script>
+    <script type="text/javascript" src="../JS/vozRamal.js"></script>
+    <script type="text/javascript" src="../JS/selecionaRamal.js"></script>
+    <!--
+    <script type="text/javascript" src="../html//pag-ramais/JS-Ramais/indexRamaisBrizza.js"></script>
+    <script type="text/javascript" src="../html//pag-ramais/JS-Ramais/indexRamaisVetor.js"></script>
+    <script type="text/javascript" src="../html/pag-ramais/JS-Ramais/indexRamais.js"></script>-->
+    
+     
 
 </body>
+
 </html>

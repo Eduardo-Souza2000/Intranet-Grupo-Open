@@ -14,6 +14,7 @@
     </head>
 
 <body>
+
     <section id="principal">
 
         <header>
@@ -22,9 +23,27 @@
 
         <main>
 
+            <!-- Criação do botão de pesquisa -->
+            <div class="search">
+
+                <!-- Ícone de lupa -->
+                <span class="fa fa-search"></span>
+
+                <!-- Caixa de seleção do filtro de pesquisa -->
+                <select id="filtro">
+                    <option value="nome">Nome</option>
+                    <option value="departamento">Departamento</option>
+                    <option value="ramal">Ramal</option>
+                </select>
+
+                <!-- Campo de pesquisa -->
+                <input type="text" id="pesquisa" placeholder="Pesquisar">
+                
+            </div>
+
             <table id="table_vetor">
 
-                <caption>Lista de Ramais<br> Vetor Automóvel Cascavel</caption>
+                <caption>Lista de Ramais<br> Vetor Hyundai Cascavel</caption>
                 
                 <tr id="titulo_ramal-vetor">
                     <th>Nome</th>
@@ -197,23 +216,24 @@
 
             <section id="contatos">
 
-              <p> Desenvolvido por Eduardo Souza </p>
-
-              <div class="redes_sociais">
-                <article> Redes Sociais:</article>
-                <section class="contato_img">
-                    <a href="https://www.linkedin.com/in/eduardo-souza-0b471a241/"><img class="rede_social" src="../../img/Linkedin.png" alt="Linkedin"></a>
-                    <a href="https://github.com/Eduardo-Souza2000"><img class="rede_social" src="../../img/Git.png" alt="Linkedin"></a>
-                </section>
-              </div>
-          
-          </section>
+                <div class="redes_sociais">
+                
+                    <section class="contato_img">
+                        <a href="https://www.linkedin.com/in/eduardo-souza-0b471a241/"><img class="rede_social" src="../../img/Linkedin.png" alt="Linkedin"></a>
+                        <a href="https://github.com/Eduardo-Souza2000"><img class="rede_social" src="../../img/Git.png" alt="Linkedin"></a>
+                    </section>
+                    
+                    <p>&copy; 2023 Desenvolvido por Eduardo Souza. Todos os direitos reservados. </p>
+                    
+                </div>
+        
+        
+            </section>
           
         </footer>
 
     </section>
 
-    <script type="text/javascript" src="..js/index.js"></script>
-
+    <script type="text/javascript" src="../pag-ramais/JS-Ramais/indexRamaisVetor.js"></script>
 </body>
 </html>
