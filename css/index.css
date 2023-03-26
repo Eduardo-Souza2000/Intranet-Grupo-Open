@@ -4,20 +4,13 @@
 
 
 
+.esconde-tabela{
+    display: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.mostra-tabela{
+    display: unset;
+}
 
 
 /* ESTILIZAÇAO Pops*/

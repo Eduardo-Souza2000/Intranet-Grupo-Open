@@ -24,7 +24,7 @@ botcon.addEventListener("click", alerta);
 
 // Função que exibe uma janela de alerta com o texto "Em Desenvolvimento
 function alerta(){
-    window.alert("Em Desenvolvimento");
+  window.alert("Em Desenvolvimento");
 }
     
 
