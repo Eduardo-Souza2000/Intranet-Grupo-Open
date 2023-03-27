@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+/* Estilização do botão de pesquisa */
+.search {
+	display: flex;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin: 10px;
+	padding: 10px;
+	background-color: #020202;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+/* Estilização do ícone de lupa */
+.fa-search {
+    color: #f8f8f8;
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+/* Estilização da caixa de seleção de filtro de pesquisa */
+#filtro {
+   background-color: #fdfdfd;
+	margin-right: 10px;
+	padding: 5px;
+	border-radius: 5px;
+    color: rgb(2, 2, 2);
+}
+
+/* Estilização do campo de pesquisa */
+#pesquisa {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: #fffdf6;
+    font-size: 16px;
+    color: rgb(7, 7, 7);
+}
+
+/* -------------------------------------------------------------------------------------------------------*/
+#titulo_ramal-open{
+    width: 40vw;
+    background-color:  rgb(0, 4, 7);
+    color: #f8f8f8;
+    font-family: 'Karla';
+    font-size: 25px;
+}
+
+#table_open{
+    width: 70vw;
+    border-spacing: 4px;
+}
+
+td{
+    align-items: center;
+    font-family: 'Karla';
+    color: #ffffff;
+    font-weight:normal;
+    font-size:1.5vw;
+    background-color: #809ba749;  
+    border-bottom: 1px solid #fffFff;
+    padding: 0.5%;  
+}
+
+
+tr:hover {
+    background-color:#011e2b;
+    color: #fffFff; 
+}
+
+caption {
+    font-family: 'Karla';
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 40px;
+    color: #fffFff;
+}
+
+
+#titulo_ramal-vetor{
+    width: 40vw;
+    background-color:  rgb(0, 4, 7);
+    color: #f8f8f8;
+    font-family: 'Karla';
+    font-size: 25px;
+}
+
+#table_vetor{
+    width: 70vw;
+    border-spacing: 4px;
+}
+
+
+#titulo_ramal-briza{
+    width: 40vw;
+    background-color:  rgb(0, 4, 7);
+    color: #f8f8f8;
+    font-family: 'Karla';
+    font-size: 25px;
+}
+
+#table_brizza{
+    width: 70vw;
+    border-spacing: 4px;
+}
+
+.logo-grupo{
+    cursor: pointer;
+    width: 400px;
+}
+
+.logo-grupo:hover{
+    background-color: #9b9b9bec;
+    border-radius: 30px;
+}
+
+
+@media  (min-width:320px ) and (max-width: 800px) {
+
+    #titulo_ramal-open{
+        width: 6vw;
+        font-size: 10px;
+    }
+    
+    #table_open{
+        width: 80vw;
+        border-spacing: 1px;
+    
+    }
+    
+    td{
+        width: 5vw;
+        font-size: 1.5vw;
+       
+    }
+    
+    caption{
+        font-size: 17px;
+    }
+    
+    
+    #titulo_ramal-vetor{
+        width: 6vw;
+        font-size: 10px;
+    }
+    
+    #table_vetor{
+        width: 80vw;
+        border-spacing: 1px;
+    }
+    
+    
+    #titulo_ramal-briza{
+        font-size: 2vw;
+    }
+    
+    #table_brizza{
+        width: 80vw;
+        border-spacing: 1px;
+    }
+    
+    .logo-grupo{
+        width: 80vw;
+    }
+    
+    .logo-grupo:hover{
+        border-radius: 20px;
+    }
+    
+}
