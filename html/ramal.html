@@ -31,7 +31,7 @@
 
                 
                 <section class="organiza_menu-ramal">
-                    <a href="#ramal-open-Cascavel-Novos"><button id="open" data-voice="Open Cascavel"   class="botao"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Open Novos Cascavel</button></a>
+                    <a href="#ramal-open-Cascavel-Novos"><button id="open" data-voice="Open Cascavel" class="botao"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Open Novos Cascavel</button></a>
                     <a href="#ramal-openfoz"><button id="open"  data-voice="Open Foz" class="botao"><img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Open Foz </button></a>
                     <a href="#ramal-toledo"><button id="open"  data-voice="Open Toledo" class="botao"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Open Toledo</button></a>
                 </section>
@@ -44,8 +44,8 @@
 
                 <section class="organiza_menu-ramal">
                     <a href="#ramal-brizza"><button id="brizza" data-voice="brisa" class="botao"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Brizza Cascavel </button></a>
-                    <a href=""><button id="open" data-voice="seminovos"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Open Semi Novos Cascavel</button></a>
-                    <a href=""><button id="open" data-voice="geral"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Geral </button></a>
+                    <a href="#open-semiNovos"><button id="open" data-voice="seminovos" class="botao"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Open Semi Novos Cascavel</button></a>
+                    <a href="geral"><button id="open" data-voice="geral" class="botao"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Geral </button></a>
                 </section>
 
             </section> 
@@ -1497,6 +1497,96 @@
             </tbody>
         </section>
 
+        <!--OPEN VEICULOS SEMI NOVOS-->
+        <section id="open-semiNovos" class="esconde-tabela">
+
+            <!-- Criação do botão de pesquisa -->
+            <div class="search">
+
+                <!-- Ícone de lupa -->
+                <span class="fa fa-search"></span>
+
+                <!-- Caixa de seleção do filtro de pesquisa -->
+                <select id="filtroOpenSemiNovos">
+                    <option value="nome">Nome</option>
+                    <option value="departamento">Departamento</option>
+                    <option value="ramal">Ramal</option>
+                </select>
+
+                <!-- Campo de pesquisa -->
+                <input type="text" id="pesquisaOpenSemiNovos" placeholder="Pesquisar">
+                
+            </div>
+
+            <tbody>
+                <table id="table_openOpenSemiNovos" >
+                    <caption>Lista de Ramais<br> Open Renault Toledo</caption>
+                    
+                    <tr id="titulo_ramal-open">
+                        <th>Nome</th>
+                        <th>Setor</th>
+                        <th>Ramal</th>
+                        <th>Email</th>
+                        <th>Loja</th>
+                    </tr>
+
+                    <tr>
+                        <td>Bruno Wesley</td>
+                        <td>Consultor de Vendas</td>
+                        <td>624</td>
+                        <td>vendas12@openveiuclos.com.br</td>
+                        <td>Open Semi Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Denivaldo Miguel</td>
+                        <td>Gerente Semi Novos</td>
+                        <td>620</td>
+                        <td>gerenciasseminovos@openveiuclos.net.br</td>
+                        <td>Open Semi Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fabio Silva</td>
+                        <td>Consultor de Vendas</td>
+                        <td>623</td>
+                        <td>vendas13@openveiuclos.com.br</td>
+                        <td>Open Semi Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Haltieres Carbolin</td>
+                        <td>Avaliador</td>
+                        <td>3</td>
+                        <td>avaliadorcvel@openveiuclos.com.br</td>
+                        <td>Open Semi Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Helio de oliveira</td>
+                        <td>Consultor de Vendas</td>
+                        <td>621</td>
+                        <td>vendas13@openveiuclos.net.br</td>
+                        <td>Open Semi Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rafael Augusto</td>
+                        <td>Consultor de Vendas</td>
+                        <td>622</td>
+                        <td>seminovos@brizza.com.br</td>
+                        <td>Open Semi Novos</td>
+                    </tr>
+
+                </table>
+            </tbody>
+
+
+        </section>
+
+        <!--GERAL-->
+        <section id="geral" class="esconde-tabela">
+        </section>
 
     </main>
         
