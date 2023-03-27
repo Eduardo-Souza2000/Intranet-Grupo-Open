@@ -43,7 +43,7 @@
 }
 
 /* -------------------------------------------------------------------------------------------------------*/
-#titulo_ramal-open{
+#titulo_ramal-open,#titulo_ramal-vetor, #titulo_ramal-briza{
     width: 40vw;
     background-color:  rgb(0, 4, 7);
     color: #f8f8f8;
@@ -51,7 +51,10 @@
     font-size: 25px;
 }
 
-#table_open, #table_openFoz, #table_openToledo{
+#table_vetor, #table_vetorFoz,
+#table_vetorUmuarama, #table_open,
+#table_openFoz, #table_openToledo,
+#table_brizza{
     width: 70vw;
     border-spacing: 4px;
 }
@@ -81,34 +84,6 @@ caption {
     color: #fffFff;
 }
 
-
-#titulo_ramal-vetor{
-    width: 40vw;
-    background-color:  rgb(0, 4, 7);
-    color: #f8f8f8;
-    font-family: 'Karla';
-    font-size: 25px;
-}
-
-#table_vetor{
-    width: 70vw;
-    border-spacing: 4px;
-}
-
-
-#titulo_ramal-briza{
-    width: 40vw;
-    background-color:  rgb(0, 4, 7);
-    color: #f8f8f8;
-    font-family: 'Karla';
-    font-size: 25px;
-}
-
-#table_brizza{
-    width: 70vw;
-    border-spacing: 4px;
-}
-
 .logo-grupo{
     cursor: pointer;
     width: 400px;
@@ -122,15 +97,9 @@ caption {
 
 @media  (min-width:320px ) and (max-width: 800px) {
 
-    #titulo_ramal-open{
+    #titulo_ramal-open,#titulo_ramal-vetor, #titulo_ramal-briza{
         width: 6vw;
         font-size: 10px;
-    }
-    
-    #table_open, #table_openFoz, #table_openToledo{
-        width: 80vw;
-        border-spacing: 1px;
-    
     }
     
     td{
@@ -142,23 +111,10 @@ caption {
     caption{
         font-size: 17px;
     }
-    
-    
-    #titulo_ramal-vetor{
-        width: 6vw;
-        font-size: 10px;
-    }
-    
-    #table_vetor{
-        width: 80vw;
-        border-spacing: 1px;
-    }
-    
-    
-    #titulo_ramal-briza{
-        font-size: 2vw;
-    }
-    
+        
+    #table_vetor, #table_vetorFoz,
+    #table_vetorUmuarama, #table_open,
+    #table_openFoz, #table_openToledo,
     #table_brizza{
         width: 80vw;
         border-spacing: 1px;

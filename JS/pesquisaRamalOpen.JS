@@ -24,6 +24,10 @@ const tableRowsOpen = document.getElementById("table_open").getElementsByTagName
 	});
 
 
+
+
+
+
 	/*PESQUISA OPEN FOZ*/ 
 	const searchInputOpenFoz = document.getElementById("pesquisaOpenFoz");
 	const filterSelectOpenFoz = document.getElementById("filtroOpenFoz");
@@ -48,6 +52,11 @@ const tableRowsOpen = document.getElementById("table_open").getElementsByTagName
 			}
 		}
 	});
+
+
+
+	
+
 
 
 	/*PESQUISA OPEN TOLEDO*/ 
