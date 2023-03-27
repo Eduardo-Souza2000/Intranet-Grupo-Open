@@ -51,7 +51,7 @@
     font-size: 25px;
 }
 
-#table_open{
+#table_open, #table_openFoz, #table_openToledo{
     width: 70vw;
     border-spacing: 4px;
 }
@@ -127,7 +127,7 @@ caption {
         font-size: 10px;
     }
     
-    #table_open{
+    #table_open, #table_openFoz, #table_openToledo{
         width: 80vw;
         border-spacing: 1px;
     
