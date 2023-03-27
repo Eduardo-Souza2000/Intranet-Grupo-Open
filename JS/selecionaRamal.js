@@ -13,7 +13,7 @@ window.addEventListener('popstate', () => {
 
     if ( tabela.className === "mostra-tabela" && exibirTabela ){
       tabela.className = 'esconde-tabela';
-      menu.style.display = 'unset'; 
+      menu.style.display = 'flex'; 
       exibirTabela = false;
       return;
     }
