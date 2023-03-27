@@ -54,7 +54,7 @@
 #table_vetor, #table_vetorFoz,
 #table_vetorUmuarama, #table_open,
 #table_openFoz, #table_openToledo,
-#table_brizza{
+#table_brizza, #table_openOpenSemiNovos, #table_Geral{
     width: 70vw;
     border-spacing: 4px;
 }
@@ -116,7 +116,7 @@ caption {
     #table_vetor, #table_vetorFoz,
     #table_vetorUmuarama, #table_open,
     #table_openFoz, #table_openToledo,
-    #table_brizza{
+    #table_brizza, #table_openOpenSemiNovos, #table_Geral{
         width: 80vw;
         border-spacing: 1px;
     }
