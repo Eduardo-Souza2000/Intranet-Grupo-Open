@@ -158,7 +158,7 @@ button{
 }
 
 button:hover{
-    background-color:#05364b;
+    background-color:#045172b4;
    
 }
 
@@ -173,12 +173,12 @@ button:hover{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #809ba749;  
+    background-color: #022331bd; 
 }
 
 #icone{
-    width: 20px;
-    height: 20px;
+    width: 2vw;
+    padding: 0.25vw;
 }
 
 
@@ -356,7 +356,7 @@ a {
     width: 40vw;
     height: 360px;
     border-radius: 20px;
-    background-color: #809ba749; 
+    background-color: #022331bd; 
 }
 
 .opc_ramal{
@@ -381,7 +381,7 @@ a {
     width: 2vw;
 }
 
-#open{
+#open,#vetor,#brizza{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -397,85 +397,66 @@ a {
     border: 2px solid #fdfdfd;
 }
 
-#open:hover{
-    background-color:#05364b;
-}
-
-#vetor{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-family: 'Karla';
-    font-size:15px;
-    width: 10vw;
-    height: 87px;
-    color: rgb(255, 255, 255);
-    background: #0c408800;
-    border-radius: 10px;
-    border: 2px solid #fdfdfd;
-}
-
-#vetor:hover{
-    background-color:#05364b;
-
-}
-
-#brizza{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-family: 'Karla';
-    font-size:15px;
-    width: 10vw;
-    height: 87px;
-    color: rgb(255, 255, 255);
-    background: #0c408800;
-    border-radius: 10px;
-    border: 2px solid #fdfdfd;
-}
-
-
-#brizza:hover{
-    background-color:#05364b;
+#open:hover,#vetor:hover,#brizza:hover{
+    background-color:#045172b4;
 }
 
 #opc-Brizza{
     display: none;
 }
-
-/* ESTILIZAÇAO PAGINA DE LINK MITSUBISH*/
-
-#estiliza_LinkMit{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1000px;
-    height: 800px;
-}
-
-/* ESTILIZAÇAO PAGINA DE LINK RENAULT*/
-
-#estiliza_LinkRENAULT{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1000px;
-    height: 800px;
-}
-
-
 /* ESTILIZAÇAO PAGINA DE LINK hYUNDAI*/
+/* ESTILIZAÇAO PAGINA DE LINK MITSUBISH*/
+/* ESTILIZAÇAO PAGINA DE LINK RENAULT*/
+#menu-opc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 360px;
+    border-radius: 20px;
+    background-color: #022331bd; 
+}
 
-#estiliza_LinkHYUNDAI{
+.menu-opc-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40vw;
+
+}
+
+.organizaOpcs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+    height: 450px;
+}
+
+#estiliza_LinkRENAULT, #estiliza_LinkMit,#estiliza_LinkHYUNDAI{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 1000px;
     height: 800px;
+}
+
+.img_estrelaopc{
+    width: 1.5vw;
+}
+
+
+
+.links{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
 }
 
 .img_estrela{
@@ -489,6 +470,7 @@ a {
     background-color: #ffffff;
     border-radius: 5px;
 }
+
 
 .bot_link{
     cursor: pointer;
