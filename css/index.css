@@ -82,12 +82,18 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #022246;
-    color: white;
+    background-color: #011429;
+    color: rgb(252, 252, 252);
     font-size: 24px;
     text-align: center;
     line-height: 50px; 
 }
+
+.ajuda:hover {
+    
+    background-color: #0876f5;
+}
+
 
 .reconhecimento {
     position: fixed;
@@ -101,6 +107,16 @@
     font-size: 24px;
     text-align: center;
     line-height: 50px; 
+}
+
+body{display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla';
+    flex-direction: column;
+    width: 100vw;
+    background: #466d7e;
 }
 
 #principal {
@@ -462,8 +478,24 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    width: 30vw;
+    justify-content: center;
+    width: 100vw;
+}
+
+.titulo_link{
+    font-family: 'Karla';
+    color:#ececec;
+    font-weight: 900;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.esconde_link{
+    display: none;
+}
+
+.mostra_link{
+    display: 'flex';
 }
 
 .img_estrela{
@@ -472,9 +504,7 @@ a {
 }
 
 .img_estrela:hover{
-    width: 50px;
-    height: 50px;
-    background-color: #ffffff;
+    background-color: #022331bd; 
     border-radius: 5px;
 }
 
@@ -490,11 +520,12 @@ a {
     border-radius: 15px;
     border: 1px solid transparent;
     background: transparent;
+    color: #ececec;
 }
 
 .bot_link:hover{
     cursor: pointer;
-    background-color:rgb(255, 255, 255);
+    background-color: #022331bd; 
 }
 
 
