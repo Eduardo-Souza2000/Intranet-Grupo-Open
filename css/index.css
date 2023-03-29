@@ -777,11 +777,9 @@ a {
 }
 
 .titulo_link{
-    font-family: 'Karla';
-    color:#ececec;
-    font-weight: 900;
+    font-weight: bold;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 40px;
 }
 
 .img_estrela{
@@ -796,22 +794,10 @@ a {
 
 
 .bot_link{
-    cursor: pointer;
-    display: flex;
-    font-family: 'Karla';
     font-size: 25px;
-    font-weight: bold;
-    width: 25vw;
-    height: 50px;
-    border-radius: 15px;
-    border: 1px solid transparent;
-    background: transparent;
-    color: #ececec;
-}
-
-.bot_link:hover{
-    cursor: pointer;
-    background-color: #022331bd; 
+    font-weight: 900;
+    width: 400px;
+    height: 60px;
 }
 
 }
