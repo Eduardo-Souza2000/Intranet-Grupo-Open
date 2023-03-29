@@ -540,7 +540,6 @@ a {
     display: flex;
     font-family: 'Karla';
     font-size: 25px;
-    font-weight: bold;
     width: 25vw;
     height: 50px;
     border-radius: 15px;
@@ -795,7 +794,6 @@ a {
 
 .bot_link{
     font-size: 25px;
-    font-weight: 300;
     width: 400px;
     height: 60px;
 }
