@@ -528,7 +528,7 @@ a {
     background-color: #022331bd; 
 }
 
-
+/*
 @media (min-width:300px) and (max-width: 800px){
     .logo-grupo{
         width: 90vw;
@@ -587,7 +587,7 @@ a {
     }
 
 
-    /* ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
+     //ESTILIZAÇAO PAGINA DE MENU RAMAIS
 
     #estiliza_menu-ramal{
         width: 85vw;
@@ -669,7 +669,7 @@ a {
         margin-top: 2vw;
     }
 
-    /* ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
+     //ESTILIZAÇAO PAGINA DE MENU RAMAIS
 
 #estiliza_menu-ramal{
     width: 800px;
@@ -709,4 +709,4 @@ a {
     height: 50px;
 }
 
-}
+}*/
