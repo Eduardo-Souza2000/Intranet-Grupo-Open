@@ -454,6 +454,32 @@ a {
     height: 450px;
 }
 
+.selecionaOpc-favoritos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Karla';
+    font-size:1vw;
+    width: 10vw;
+    height: 70px;
+    color: rgb(255, 255, 255);
+    background: #0c408800;
+    border-radius: 10px;
+    border: 2px solid #fdfdfd;
+    
+    
+    
+   
+}
+
+.selecionaOpc-favoritos:hover{
+    background-color:#045172b4;
+   
+}
+
+
 #estiliza_LinkRENAULT, #estiliza_LinkMit,#estiliza_LinkHYUNDAI{
     display: flex;
     flex-direction: column;
@@ -528,7 +554,7 @@ a {
     background-color: #022331bd; 
 }
 
-/*
+
 @media (min-width:300px) and (max-width: 800px){
     .logo-grupo{
         width: 90vw;
@@ -587,7 +613,7 @@ a {
     }
 
 
-     //ESTILIZAÇAO PAGINA DE MENU RAMAIS
+     /*ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
 
     #estiliza_menu-ramal{
         width: 85vw;
@@ -669,7 +695,7 @@ a {
         margin-top: 2vw;
     }
 
-     //ESTILIZAÇAO PAGINA DE MENU RAMAIS
+    /*ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
 
 #estiliza_menu-ramal{
     width: 800px;
@@ -709,4 +735,83 @@ a {
     height: 50px;
 }
 
-}*/
+
+/* LINKS RENAULT*/
+#menu-opc{
+    width: 700px;
+    height: 550px;
+}
+
+.menu-opc-button{
+    width: 100%;
+
+}
+
+.selecionaOpc-favoritos{
+    font-size: 18px;
+    width: 200px;
+    height: 100px; 
+}
+
+.organizaOpcs{
+    width: 700px;
+    height: 500px;
+}
+
+#estiliza_LinkRENAULT, #estiliza_LinkMit,#estiliza_LinkHYUNDAI{
+    width: 1000px;
+    height: 800px;
+}
+
+.img_estrelaopc{
+    width: 25px;
+}
+
+.pop-up-enunciadoLinks{
+    font-size: 20px;
+
+}
+
+.links{
+    width: 100vw;
+}
+
+.titulo_link{
+    font-family: 'Karla';
+    color:#ececec;
+    font-weight: 900;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.img_estrela{
+    width: 40px;
+    height: 40px;
+}
+
+.img_estrela:hover{
+    background-color: #022331bd; 
+    border-radius: 5px;
+}
+
+
+.bot_link{
+    cursor: pointer;
+    display: flex;
+    font-family: 'Karla';
+    font-size: 25px;
+    font-weight: bold;
+    width: 25vw;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: #ececec;
+}
+
+.bot_link:hover{
+    cursor: pointer;
+    background-color: #022331bd; 
+}
+
+}
