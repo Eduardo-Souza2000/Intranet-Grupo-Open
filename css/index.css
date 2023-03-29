@@ -36,12 +36,14 @@
 }
   
 .pop-up-enunciado{
-    font-size: 1vw;
+    text-align: center;
+    font-size: 1.1vw;
     color: #141414;
 
 }
 
 .pop-up-texto{
+    text-align: justify;
     font-size: 1vw;
     color: #141414;
 
@@ -448,7 +450,12 @@ a {
     width: 1.5vw;
 }
 
+.pop-up-enunciadoLinks{
+    text-align:center;
+    font-size: 1vw;
+    color: #141414;
 
+}
 
 .links{
     margin-top: 30px;
