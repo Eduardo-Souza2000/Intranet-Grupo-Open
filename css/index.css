@@ -68,11 +68,6 @@
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.6);
 }
 
-#botao-fechar:hover {
-    border: 0px;
-    background-color: #f30505;
-    color: #ececec;
-}
 
 .risco {
     position: absolute;
@@ -839,20 +834,27 @@ footer{
 }
 
 #botao-fechar {
-    bottom: 290px;
-    left: 500px;
+    bottom: 190px;
+    left: 340px;
     width: 3vw;
     
 }
 
 .ajuda {
-    bottom: 90px;
-    right: 80px;
+    bottom: 40px;
+    right: 40px;
     width: 60px;
     height: 60px;
     border-radius: 60%;
     background-color: #044999;
     font-size: 35px;
+}
+
+.pop-up {
+    position: fixed;
+    width: 25vw;
+    left: 86%;
+    
 }
 
 }
