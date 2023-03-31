@@ -669,6 +669,59 @@ a {
       }
 
 
+    #menu-opc{
+        
+        width: 60vw;
+        height: 450px;
+        border-radius: 10px;
+    }
+    
+    .menu-opc-button{  
+        width: 60vw;  
+    }
+    
+    .organizaOpcs{
+        width: 60vw;
+        height: 450px;
+    }
+    
+    .selecionaOpc-favoritos{
+        font-size:2vw;
+        width: 15vw;
+        border-radius: 5px;
+        border: 1px solid #fdfdfd;        
+       
+    }   
+    
+    .img_estrelaopc{
+        width: 3vw;
+    }
+    
+    .pop-up-enunciadoLinks{
+        text-align:center;
+        font-size: 1vw;
+        color: #141414;
+    
+    }
+    
+    .links{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+    
+    .titulo_link{
+        font-family: 'Karla';
+        justify-content: center;
+        color:#ececec;
+        font-weight: 900;
+        text-align: center;
+        font-size: 2.5vw;
+    }
+
      /*ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
 
     #estiliza_menu-ramal{
