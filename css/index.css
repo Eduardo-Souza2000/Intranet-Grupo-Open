@@ -572,26 +572,24 @@ h1{
 
 button{  
     font-size: 2vw;
-    width: 15vw;
-    height: 50px;
+    width: 14vw;
+    height: 60px;
     border-radius: 5px;
-    border: 1px solid #fdfdfd;
-
 }
 
 #botoes {
-    width: 60vw;
+    width: 70vw;
     height: 450px;
     border-radius: 5px;
 }
 
 #icone{
-    width: 3vw;
+    width: 2vw;
     
 }
 
 .linha_01, .linha_02, .linha_03 {
-    width: 60vw;
+    width: 70vw;
 }
 
 footer{
@@ -662,10 +660,9 @@ footer{
 
 
 #menu-opc{
-    
-    width: 60vw;
+    width: 70vw;
     height: 450px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .menu-opc-button{  
@@ -717,8 +714,9 @@ footer{
     /*ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
 
 #estiliza_menu-ramal{
-    width: 60vw;
-    height: 450px; 
+    width: 70vw;
+    height: 450px;
+    border-radius: 5px;
 }
 
 .opc_ramal{
@@ -745,7 +743,7 @@ footer{
     width: 14vw;
     height: 60px;
     border-radius: 5px;
-    border: 1px solid #fdfdfd;
+
 
 }
 
