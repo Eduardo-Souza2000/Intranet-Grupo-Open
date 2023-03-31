@@ -565,9 +565,7 @@ h1{
 }
 
 .ajuda {
-    width: 7vw;
-    height: 7vw;
-    font-size: 5vw;
+    display: none;
 }
 
 button{  
