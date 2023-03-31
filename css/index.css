@@ -743,39 +743,39 @@ a {
 
 @media (min-width: 1400px){
 
-    .logo-grupo{
-        cursor: pointer;
-        width: 600px;
-    }
+.logo-grupo{
+    cursor: pointer;
+    width: 600px;
+}
 
-    h1{   
-        font-size: 50px;
-    }
+h1{   
+    font-size: 40px;
+}
 
-    button{  
-        font-size: 20px;
-        width: 200px;
-        height: 120px;
-    }
-    
-    #botoes,#menu-opc, #estiliza_menu-ramal {
-        width: 850px;
-        height: 900px; 
-    }
+button{  
+    font-size: 20px;
+    width: 200px;
+    height: 120px;
+}
 
-    #icone{
-        width: 8px;
-        height: 8px;
-    }
+#botoes,#menu-opc, #estiliza_menu-ramal {
+    width: 850px;
+    height: 900px; 
+}
 
-    .linha_01, .linha_02, .linha_03 {
-        width: 900px;
-    }
+#icone{
+    width: 30px;
+    height: 30px;
+}
 
-    footer{
-        font-size: 15px;  
-        margin-top: 2vw;
-    }
+.linha_01, .linha_02, .linha_03 {
+    width: 900px;
+}
+
+footer{
+    font-size: 15px;  
+    margin-top: 2vw;
+}
 
     /*ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
 
@@ -796,10 +796,7 @@ a {
     
 }
 
-#icone{
-    width: 50px;
-    height: 50px;
-}
+
 
 
 /* LINKS RENAULT*/
