@@ -179,7 +179,7 @@ button{
     color: rgb(255, 255, 255);
     background: #0c408800;
     border-radius: 10px;
-    border: 1px solid #fdfdfd;
+    border: 2px solid #fdfdfd;
 
 }
 
@@ -411,7 +411,7 @@ a {
     color: rgb(255, 255, 255);
     background: #0c408800;
     border-radius: 8px;
-    border: 1px solid #fdfdfd;
+    border: 2px solid #fdfdfd;
 }
 
 #open:hover,#vetor:hover,#brizza:hover{
@@ -457,8 +457,7 @@ a {
     color: rgb(255, 255, 255);
     background: #0c408800;
     border-radius: 10px;
-    border: 1px solid #fdfdfd;
-
+    border: 2px solid #fdfdfd;
    
 }
 
@@ -753,7 +752,7 @@ h1{
 }
 
 button{  
-    font-size: 20px;
+    font-size: 22px;
     width: 200px;
     height: 120px;
 }
@@ -790,7 +789,7 @@ footer{
 
 
 #open, #vetor, #brizza {
-    font-size: 20px;
+    font-size: 22px;
     width: 200px;
     height: 120px;
     
@@ -808,7 +807,7 @@ footer{
 }
 
 .selecionaOpc-favoritos{
-    font-size: 18px;
+    font-size: 22px;
     width: 200px;
     height: 100px; 
 }
