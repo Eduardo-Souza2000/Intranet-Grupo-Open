@@ -458,9 +458,7 @@ a {
     background: #0c408800;
     border-radius: 10px;
     border: 1px solid #fdfdfd;
-    
-    
-    
+
    
 }
 
@@ -761,8 +759,8 @@ a {
     }
     
     #botoes,#menu-opc, #estiliza_menu-ramal {
-        width: 800px;
-        height: 600px; 
+        width: 850px;
+        height: 900px; 
     }
 
     #icone{
@@ -819,8 +817,8 @@ a {
 }
 
 .organizaOpcs{
-    width: 700px;
-    height: 500px;
+    width: 800px;
+    height: 600px;
 }
 
 #estiliza_LinkRENAULT, #estiliza_LinkMit,#estiliza_LinkHYUNDAI{
