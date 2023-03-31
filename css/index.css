@@ -838,4 +838,21 @@ footer{
     height: 60px;
 }
 
+#botao-fechar {
+    bottom: 290px;
+    left: 500px;
+    width: 3vw;
+    
+}
+
+.ajuda {
+    bottom: 90px;
+    right: 80px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    background-color: #044999;
+    font-size: 35px;
+}
+
 }
