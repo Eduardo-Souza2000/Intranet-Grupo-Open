@@ -152,8 +152,10 @@ header{
 
 
 h1{   
+    display: flex;
     font-family: 'Karla';
     font: bold;
+    text-align: center;
     font-size: 30px;
     color: #f8f8f8;
 }
