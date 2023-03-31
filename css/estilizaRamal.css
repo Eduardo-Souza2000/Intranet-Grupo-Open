@@ -84,15 +84,6 @@ caption {
     color: #fffFff;
 }
 
-.logo-grupo{
-    cursor: pointer;
-    width: 400px;
-}
-
-.logo-grupo:hover{
-    background-color: #9b9b9bec;
-    border-radius: 30px;
-}
 
 
 @media  (min-width:320px ) and (max-width: 800px) {
@@ -121,12 +112,5 @@ caption {
         border-spacing: 1px;
     }
     
-    .logo-grupo{
-        width: 80vw;
-    }
-    
-    .logo-grupo:hover{
-        border-radius: 20px;
-    }
     
 }
