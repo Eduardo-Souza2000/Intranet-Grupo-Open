@@ -749,7 +749,7 @@ a {
 }
 
 h1{   
-    font-size: 40px;
+    font-size: 50px;
 }
 
 button{  
@@ -759,8 +759,8 @@ button{
 }
 
 #botoes,#menu-opc, #estiliza_menu-ramal {
-    width: 850px;
-    height: 900px; 
+    width: 750px;
+    height: 800px;
 }
 
 #icone{
@@ -769,7 +769,7 @@ button{
 }
 
 .linha_01, .linha_02, .linha_03 {
-    width: 900px;
+    width: 750px;
 }
 
 footer{
