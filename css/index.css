@@ -712,6 +712,8 @@ footer{
 
 }
 
+
+
 @media (min-width: 1400px){
 
 .logo-grupo{
@@ -834,8 +836,8 @@ footer{
 }
 
 #botao-fechar {
-    bottom: 190px;
-    left: 340px;
+    bottom: 200px;
+    left: 85%;
     width: 3vw;
     
 }
@@ -846,8 +848,6 @@ footer{
     width: 60px;
     height: 60px;
     border-radius: 60%;
-    background-color: #044999;
-    font-size: 35px;
 }
 
 .pop-up {
