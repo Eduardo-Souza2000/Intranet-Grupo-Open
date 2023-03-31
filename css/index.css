@@ -180,6 +180,9 @@ button{
     background: #0c408800;
     border-radius: 10px;
     border: 2px solid #fdfdfd;
+    margin: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    z-index: 1;
 
 }
 
@@ -200,6 +203,7 @@ button:hover{
     align-items: center;
     justify-content: space-evenly;
     background-color: #022331bd; 
+    
 }
 
 #icone{
@@ -755,6 +759,9 @@ button{
     font-size: 22px;
     width: 200px;
     height: 120px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    z-index: 1;
 }
 
 #botoes,#menu-opc, #estiliza_menu-ramal {
