@@ -575,6 +575,9 @@ button{
     width: 14vw;
     height: 60px;
     border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.6);
+    z-index: 1;
 }
 
 #botoes {
@@ -678,7 +681,10 @@ footer{
     font-size:2vw;
     width: 15vw;
     border-radius: 5px;
-    border: 1px solid #fdfdfd;        
+    border: 1px solid #fdfdfd;
+    margin: 5px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.6);
+    z-index: 1;        
     
 }   
 
@@ -743,7 +749,9 @@ footer{
     width: 14vw;
     height: 60px;
     border-radius: 5px;
-
+    margin: 5px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.6);
+    z-index: 1;
 
 }
 
