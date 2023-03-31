@@ -179,7 +179,7 @@ button{
     color: rgb(255, 255, 255);
     background: #0c408800;
     border-radius: 10px;
-    border: 2px solid #fdfdfd;
+    border: 1px solid #fdfdfd;
 
 }
 
@@ -188,7 +188,7 @@ button:hover{
    
 }
 
-#botoes {
+#botoes,#menu-opc, #estiliza_menu-ramal {
     cursor: pointer;
     width: 38vw;
     height: 450px;
@@ -374,16 +374,7 @@ a {
 
 /* ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
 
-#estiliza_menu-ramal{   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40vw;
-    height: 360px;
-    border-radius: 20px;
-    background-color: #022331bd; 
-}
+
 
 .opc_ramal{
     display: flex;
@@ -419,8 +410,8 @@ a {
     height: 87px;
     color: rgb(255, 255, 255);
     background: #0c408800;
-    border-radius: 10px;
-    border: 2px solid #fdfdfd;
+    border-radius: 8px;
+    border: 1px solid #fdfdfd;
 }
 
 #open:hover,#vetor:hover,#brizza:hover{
@@ -433,16 +424,7 @@ a {
 /* ESTILIZAÇAO PAGINA DE LINK hYUNDAI*/
 /* ESTILIZAÇAO PAGINA DE LINK MITSUBISH*/
 /* ESTILIZAÇAO PAGINA DE LINK RENAULT*/
-#menu-opc{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40vw;
-    height: 360px;
-    border-radius: 20px;
-    background-color: #022331bd; 
-}
+
 
 .menu-opc-button{
     display: flex;
@@ -475,7 +457,7 @@ a {
     color: rgb(255, 255, 255);
     background: #0c408800;
     border-radius: 10px;
-    border: 2px solid #fdfdfd;
+    border: 1px solid #fdfdfd;
     
     
     
@@ -778,9 +760,9 @@ a {
         height: 120px;
     }
     
-    #botoes {
+    #botoes,#menu-opc, #estiliza_menu-ramal {
         width: 800px;
-        height: 750px;
+        height: 600px; 
     }
 
     #icone{
@@ -799,11 +781,6 @@ a {
 
     /*ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
 
-#estiliza_menu-ramal{
-    width: 800px;
-    height: 600px; 
-}
-
 .opc_ramal{
     width: 800px;
     height: 600px;
@@ -814,22 +791,11 @@ a {
 }
 
 
-#open{
+#open, #vetor, #brizza {
     font-size: 20px;
-    width: 220px;
+    width: 200px;
     height: 120px;
-}
-
-#vetor{
-    font-size: 20px;
-    width: 220px;
-    height: 120px;
-}
-
-#brizza{
-    font-size: 20px;
-    width: 220px;
-    height: 120px;
+    
 }
 
 #icone{
@@ -839,10 +805,7 @@ a {
 
 
 /* LINKS RENAULT*/
-#menu-opc{
-    width: 700px;
-    height: 550px;
-}
+
 
 .menu-opc-button{
     width: 100%;
