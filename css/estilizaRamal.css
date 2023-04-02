@@ -3,36 +3,37 @@
 
 /* Estilização do botão de pesquisa */
 .search {
-	display: flex;
-	align-items: center;
-	position: fixed;
-	top: 0;
-	right: 0;
-	margin: 10px;
-	padding: 10px;
-	background-color: #020202;
-	border-radius: 5px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    position: static;
+    width: 20vw;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #020202;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     color: #333;
-}
-/* Estilização do ícone de lupa */
-.fa-search {
+  }
+  
+  /* Estilização do ícone de lupa */
+  .fa-search {
     color: #f8f8f8;
-	margin-right: 10px;
-	font-size: 20px;
-}
-
-/* Estilização da caixa de seleção de filtro de pesquisa */
-#filtro {
-   background-color: #fdfdfd;
-	margin-right: 10px;
-	padding: 5px;
-	border-radius: 5px;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  /* Estilização da caixa de seleção de filtro de pesquisa */
+  #filtro {
+    background-color: #fdfdfd;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
     color: rgb(2, 2, 2);
-}
-
-/* Estilização do campo de pesquisa */
-#pesquisa {
+  }
+  
+  /* Estilização do campo de pesquisa */
+  #pesquisa {
     padding: 8px;
     border: none;
     border-radius: 4px;
@@ -40,7 +41,7 @@
     background-color: #fffdf6;
     font-size: 16px;
     color: rgb(7, 7, 7);
-}
+  }
 
 /* -------------------------------------------------------------------------------------------------------*/
 #titulo_ramal-open,#titulo_ramal-vetor, #titulo_ramal-briza{

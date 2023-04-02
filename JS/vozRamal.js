@@ -1,4 +1,4 @@
-// Cria um objeto com os IDs dos elementos navegáveis
+/*// Cria um objeto com os IDs dos elementos navegáveis
 const targetIds = {
     'Open Cascavel': 'Open Foz',
     'Open Toledo': 'Cascavel',
@@ -44,4 +44,4 @@ const targetIds = {
   
     // Começa a ouvir por comandos de voz
     recognition.start();
-  });
+  });*/
