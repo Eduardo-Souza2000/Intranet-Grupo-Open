@@ -74,3 +74,12 @@ const targetIds = {
       searchBoxToledo.style.display = "none";
     }
   });
+
+  document.getElementById("search-btnVetCascavel").addEventListener("click", function() {
+    var searchBoxVetCascavel = document.getElementById("search-boxVetCascavel");
+    if (searchBoxVetCascavel.style.display === "none") {
+      searchBoxVetCascavel.style.display = "flex";
+    } else {
+      searchBoxVetCascavel.style.display = "none";
+    }
+  });

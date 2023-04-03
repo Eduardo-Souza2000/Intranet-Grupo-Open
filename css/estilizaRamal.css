@@ -6,7 +6,7 @@
     
   }
   
-  #search-btn, #search-btnOpenFoz, #search-btnOpenToledo {
+  #search-btn, #search-btnOpenFoz, #search-btnOpenToledo, #search-btnVetCascavel {
     position: static;
     top: 0;
     right: 0;
@@ -17,7 +17,7 @@
     cursor: pointer;
   }
   
-  #search-btn, #search-btnOpenFoz, #search-btnOpenToledo:hover {
+  #search-btn, #search-btnOpenFoz, #search-btnOpenToledo, #search-btnVetCascavel:hover {
     background-color:#01223d;
    
   }
@@ -28,7 +28,7 @@
   }
  
 
-  #search-box, #search-boxOpenFoz,#search-boxOpenToledo  {
+  #search-box, #search-boxOpenFoz,#search-boxOpenToledo, #search-boxVetCascavel {
     position: static;
     display: flex;
     width: 20vw;
@@ -40,14 +40,14 @@
     margin-bottom: 2vw;
   }
   
-  #filtroOpen, #filtroOpenFoz, #filtroOpenToledo {
+  #filtroOpen, #filtroOpenFoz, #filtroOpenToledo,#search-boxVetCascavel {
     margin-right: 10px;
     font-size: 16px;
     background-color: #c7c7e0;
     color: rgb(0, 0, 0);
   }
   
-  #pesquisaOpen, #pesquisaOpenFoz, #pesquisaOpenToledo {
+  #pesquisaOpen, #pesquisaOpenFoz, #pesquisaOpenToledo, #pesquisaVetCascavel{
     padding: 8px;
     border: none;
     border-radius: 4px;

@@ -975,19 +975,23 @@
                 <!-- Criação do botão de pesquisa -->
                 <div class="search">
 
-                <!-- Ícone de lupa -->
-                <span class="fa fa-search"></span>
-    
-                <!-- Caixa de seleção do filtro de pesquisa -->
-                <select id="filtro">
-                    <option value="Nome">Nome</option>
-                    <option value="Setor">Setor</option>
-                    <option value="Ramal">Ramal</option>
-                </select>
-    
-                <!-- Campo de pesquisa -->
-                <input type="text" id="pesquisa" placeholder="Pesquisar">
-                
+                    <!-- Ícone de lupa -->
+                    <button id="search-btnVetCascavel"><i class="fa fa-search"></i></button>
+
+                   <div id="search-boxVetCascavel" style="display:none">
+                        <!-- Caixa de seleção do filtro de pesquisa -->
+                        <select id="filtroVetCascavel">
+                            <option value="Nome">Nome</option>
+                            <option value="Setor">Setor</option>
+                            <option value="Ramal">Ramal</option>
+                        </select>
+                        <!-- Campo de pesquisa -->
+                        <input type="text" id="pesquisaVetCascavel" placeholder="Pesquisar">
+
+                    </div>
+
+                    
+                    
                 </div>
                 
                 <tr id="titulo_ramal-vetor">
