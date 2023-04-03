@@ -55,3 +55,12 @@ const targetIds = {
       searchBox.style.display = "none";
     }
   });
+
+  document.getElementById("search-btnOpenFoz").addEventListener("click", function() {
+    var searchBoxFoz = document.getElementById("search-boxOpenFoz");
+    if (searchBoxFoz.style.display === "none") {
+      searchBoxFoz.style.display = "flex";
+    } else {
+      searchBoxFoz.style.display = "none";
+    }
+  });

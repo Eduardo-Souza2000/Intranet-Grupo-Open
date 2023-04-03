@@ -103,7 +103,7 @@
                           </select>
                           <input type="text" id="pesquisaOpen" placeholder="Digite Aqui...">
                         </div>
-                      </div>
+                    </div>
 
                     <tr id="titulo_ramal-open">
                         <th>Nome</th>
@@ -606,25 +606,32 @@
 
             <!-- Tabela de ramais -->
             <tbody>
+                <h1 class="titulo_tabela">Lista de Ramais<br> Open Renault Foz do Iguaçu</h1>
+
                 <table id="table_openFoz">
                     
-                    <caption>Lista de Ramais<br> Open Renault Foz do Iguaçu</caption>
+
+                    
 
                     <!-- Criação do botão de pesquisa -->
                     <div class="search">
 
                         <!-- Ícone de lupa -->
-                        <span class="fa fa-search"></span>
+                        <button id="search-btnOpenFoz"><i class="fa fa-search"></i></button>
 
-                        <!-- Caixa de seleção do filtro de pesquisa -->
-                        <select id="filtroOpenFoz">
-                            <option value="Nome">Nome</option>
-                            <option value="Setor">Setor</option>
-                            <option value="Ramal">Ramal</option>
-                        </select>
+                       <div id="search-boxOpenFoz" style="display:none">
+                            <!-- Caixa de seleção do filtro de pesquisa -->
+                            <select id="filtroOpenFoz">
+                                <option value="Nome">Nome</option>
+                                <option value="Setor">Setor</option>
+                                <option value="Ramal">Ramal</option>
+                            </select>
+                            <!-- Campo de pesquisa -->
+                            <input type="text" id="pesquisaOpenFoz" placeholder="Pesquisar">
 
-                        <!-- Campo de pesquisa -->
-                        <input type="text" id="pesquisaOpenFoz" placeholder="Pesquisar">
+                        </div>
+
+                        
                         
                     </div>
                 
@@ -818,9 +825,11 @@
 
            
             
-            <tbody>
+            <tbody> 
+                <h1 class="titulo_tabela">Lista de Ramais<br> Open Renault Toledo</h1>
+
                 <table id="table_openToledo" >
-                    <caption>Lista de Ramais<br> Open Renault Toledo</caption>
+                    
 
                     <!-- Criação do botão de pesquisa -->
                     <div class="search">
@@ -953,9 +962,11 @@
         <section id="ramal-vetor-cascavel" class="esconde-tabela">
             
         <tbody>
+
+            <h1 class="titulo_tabela">Lista de Ramais<br> Vetor Hyundai Cascavel</h1>
+
             <table id="table_vetor">
 
-                <caption>Lista de Ramais<br> Vetor Hyundai Cascavel</caption>
 
                 <!-- Criação do botão de pesquisa -->
                 <div class="search">
@@ -1215,9 +1226,10 @@
             
 
             <tbody>
+                <h1 class="titulo_tabela">Lista de Ramais <br>Vetor Hyundai Foz</h1>
+
                 <table id="table_vetorFoz">
 
-                    <caption>Lista de Ramais <br>Vetor Hyundai Foz</caption>
                     <!-- Criação do botão de pesquisa -->
                     <div class="search">
 
@@ -1324,9 +1336,12 @@
         <section id="ramal-vetor-umuarama" class="esconde-tabela">
                       
             <tbody>
+
+                <h1 class="titulo_tabela">Lista de Ramais<br> Vetor Hyundai Umuarama</h1>
+
+
                 <table id="table_vetorUmuarama">
 
-                    <caption>Lista de Ramais<br> Vetor Hyundai Umuarama</caption>
                     <!-- Criação do botão de pesquisa -->
                     <div class="search">
 
@@ -1417,9 +1432,10 @@
         <section id="ramal-brizza" class="esconde-tabela">
             
             <tbody>
+                <h1 class="titulo_tabela">Lista de Ramais<br> Brizza Mitsubishi Cascavel</h1>
+
                 <table id="table_brizza">
                     
-                    <caption>Lista de Ramais<br> Brizza Mitsubishi Cascavel</caption>
                     
                 <!-- Criação do botão de pesquisa -->
                 <div class="search">
@@ -1626,8 +1642,9 @@
         <section id="open-semiNovos" class="esconde-tabela">
 
             <tbody>
+                <h1 class="titulo_tabela">Lista de Ramais<br> Open Renault Seminovos</h1>
                 <table id="table_openOpenSemiNovos" >
-                    <caption>Lista de Ramais<br> Open Renault Seminovos</caption>
+                    
                     
                     <tr id="titulo_ramal-open">
                         <th>Nome</th>
@@ -1697,9 +1714,11 @@
             
 
             <tbody>
+                
+                <h1 class="titulo_tabela">Lista de Ramais<br> Geral Grupo Open</h1>
+
                 <table id="table_Geral">
 
-                    <caption>Lista de Ramais<br> Geral Grupo Open</caption>
                     
                     <div class="search">
 
