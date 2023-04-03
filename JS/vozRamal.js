@@ -56,11 +56,21 @@ const targetIds = {
     }
   });
 
+
   document.getElementById("search-btnOpenFoz").addEventListener("click", function() {
     var searchBoxFoz = document.getElementById("search-boxOpenFoz");
     if (searchBoxFoz.style.display === "none") {
       searchBoxFoz.style.display = "flex";
     } else {
       searchBoxFoz.style.display = "none";
+    }
+  });
+
+  document.getElementById("search-btnOpenToledo").addEventListener("click", function() {
+    var searchBoxToledo = document.getElementById("search-boxOpenToledo");
+    if (searchBoxToledo.style.display === "none") {
+      searchBoxToledo.style.display = "flex";
+    } else {
+      searchBoxToledo.style.display = "none";
     }
   });
