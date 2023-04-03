@@ -83,3 +83,12 @@ const targetIds = {
       searchBoxVetCascavel.style.display = "none";
     }
   });
+
+  document.getElementById("search-btnVetfoz").addEventListener("click", function() {
+    var searchBoxVetfoz = document.getElementById("search-boxVetfoz");
+    if (searchBoxVetfoz.style.display === "none") {
+      searchBoxVetfoz.style.display = "flex";
+    } else {
+      searchBoxVetfoz.style.display = "none";
+    }
+  });
