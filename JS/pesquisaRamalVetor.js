@@ -1,7 +1,7 @@
 
 /* PESQUISA VETOR CASCAVEL*/
-const searchInput = document.getElementById("pesquisa");
-const filterSelect = document.getElementById("filtro");
+const searchInput = document.getElementById("pesquisaVetCascavel");
+const filterSelect = document.getElementById("filtroVetCascavel");
 const tableRows = document.getElementById("table_vetor").getElementsByTagName("tr");
 
 	// adiciona um listener de eventos ao campo de entrada de texto
