@@ -84,27 +84,26 @@
         <section id="ramal-open-Cascavel-Novos" class="esconde-tabela">
             
             <tbody>
+
+                <h1 class="titulo_tabela">Lista de Ramais<br> Open Renault Cascavel</h1>
+
                 <table id="table_open">
+                    
 
-                    <caption>Lista de Ramais<br> Open Renault Cascavel</caption>
-
+                    
+                 
                     <!-- Criação do botão de pesquisa -->
                     <div class="search">
-
-                <!-- Ícone de lupa -->
-                <span class="fa fa-search"></span>
-
-                <!-- Caixa de seleção do filtro de pesquisa -->
-                <select id="filtroOpen">
-                    <option value="Nome">Nome</option>
-                    <option value="Setor">Setor</option>
-                    <option value="Ramal">Ramal</option>
-                </select>
-
-                <!-- Campo de pesquisa -->
-                <input type="text" id="pesquisaOpen" placeholder="Pesquisar">
-                
-                    </div>
+                        <button id="search-btn"><i class="fa fa-search"></i></button>
+                        <div id="search-box" style="display:none">
+                          <select id="filtroOpen">
+                            <option value="Nome">Nome</option>
+                            <option value="Setor">Setor</option>
+                            <option value="Ramal">Ramal</option>
+                          </select>
+                          <input type="text" id="pesquisaOpen" placeholder="Digite Aqui...">
+                        </div>
+                      </div>
 
                     <tr id="titulo_ramal-open">
                         <th>Nome</th>
@@ -3070,7 +3069,7 @@
     
 
     <script type="text/javascript" src="../JS/ajudaRamal.js"></script>
-    <!--<script type="text/javascript" src="../JS/vozRamal.js"></script>-->
+    <script type="text/javascript" src="../JS/vozRamal.js"></script>
     <script type="text/javascript" src="../JS/selecionaRamal.js"></script>
     <script type="text/javascript" src="../JS/pesquisaRamalBrizza.js"></script>
     <script type="text/javascript" src="../JS/pesquisaRamalVetor.js"></script>

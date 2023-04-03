@@ -45,3 +45,13 @@ const targetIds = {
     // Começa a ouvir por comandos de voz
     recognition.start();
   });*/
+
+
+  document.getElementById("search-btn").addEventListener("click", function() {
+    var searchBox = document.getElementById("search-box");
+    if (searchBox.style.display === "none") {
+      searchBox.style.display = "flex";
+    } else {
+      searchBox.style.display = "none";
+    }
+  });

@@ -1,47 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 
-/* Estilização do botão de pesquisa */
 .search {
-    display: flex;
-    align-items: center;
+    position: relative;
+    
+  }
+  
+  #search-btn {
     position: static;
-    width: 20vw;
     top: 0;
     right: 0;
-    padding: 10px;
-    background-color: #020202;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    color: #333;
+    width: 4vw;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
   }
   
-  /* Estilização do ícone de lupa */
   .fa-search {
-    color: #f8f8f8;
-    margin-right: 10px;
-    font-size: 20px;
+    color: #fffefe;
+    font-size: 24px;
   }
   
-  /* Estilização da caixa de seleção de filtro de pesquisa */
-  #filtro {
-    background-color: #fdfdfd;
-    margin-right: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    color: rgb(2, 2, 2);
+  #search-box {
+    position: static;
+    display: flex;
+    width: 20vw;
+    align-items: center;
+    background-color:#011e2b;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2vw;
   }
   
-  /* Estilização do campo de pesquisa */
-  #pesquisa {
+  #filtroOpen {
+    margin-right: 10px;
+    font-size: 16px;
+    background-color: #c7c7e0;
+    color: rgb(0, 0, 0);
+  }
+  
+  #pesquisaOpen {
     padding: 8px;
     border: none;
     border-radius: 4px;
     margin-right: 10px;
-    background-color: #fffdf6;
+    background-color: #c7d0e0;
     font-size: 16px;
-    color: rgb(7, 7, 7);
+    color:black;
   }
+  
+  
+
 
 /* -------------------------------------------------------------------------------------------------------*/
 #titulo_ramal-open,#titulo_ramal-vetor, #titulo_ramal-briza{
@@ -77,17 +88,57 @@ tr:hover {
     color: #fffFff; 
 }
 
-caption {
+.titulo_tabela {
+    display: flex;
     font-family: 'Karla';
     font-size: 40px;
     font-weight: bolder;
     margin: 40px;
     color: #fffFff;
+    justify-content: center;
 }
 
 
 
 @media  (min-width:320px ) and (max-width: 800px) {
+
+    .search {
+        margin-bottom: 2vw;
+    }
+        
+    #search-btn {
+        width: 5vw;
+        height: 20px;
+    }
+        
+    #search-box {
+    width: 60vw;
+    height: 20px;
+    }
+    
+    .fa-search {
+        color: #fffefe;
+        font-size: 16px;
+    }
+
+    #filtroOpen {
+    width: 30vw;
+    height: 20px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    }
+    
+    #pesquisaOpen {
+    width: 30vw;
+    height: 20px;
+    padding: 2px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 14px;
+    color:black;
+    }
 
     #titulo_ramal-open,#titulo_ramal-vetor, #titulo_ramal-briza{
         width: 6vw;
