@@ -92,3 +92,12 @@ const targetIds = {
       searchBoxVetfoz.style.display = "none";
     }
   });
+
+  document.getElementById("search-btnVetumuarama").addEventListener("click", function() {
+    var searchBoxVetumuarama = document.getElementById("search-boxVetumuarama");
+    if (searchBoxVetumuarama.style.display === "none") {
+      searchBoxVetumuarama.style.display = "flex";
+    } else {
+      searchBoxVetumuarama.style.display = "none";
+    }
+  });

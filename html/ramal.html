@@ -1359,19 +1359,23 @@
                     <div class="search">
 
                         <!-- Ícone de lupa -->
-                        <span class="fa fa-search"></span>
+                        <button id="search-btnVetumuarama"><i class="fa fa-search"></i></button>
 
-                        <!-- Caixa de seleção do filtro de pesquisa -->
-                        <select id="filtroUmuarama">
-                            <option value="Nome">Nome</option>
-                            <option value="Setor">Setor</option>
-                            <option value="Ramal">Ramal</option>
-                        </select>
+                        <div id="search-boxVetumuarama" style="display:none">
+                            <!-- Caixa de seleção do filtro de pesquisa -->
+                            <select id="filtroumuarama">
+                                <option value="Nome">Nome</option>
+                                <option value="Setor">Setor</option>
+                                <option value="Ramal">Ramal</option>
+                            </select>
+                            <!-- Campo de pesquisa -->
+                            <input type="text" id="pesquisaumuarama" placeholder="Pesquisar">
 
-                        <!-- Campo de pesquisa -->
-                        <input type="text" id="pesquisaUmuarama" placeholder="Pesquisar">
+                        </div>
+
                         
-                    </div> 
+                        
+                    </div>
                     
                     <tr id="titulo_ramal-vetor">
                         <th>Nome</th>

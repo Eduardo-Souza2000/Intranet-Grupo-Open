@@ -4,9 +4,12 @@
 .search {
     position: relative;
     
-  }
+}
   
-  #search-btn, #search-btnOpenFoz, #search-btnOpenToledo, #search-btnVetCascavel, #search-btnVetCascavel, #search-btnVetfoz {
+#search-btn, #search-btnOpenFoz, #search-btnOpenToledo, 
+#search-btnVetCascavel, #search-btnVetCascavel, 
+#search-btnVetfoz, #search-btnVetumuarama, 
+#search-btnbrizza, #search-btngeral {
     position: static;
     top: 0;
     right: 0;
@@ -15,9 +18,12 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-  }
+}
   
-  #search-btn, #search-btnOpenFoz, #search-btnOpenToledo, #search-btnVetCascavel, #search-btnVetfoz:hover {
+#search-btn, #search-btnOpenFoz, #search-btnOpenToledo, 
+#search-btnVetCascavel, #search-btnVetCascavel, 
+#search-btnVetfoz, #search-btnVetumuarama, 
+#search-btnbrizza, #search-btngeral:hover {
     background-color:#01223d;
    
   }
@@ -28,7 +34,10 @@
   }
  
 
-  #search-box, #search-boxOpenFoz,#search-boxOpenToledo, #search-boxVetCascavel,#search-boxVetfoz {
+#search-box, #search-boxOpenFoz,
+#search-boxOpenToledo, #search-boxVetCascavel,
+#search-boxVetfoz,#search-boxVetumuarama, 
+#search-boxbrizzza, #search-boxgeral  {
     position: static;
     display: flex;
     width: 20vw;
@@ -38,16 +47,22 @@
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     margin-bottom: 2vw;
-  }
+}
   
-  #filtroOpen, #filtroOpenFoz, #filtroOpenToledo,#filtroVetCascavel, #filtroFoz {
+  #filtroOpen, #filtroOpenFoz, 
+  #filtroOpenToledo,#filtroVetCascavel, 
+  #filtroFoz,#filtroumuarama, 
+  #filtrobrizza,#filtrogeral {
     margin-right: 10px;
     font-size: 16px;
     background-color: #c7c7e0;
     color: rgb(0, 0, 0);
   }
   
-  #pesquisaOpen, #pesquisaOpenFoz, #pesquisaOpenToledo, #pesquisaVetCascavel, #pesquisaFoz{
+  #pesquisaOpen, #pesquisaOpenFoz, 
+  #pesquisaOpenToledo, #pesquisaVetCascavel, 
+  #pesquisaFoz,#pesquisaumuarama
+  #pesquisabrizza, #pesquisageral {
     padding: 8px;
     border: none;
     border-radius: 4px;
