@@ -37,7 +37,7 @@
 #search-box, #search-boxOpenFoz,
 #search-boxOpenToledo, #search-boxVetCascavel,
 #search-boxVetfoz,#search-boxVetumuarama, 
-#search-boxbrizzza, #search-boxgeral  {
+#search-boxbrizza, #search-boxgeral  {
     position: static;
     display: flex;
     width: 20vw;

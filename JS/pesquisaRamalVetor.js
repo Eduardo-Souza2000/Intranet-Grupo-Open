@@ -54,8 +54,8 @@ const tableRows = document.getElementById("table_vetor").getElementsByTagName("t
 	
 
 	/* PESQUISA VETOR UMUARAMA*/
-	const searchInputUmuarama = document.getElementById("pesquisaUmuarama");
-	const filterSelecUmuarama = document.getElementById("filtroUmuarama");
+	const searchInputUmuarama = document.getElementById("pesquisaumuarama");
+	const filterSelecUmuarama = document.getElementById("filtroumuarama");
 	const tableRowsUmuarama = document.getElementById("table_vetorUmuarama").getElementsByTagName("tr");
 
 	// adiciona um listener de eventos ao campo de entrada de texto

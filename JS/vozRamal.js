@@ -101,3 +101,12 @@ const targetIds = {
       searchBoxVetumuarama.style.display = "none";
     }
   });
+
+  document.getElementById("search-btnbrizza").addEventListener("click", function() {
+    var searchBoxbrizza = document.getElementById("search-boxbrizza");
+    if (searchBoxbrizza.style.display === "none") {
+      searchBoxbrizza.style.display = "flex";
+    } else {
+      searchBoxbrizza.style.display = "none";
+    }
+  });

@@ -1,5 +1,5 @@
 // Obtém o elemento de entrada de texto com o ID "pesquisa"
-const searchInputbrizza = document.getElementById("pesquisaBrizza");
+const searchInputbrizza = document.getElementById("pesquisabrizza");
 // Obtém o elemento de seleção de filtro com o ID "filtro
 const filterSelectbrizza = document.getElementById("filtrobrizza");
 // Obtém todas as linhas da tabela com o ID "table_open"
