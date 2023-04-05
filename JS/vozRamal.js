@@ -110,3 +110,12 @@ const targetIds = {
       searchBoxbrizza.style.display = "none";
     }
   });
+
+  document.getElementById("search-btngeral").addEventListener("click", function() {
+    var searchBoxgeral = document.getElementById("search-boxgeral");
+    if (searchBoxgeral.style.display === "none") {
+      searchBoxgeral.style.display = "flex";
+    } else {
+      searchBoxgeral.style.display = "none";
+    }
+  });

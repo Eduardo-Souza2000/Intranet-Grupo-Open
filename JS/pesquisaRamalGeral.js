@@ -1,7 +1,7 @@
 // Obtém o elemento de entrada de texto com o ID "pesquisa"
-const searchInputGeral = document.getElementById("pesquisaGeral");
+const searchInputGeral = document.getElementById("pesquisageral");
 // Obtém o elemento de seleção de filtro com o ID "filtro
-const filterSelectGeral = document.getElementById("filtroGeral");
+const filterSelectGeral = document.getElementById("filtrogeral");
 // Obtém todas as linhas da tabela com o ID "table_open"
 const tableRowsGeral = document.getElementById("table_Geral").getElementsByTagName("tr");
 
