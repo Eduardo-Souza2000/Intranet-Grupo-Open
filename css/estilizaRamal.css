@@ -20,13 +20,13 @@
     cursor: pointer;
 }
   
-#search-btn, #search-btnOpenFoz, #search-btnOpenToledo, 
-#search-btnVetCascavel, #search-btnVetCascavel, 
-#search-btnVetfoz, #search-btnVetumuarama, 
-#search-btnbrizza, #search-btngeral:hover {
+#search-btn:hover, #search-btnOpenFoz:hover, #search-btnOpenToledo:hover, 
+#search-btnVetCascavel:hover, #search-btnVetCascavel:hover, 
+#search-btnVetfoz:hover, #search-btnVetumuarama:hover, 
+#search-btngeral:hover,  #search-btnbrizza:hover {
     background-color:#01223d;
    
-  }
+}
 
   .fa-search {
     color: #f8f8f8;
