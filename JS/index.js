@@ -79,3 +79,5 @@ const targetIds = {
     var div = document.getElementById("confetes");
     div.style.display = "none";
   }, 5000); // Remove o elemento após 5 segundos
+
+

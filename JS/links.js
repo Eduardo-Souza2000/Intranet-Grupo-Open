@@ -25,3 +25,5 @@ for (let i=0; i < botOpen.length; i++){
         setTimeout(() => exibirlink = true, 10)
     })
 }
+
+
