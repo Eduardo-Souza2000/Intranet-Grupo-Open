@@ -545,7 +545,7 @@ a {
     display: flex;
     font-family: 'Karla';
     font-size: 25px;
-    width: 25vw;
+    width: 35vw;
     height: 50px;
     border-radius: 15px;
     border: 1px solid transparent;
@@ -556,6 +556,9 @@ a {
 .bot_link:hover{
     cursor: pointer;
     background-color: #022331bd; 
+    margin: 5px;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.6);
+
 }
 
 
@@ -662,13 +665,26 @@ footer{
     width: 100vw;
 }
 
+.img_estrela{
+    width: 6vw;
+    height: 25px;
+}
+
+
+.bot_link{
+    font-size: 5vw;
+    width: 80vw;
+    height: 30px;
+    border-radius: 10px;
+}
+
 .titulo_link{
     font-family: 'Karla';
     justify-content: center;
     color:#ececec;
     font-weight: 900;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 6vw;
 }
 
     /*ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
