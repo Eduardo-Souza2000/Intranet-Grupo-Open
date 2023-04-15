@@ -3,6 +3,39 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 
+  
+#estiliza-Historia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    text-align: justify;
+    font-size: 4vw;
+    color: #f3f0e1;
+}
+
+.historia{
+    text-indent: 40px;
+    width: 50vw;
+    font-size: 1.5vw;
+    color: #fdfdfd;
+    margin: 3px;
+}
+
+.lista_historia{
+    list-style-type: disc;
+    padding-left: 30px;
+    color: #fdfdfd;
+    margin: 0px;
+}
+
+.lista-linha_historia{
+    margin-bottom: 10px;
+}
+
+.titulo-historia{
+    font-size: 3vw;
+}
 
 
 
