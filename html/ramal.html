@@ -8,65 +8,3089 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/estilizaRamal.css">
     <title>Intranet Grupo Open</title>
     <link rel="icon" href="../img/logo-grupo.png">
 </head>
 
-<body>
-    <section id="principal">
+<body id="principal">
 
-        <header>
-            <a href="../html/home.html"> <img class="logo-grupo" src="../img/logo-grupo.png" alt="Logo"></a>
-        </header>
+   
 
-        <main>
+    <header>
+        <a href="../html/home.html"> <img class="logo-grupo" src="../img/logo-grupo.png" alt="Logo"></a>
+        
+    </header>
 
-            <section id="estiliza_menu-ramal">
-
+    <main>
+  
+        <section id="estiliza_menu-ramal">
                 <h1> Escolha a loja: </h1>
 
                 <section class="opc_ramal">
 
+                    
                     <section class="organiza_menu-ramal">
-                        <a href="../html/pag-ramais/ramal-brizza.html"><button id="brizza"> Ramais<br> Brizza Cascavel</button></a>
-                        <a href="../html/pag-ramais/ramal-cascavel.html.html"><button id="open"> Ramais<br> Open Cascavel </button></a>
-                        <a href="../html/pag-ramais/ramal-foz.html"><button id="open"> Ramais<br> Open Foz</button></a>
-                        <a href="../html/pag-ramais/ramal-toledo.html"><button id="open"> Ramais<br> Open Toledo</button></a>
+                        <a href="#ramal-open-Cascavel-Novos"><button id="open" data-voice="Open Cascavel" class="botao" onclick="ordenarTabelaopenCascavel()"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Open Novos</button></a>
+                        <a href="#ramal-openfoz"><button id="open"  data-voice="Open Foz" class="botao" onclick="ordenarTabelaopenFoz()"><img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Open Foz </button></a>
+                        <a href="#ramal-toledo"><button id="open"  data-voice="Open Toledo" class="botao" onclick="ordenarTabelaopenToledo()"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Open Toledo</button></a>
                     </section>
 
                     <section class="organiza_menu-ramal">
-                        <a href="../html/pag-ramais/ramal-vetor-cascavel.html"><button id="vetor"> Ramais<br> Vetor Cascavel </button></a>
-                        <a href="../html/pag-ramais/ramal-vetor-foz.html"><button id="vetor"> Ramais<br> Vetor Foz</button></a>
-                        <a href="../html/pag-ramais/ramal-vetor-umuarama.html"><button id="vetor"> Ramais<br> Vetor Umuarama</button></a>
+                        <a href="#ramal-vetor-cascavel"><button id="vetor" data-voice="Cascavel" class="botao" onclick="ordenarTabelaVetorCascavel()"><img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Vetor Cascavel  </button></a>
+                        <a href="#ramal-vetor-foz"><button id="vetor" data-voice="Foz" class="botao" onclick="ordenarTabelaVetorFoz()" > <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Vetor Foz </button></a>
+                        <a href="#ramal-vetor-umuarama"><button id="vetor" data-voice="Umuarama" class="botao" onclick="ordenarTabelaVetorUmuarama()"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Vetor Umuarama </button></a>
+                    </section>
+
+                    <section class="organiza_menu-ramal">
+                        <a href="#ramal-brizza"><button id="brizza" data-voice="brisa" class="botao" onclick="ordenarTabelaBrizza()"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Brizza Cascavel </button></a>
+                        <a href="#open-semiNovos"><button id="open" data-voice="seminovos" class="botao" onclick="ordenarTabelaOpenSeminovos()"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal">Ramais<br> Open Seminovos</button></a>
+                        <a href="#geral"><button id="open" data-voice="geral" class="botao" onclick="ordenarTabela()"> <img id="iconeramal" src="../img/Ramal.png" alt="Ramal"> Ramais<br> Geral </button></a>
                     </section>
 
                 </section> 
 
-            </section>
+                
+            <button id="botramal" class="ajuda">?</button>
+           <!-- <button id="reconhecimentoHome" class="reconhecimento"><i class="fa fa-microphone"></i> </button>-->
+
+            <div id="pop-up-ajuda" class="pop-up">
+
+                <div class="pop-up-conteudo">
+
+                    <h2 class="pop-up-enunciado"> Intranet do Grupo Open</h2>
+                    
+                    <p class="pop-up-texto">
+                        Na página de ramais, você poderá pressionar o botão para selecionar a loja e buscar o número do ramal ou informações do colaborador. 
+                        Também temos uma aba de ramais gerais, onde os nomes de todos os colaboradores do grupo são listados em ordem alfabética. 
+                        Você pode filtrar por nome, loja, setor, ramal ou e-mail.       
+                    </p>
+
+                    <b>Em caso de duvida ligar no ramal 309</b> 
+                    
+                    <button id="botao-fechar">X</button>
+
+                </div>
+
+                <div class="risco"></div>
         
-        </main>
+            
+            </div>
+
+        </section>
+
+
+        <!--OPEN VEICULOS CASCAVEL-->
+        <section id="ramal-open-Cascavel-Novos" class="esconde-tabela">
+            
+            <tbody>
+
+                <h1 class="titulo_tabela">Lista de Ramais<br> Open Renault Cascavel</h1>
+
+                <table id="table_open">
+                    
+
+                    
+                 
+                    <!-- Criação do botão de pesquisa -->
+                    <div class="search">
+                        <button id="search-btn"><i class="fa fa-search"></i></button>
+                        <div id="search-box" style="display:none">
+                          <select id="filtroOpen">
+                            <option value="Nome">Nome</option>
+                            <option value="Setor">Setor</option>
+                            <option value="Ramal">Ramal</option>
+                          </select>
+                          <input type="text" id="pesquisaOpen" placeholder="Digite Aqui...">
+                        </div>
+                    </div>
+
+                    <tr id="titulo_ramal-open">
+                        <th>Nome</th>
+                        <th>Setor</th>
+                        <th>Ramal</th>
+                        <th>Email</th>
+                        <th>Loja</th>
+                    </tr>
+
+                    <tr>
+                        <td>Sinara Tauffer</td>
+                        <td>Agendamento</td>
+                        <td>632</td>
+                        <td>agendamento05@brizza.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Oficina </td>
+                        <td>Oficina</td>
+                        <td>172</td>
+                        <td>-----------------</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Adilson Vesohoski </td>
+                        <td>Consultor de Vendas PRO+</td>
+                        <td>143</td>
+                        <td>vendas17@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Alexandre Serra</td>
+                        <td>Diretoria</td>
+                        <td>111</td>
+                        <td>diretoria@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Aline Teixeira</td>
+                        <td>Garantia</td>
+                        <td>1096</td>
+                        <td>garantia05@hyundaiopen.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pablo Henrique </td>
+                        <td>Garantia</td>
+                        <td>184</td>
+                        <td>garantia03@brizza.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Amabily Vitoria </td>
+                        <td>Contabilidade</td>
+                        <td>167</td>
+                        <td>contabil05@hundaiopen.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Andressa Bortolini</td>
+                        <td>RH</td>
+                        <td>110</td>
+                        <td>rh4@brizza.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Andressa </td>
+                        <td>Faturamento</td>
+                        <td>102</td>
+                        <td>faturamentocvel2@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Andrey Felipe </td>
+                        <td>DHO</td>
+                        <td>159</td>
+                        <td>rh3@brizza.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Angelica Martineli </td>
+                        <td>Contabilidade</td>
+                        <td>125</td>
+                        <td>contabil03@brizza.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bruna Iembo</td>
+                        <td>Financeiro</td>
+                        <td>115</td>
+                        <td>financeiro2@hyundaiopen.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Caroline Bernardon</td>
+                        <td>Marketing</td>
+                        <td>635</td>
+                        <td>mkt@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>                
+
+                    <tr>
+                        <td>Christopher Henrique </td>
+                        <td>Contabilidade</td>
+                        <td>112</td>
+                        <td>contabil04@hyundaiopen.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cristiane Rabel </td>
+                        <td>DHO</td>
+                        <td>156</td>
+                        <td>treinamento@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cleverlin Faustino</td>
+                        <td>Peças</td>
+                        <td>163</td>
+                        <td>pecascobrancas@openveiculos.net.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Divaldo Marques </td>
+                        <td>TI</td>
+                        <td>121 </td>
+                        <td>cpd02@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Dyohana Ferreira </td>
+                        <td>Faturamento</td>
+                        <td>101</td>
+                        <td>faturamentocvel1@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Edina Mayra </td>
+                        <td> Financeiro</td>
+                        <td>114</td>
+                        <td>caixacvl@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Elizandra Martins </td>
+                        <td>Faturamento</td>
+                        <td>108</td>
+                        <td>faturamento@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Elson Bertoldo </td>
+                        <td>Peças</td>
+                        <td>173</td>
+                        <td>pecasvendas5@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fernanda Daniel </td>
+                        <td>Garantia</td>
+                        <td>178</td>
+                        <td>fernanda@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Palmiere Frank </td>
+                        <td>Peças</td>
+                        <td>177</td>
+                        <td>pecasvendas2@openveiculos.net.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Hamilly Mariana </td>
+                        <td>Marketing</td>
+                        <td>636</td>
+                        <td>rh4@brizza.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Heverton Haensel </td>
+                        <td>Gestor Vendas Pro+</td>
+                        <td>190</td>
+                        <td>gerentevd@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fabio </td>
+                        <td>Gestor Peças</td>
+                        <td>177</td>
+                        <td>gerente.pecas@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>João Vitor </td>
+                        <td>Vendas PRO+</td>
+                        <td>107</td>
+                        <td>faturamentocvel4@hyundaiopen.com.br</td>
+                        <td> Open Novos</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Katia Zang </td>
+                        <td>Gestor F&I</td>
+                        <td>139</td>
+                        <td>centralfi@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Kellin Berno </td>
+                        <td>Consultora Pós Vendas</td>
+                        <td>185</td>
+                        <td> consultor01@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lavadores</td>
+                        <td>Pós Vendas</td>
+                        <td>1098</td>
+                        <td>-----------------</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Leonardo Antony </td>
+                        <td>Garantia</td>
+                        <td>1091</td>
+                        <td>garantia04@brizza.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Anne Veloso </td>
+                        <td>Entrega Técnica</td>
+                        <td>140</td>
+                        <td>entregatecnicacvel@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lincoln Henrique </td>
+                        <td>Contabilidade</td>
+                        <td>113</td>
+                        <td>fiscal02@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lucas Talevi </td>
+                        <td>Qualidade</td>
+                        <td>1093</td>
+                        <td>qualidade@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Lucas Antonio</td>
+                        <td>F&i</td>
+                        <td>158</td>
+                        <td>operacoesfi@brizza.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Luccas Arnone </td>
+                        <td>Gesto Vendas Novos</td>
+                        <td>122 </td>
+                        <td>gerenciacvel@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Maglo Carlos </td>
+                        <td>Consultor Vendas Novos</td>
+                        <td>128</td>
+                        <td>vendas15@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Marcos Urio</td>
+                        <td>Diretoria</td>
+                        <td>111</td>
+                        <td>marcos@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mario Andersen </td>
+                        <td>Preparador de Veiculos Novos</td>
+                        <td>182</td>
+                        <td>--------------------</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mateus Rocha </td>
+                        <td>F&I</td>
+                        <td>119</td>
+                        <td>centralfi2@hyundaiopen.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Roberto Lopes</td>
+                        <td>Consultor Vendas Novos</td>
+                        <td>146</td>
+                        <td>vendas15@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Nei Luiz </td>
+                        <td>Consultor de Pos vendas</td>
+                        <td>181</td>
+                        <td>consultor2@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Nicolas Eduardo </td>
+                        <td>TI</td>
+                        <td>141</td>
+                        <td>suporte03@hyundaiopen.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lupercio Pereira </td>
+                        <td>Gerente Pós Vendas</td>
+                        <td>189</td>
+                        <td> posvendas@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Priscila Frits </td>
+                        <td>Gerente Financeiro</td>
+                        <td>116</td>
+                        <td> priscila@brizza.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rafael </td>
+                        <td>Posto de Lavagem</td>
+                        <td>1098</td>
+                        <td></td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Estanis Selenko</td>
+                        <td>Recepção</td>
+                        <td>136</td>
+                        <td>recepcaocvel@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ricardo Moraes</td>
+                        <td>Gestor de Agendamento</td>
+                        <td>634 </td>
+                        <td> agendamento01@hyundaiopen.com.br /<br> agendamento1@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Roberto Dagher </td>
+                        <td>Cotech</td>
+                        <td>175</td>
+                        <td>cotech1@openveiculos.net.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rosana Malaquias </td>
+                        <td>Financeiro</td>
+                        <td>106</td>
+                        <td>financeiro.cp@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Sandra Miguel </td>
+                        <td> Gestor RH</td>
+                        <td>151</td>
+                        <td>sandrarh@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Evelyn Karine </td>
+                        <td>Compras</td>
+                        <td>639</td>
+                        <td>cotacoes@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Silvana Lima</td>
+                        <td>Assistente de Pos vendas</td>
+                        <td>149</td>
+                        <td>assispvcvel@brizza.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Silvana Czoupynski </td>
+                        <td>RH</td>
+                        <td>150</td>
+                        <td>silvana.santos@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Susete Fatima</td>
+                        <td>Consultor Vendas Novos</td>
+                        <td>145</td>
+                        <td>susete@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thatyane Leida </td>
+                        <td>Gestor Contabilidade</td>
+                        <td>191</td>
+                        <td>contabilidade@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Valmir Jose </td>
+                        <td>Consultor Peças</td>
+                        <td>188</td>
+                        <td>vendaspecas@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vinicius Dubay </td>
+                        <td>Peças</td>
+                        <td>161</td>
+                        <td>vendasweb@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Douglas Oliveira </td>
+                        <td>Peças</td>
+                        <td>130</td>
+                        <td>pecasvendas6@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Viviane Morais </td>
+                        <td>Gestor Faturamento</td>
+                        <td>138</td>
+                        <td>viviane@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+
+                </table>
+            </tbody>
+        </section>
+
+
+        <!--OPEN VEICULOS FOZ-->
+        <section id="ramal-openfoz" class="esconde-tabela">
+           
+
+            <!-- Tabela de ramais -->
+            <tbody>
+                <h1 class="titulo_tabela">Lista de Ramais<br> Open Renault Foz do Iguaçu</h1>
+
+                <table id="table_openFoz">
+                    
+
+                    
+
+                    <!-- Criação do botão de pesquisa -->
+                    <div class="search">
+
+                        <!-- Ícone de lupa -->
+                        <button id="search-btnOpenFoz"><i class="fa fa-search"></i></button>
+
+                       <div id="search-boxOpenFoz" style="display:none">
+                            <!-- Caixa de seleção do filtro de pesquisa -->
+                            <select id="filtroOpenFoz">
+                                <option value="Nome">Nome</option>
+                                <option value="Setor">Setor</option>
+                                <option value="Ramal">Ramal</option>
+                            </select>
+                            <!-- Campo de pesquisa -->
+                            <input type="text" id="pesquisaOpenFoz" placeholder="Pesquisar">
+
+                        </div>
+
+                        
+                        
+                    </div>
+                
+                    <thead>
+                        <tr id="titulo_ramal-open">
+                            <th>Nome</th>
+                            <th>Setor</th>
+                            <th>Ramal</th>
+                            <th>Email</th>
+                            <th>Loja</th>
+                        </tr>
+                    </thead>
+
+
+                    <tr>
+                        <td>Raquel Ferreira </td>
+                        <td>Agendamento</td>
+                        <td>633</td>
+                        <td>agendamento02@openveiculos.com.br</td>
+                        <td> Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Polyana Francisca </td>
+                        <td>Agendamento</td>
+                        <td>630</td>
+                        <td>centralagm@openveiculos.com.br</td>
+                        <td> Open Foz</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Eduardo Souza</td>
+                        <td>TI</td>
+                        <td>309</td>
+                        <td>cpd@openveiculos.com.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Elisete Rocha</td>
+                        <td>Financeiro</td>
+                        <td>318</td>
+                        <td>caixafoz@openveiculos.net.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Elvis Xavier</td>
+                        <td>Gestor de Novos</td>
+                        <td>304</td>
+                        <td>gerentefoz@openveiculos.net.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Igor Cruz</td>
+                        <td>Peças</td>
+                        <td>316</td>
+                        <td>estoqueopenfoz@gmail.com</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Joao Paranhos</td>
+                        <td>Consultor de Pos vendas</td>
+                        <td>322</td>
+                        <td>consultor03@openveiculos.net.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Joao Vitor</td>
+                        <td>Consultor de vendas PRO +</td>
+                        <td>306</td>
+                        <td>vendas19@openveiculos.com.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Kairo Martim</td>
+                        <td>Cotech</td>
+                        <td>321</td>
+                        <td>cotech-foz@openveiculos.net.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Leia Rios</td>
+                        <td>Consultor de Pos vendas</td>
+                        <td>323</td>
+                        <td>leia.openveiculos@gmail.com</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Marcio Nering</td>
+                        <td>Consultor de vendas</td>
+                        <td>303</td>
+                        <td>vendas19@openveiculos.net.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Marina Ferreira</td>
+                        <td>Aprendiz Financeiro</td>
+                        <td>330</td>
+                        <td>aux.fin@openveiculos.com.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Monica/Everson</td>
+                        <td>Posto de Lavagem</td>
+                        <td>319</td>
+                        <td>-------------------------</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pedro Tamura</td>
+                        <td>Avaliador</td>
+                        <td>314</td>
+                        <td>avaliadorfoz@openveiculos.net.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Robson Ferguglia</td>
+                        <td>Peças</td>
+                        <td>320</td>
+                        <td>Robson@openveiculos.net.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sabrina This</td>
+                        <td>Consultor de Vendas</td>
+                        <td>305</td>
+                        <td>vendas20@openveiculos.net.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tatielen Sousa</td>
+                        <td>Consultor Pos Vendas</td>
+                        <td>326</td>
+                        <td>oficinafoz@brizza.com.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Victoria Tayna</td>
+                        <td>Recepção</td>
+                        <td>301</td>
+                        <td>telefonista@openveiculos.net.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vikthor Philippi</td>
+                        <td>Consultor de Vendas</td>
+                        <td>302</td>
+                        <td>vendas07@openveiculos.com.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                </table>
+            </tbody>
+
+        </section>
+
+        <!--OPEN VEICULOS TOLEDO-->
+        <section id="ramal-toledo" class="esconde-tabela">
+             
+
+           
+            
+            <tbody> 
+                <h1 class="titulo_tabela">Lista de Ramais<br> Open Renault Toledo</h1>
+
+                <table id="table_openToledo" >
+                    
+
+                    <!-- Criação do botão de pesquisa -->
+                    <div class="search">
+
+                        <!-- Ícone de lupa -->
+                        <button id="search-btnOpenToledo"><i class="fa fa-search"></i></button>
+
+                       <div id="search-boxOpenToledo" style="display:none">
+                            <!-- Caixa de seleção do filtro de pesquisa -->
+                            <select id="filtroOpenToledo">
+                                <option value="Nome">Nome</option>
+                                <option value="Setor">Setor</option>
+                                <option value="Ramal">Ramal</option>
+                            </select>
+                            <!-- Campo de pesquisa -->
+                            <input type="text" id="pesquisaOpenToledo" placeholder="Pesquisar">
+
+                        </div>
+
+                        
+                        
+                    </div>
+                    
+                    <tr id="titulo_ramal-open">
+                        <th>Nome</th>
+                        <th>Setor</th>
+                        <th>Ramal</th>
+                        <th>Email</th>
+                        <th>loja</th>
+                    </tr>
+
+                    <tr>
+                        <td>Amanda Maria</td>
+                        <td>Entrega Técnica</td>
+                        <td>214</td>
+                        <td>entregatecnicato@openveiculos.com.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Paulo Caramori</td>
+                        <td>Consultor de Vendas</td>
+                        <td>200</td>
+                        <td>vendas14@openveiculos.com.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Valderes Barbosa</td>
+                        <td>Agendamento</td>
+                        <td>632</td>
+                        <td>agendamento1@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rui Rodrigues</td>
+                        <td>Gerente de Novos</td>
+                        <td>201</td>
+                        <td>gerenciatoledo@openveiculos.com.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ana Caroline</td>
+                        <td>Recepção</td>
+                        <td>201</td>
+                        <td>recep-toledo@openveiculos.net.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Anderson Habitzreuter</td>
+                        <td>Peças</td>
+                        <td>211</td>
+                        <td>estoque01@openveiculos.net.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Clarice Byk</td>
+                        <td>Financeiro</td>
+                        <td>205</td>
+                        <td>claricefinanceirotoo@openveiculos.com.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Edson Pereira</td>
+                        <td>Consultor de Vendas</td>
+                        <td>202</td>
+                        <td>vendas08@openveiculos.com.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fermanda Luize</td>
+                        <td>Consultor de Vendas Pro+</td>
+                        <td>216</td>
+                        <td>vendadiretato@openveieculos.com.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Gabriel /<br>Jeziel</td>
+                        <td>Consultor Pos Vendas</td>
+                        <td>213</td>
+                        <td>consultortoo@openveiculos.net.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mauro Adriano</td>
+                        <td>Consultor de Vendas</td>
+                        <td>203</td>
+                        <td>vendas07@openveiculos.net.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vanderson Jose</td>
+                        <td>Peças</td>
+                        <td>200</td>
+                        <td>estoquetol@openveiculos.com.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                </table>
+            </tbody>
+
+        </section>
+
+        <!--VETOR CASCAVEL-->
+        <section id="ramal-vetor-cascavel" class="esconde-tabela">
+            
+        <tbody>
+
+            <h1 class="titulo_tabela">Lista de Ramais<br> Vetor Hyundai Cascavel</h1>
+
+            <table id="table_vetor">
+
+                <!-- Criação do botão de pesquisa -->
+                <div class="search">
+
+                    <!-- Ícone de lupa -->
+                    <button id="search-btnVetCascavel"><i class="fa fa-search"></i></button>
+
+                   <div id="search-boxVetCascavel" style="display:none">
+                        <!-- Caixa de seleção do filtro de pesquisa -->
+                        <select id="filtroVetCascavel">
+                            <option value="Nome">Nome</option>
+                            <option value="Setor">Setor</option>
+                            <option value="Ramal">Ramal</option>
+                        </select>
+                        <!-- Campo de pesquisa -->
+                        <input type="text" id="pesquisaVetCascavel" placeholder="Pesquisar">
+
+                    </div>
+
+                    
+                    
+                </div>
+                
+                <tr id="titulo_ramal-vetor">
+                    <th>Nome</th>
+                    <th>Setor</th>
+                    <th>Ramal</th>
+                    <th>Email</th>
+                    <th>Loja</th>
+                </tr>
+
+                <tr>
+                    <td>Adriana Sohm</td>
+                    <td>Consultor de Vendas</td>
+                    <td>612</td>
+                    <td>vendas4@hyundaiopen.com.br</td>
+                    <td> Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Alan Otavio</td>
+                    <td>Agendamento</td>
+                    <td>631</td>
+                    <td>agendamentocvel@hyundaiopen.com.br</td>
+                    <td> Vetor Cascavel</td>
+                </tr>
+
+
+                <tr>
+                    <td>Celso Hissao</td>
+                    <td>Controladoria</td>
+                    <td>126</td>
+                    <td>assistentecontro@openveiculos.net.br</td>
+                    <td> Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Agendamento</td>
+                    <td>Agendamento </td>
+                    <td>631</td>
+                    <td> agendamentocvel@hyundaiopen.com.br</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Alex Rech </td>
+                    <td> Gerente Pós Vendas</td>
+                    <td>619</td>
+                    <td>gerenciaposvendas@hyundaiopen.com.br</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+                
+                <tr>
+                    <td>Ana Lazzaretti </td>
+                    <td>Financeiro</td>
+                    <td>603</td>
+                    <td>financeiro@hyundaiopen.com.br</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Felipe Paiva</td>
+                    <td> Vendas Acessorios </td>
+                    <td>628</td>
+                    <td>entregatecnica@hyundaiopen.com.br</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Hiago Rauber </td>
+                    <td>Entrega Tecnica</td>
+                    <td>608</td>
+                    <td>Entregatecncvel@hyundaiopen.com.br</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Carla Fernanda</td>
+                    <td>Recepcionista</td>
+                    <td>600</td>
+                    <td>atendimento@hyundaiopen.com.br</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+                        
+                <tr>
+                    <td>Jose Junior</td>
+                    <td> Consultor Pós Vendas</td>
+                    <td>611</td>
+                    <td>consultor10@hyundaiopen.com.br</td>
+                    <td> Open Novos</td>
+                </tr>
+
+                <tr>
+                    <td>Elionai Rodrigues</td>
+                    <td>Consultor de Pos Vendas</td>
+                    <td>606</td>
+                    <td>consultor08@hyundaiopen.com.b</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Fernando Henrique</td>
+                    <td>Orçamentista</td>
+                    <td>616</td>
+                    <td>pecas5@hyundaiopen.com.br </td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Marcelo Baluta</td>
+                    <td>Peças</td>
+                    <td>616</td>
+                    <td>pecas5@hyundaiopen.com.br </td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Vetor Subsolo Cascave </td>
+                    <td>Estoque</td>
+                    <td>644</td>
+                    <td>------------------------</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Ellen Gonçalves </td>
+                    <td>Leads</td>
+                    <td>125</td>
+                    <td>crm@hyundaiopen.com.br /<br> crm@openveiculos.com.br</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Edneia Pagangriso </td>
+                    <td>Leads</td>
+                    <td>125</td>
+                    <td>lead@hyundaiopen.com.br /<br> lead01@openveiculos.com.br</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Luiz Ramos</td>
+                    <td> Vendedor Peças</td>
+                    <td>605</td>
+                    <td>pecas01@hyundaiopen.com</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Joeverton Sousa </td>
+                    <td>Peças</td>
+                    <td>165</td>
+                    <td>pecas01@hyundaiopen.com.br</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Katia Turchato </td>
+                    <td>Consultor de Vendas</td>
+                    <td>607</td>
+                    <td>vendas03@hyundaiopen.com.br</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Rodrigo Patrick </td>
+                    <td>Peças</td>
+                    <td>196</td>
+                    <td>pecas06@hyundaiopen.com.br</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Luiz Ghiggi  </td>
+                    <td>Gerente de Novos</td>
+                    <td>610</td>
+                    <td>luiz@hyundaiopen.com.br</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+
+                <tr>
+                    <td>Marcio Geiss  </td>
+                    <td>Chefe Oficina</td>
+                    <td>606</td>
+                    <td>oficina@hyundaiopen.com.br</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Marketing    </td>
+                    <td>Marketing </td>
+                    <td>636</td>
+                    <td>------------</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Maycon Mazzer Mazzer     </td>
+                    <td>Vendedor Novos </td>
+                    <td>615</td>
+                    <td>vendas01@hyundaiopen.com.br</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Paulo Monte</td>
+                    <td>Vendedor Novos </td>
+                    <td>614</td>
+                    <td> paulomonte@hyundaiopen.com.br</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Rafael Augusto</td>
+                    <td>Supervisor de Estoque</td>
+                    <td>640</td>
+                    <td> pecas@hyundaiopen.com.br </td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+                <tr>
+                    <td>Rodolpho Castro</td>
+                    <td>Gerente Vendas </td>
+                    <td>601</td>
+                    <td> gerentevn@hyundaiopen.com.br</td>
+                    <td>Vetor Cascavel</td>
+                </tr>
+
+               
+                
+
+            </table>
+        </tbody>
+        </section>
+
+
+        <!--VETOR FOZ-->
+        <section id="ramal-vetor-foz" class="esconde-tabela">
+            
+            
+
+            <tbody>
+                <h1 class="titulo_tabela">Lista de Ramais <br>Vetor Hyundai Foz</h1>
+
+                <table id="table_vetorFoz">
+
+
+                    <!-- Criação do botão de pesquisa -->
+                    <div class="search">
+
+                        <!-- Ícone de lupa -->
+                        <button id="search-btnVetfoz"><i class="fa fa-search"></i></button>
+
+                        <div id="search-boxVetfoz" style="display:none">
+                            <!-- Caixa de seleção do filtro de pesquisa -->
+                            <select id="filtroFoz">
+                                <option value="Nome">Nome</option>
+                                <option value="Setor">Setor</option>
+                                <option value="Ramal">Ramal</option>
+                            </select>
+                            <!-- Campo de pesquisa -->
+                            <input type="text" id="pesquisaFoz" placeholder="Pesquisar">
+
+                        </div>
+
+                        
+                        
+                    </div>
+                    
+                    
+                    <tr id="titulo_ramal-vetor">
+                        <th>Nome</th>
+                        <th>Setor</th>
+                        <th>Ramal</th>
+                        <th>Email</th>
+                        <th>Loja</th>
+                    </tr>
+
+                    <tr>
+                        <td>Adriana Castanho</td>
+                        <td> Consultor de Vendas</td>
+                        <td>802</td>
+                        <td>vendas08@hyundaiopen.com.br</td>
+                        <td>Vetor Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Alisson Hunoff</td>
+                        <td>Peças</td>
+                        <td>806</td>
+                        <td>pecas03@hyundaiopen.com.br</td>
+                        <td>Vetor Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Deijan Schimdt</td>
+                        <td>Consultor de Vendas</td>
+                        <td>804</td>
+                        <td>vendas08@hyundaiopen.com.br</td>
+                        <td>Vetor Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fernando Santos</td>
+                        <td>Consultor Pos Vendas</td>
+                        <td>808</td>
+                        <td>consultor03@hyundaiopen.com.br</td>
+                        <td>Vetor Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Henrique Raldi</td>
+                        <td>Gerente</td>
+                        <td>801</td>
+                        <td>gerencia@hyundaiopen.com.br</td>
+                        <td>Vetor Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lohana Paixao</td>
+                        <td>Financeiro</td>
+                        <td>813</td>
+                        <td>caixafoz@hyundaiopen.com.br</td>
+                        <td>Vetor Foz</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Lucas Cristian</td>
+                        <td>Consultor de Pos Vendas</td>
+                        <td>809</td>
+                        <td>consultor04@hyundaiopen.com.br</td>
+                        <td>Vetor Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Nickolli Fernanda</td>
+                        <td>Recepção</td>
+                        <td>800</td>
+                        <td>recepcaofoz@vetor-hmb.com.br</td>
+                        <td>Vetor Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Verlainy Mascarenhas</td>
+                        <td>Consultor de Vendas</td>
+                        <td>803</td>
+                        <td>vendas16@hyundaiopen.com.br</td>
+                        <td>Vetor Foz</td>
+                    </tr>
+
+                </table>
+            </tbody>
+        </section>
+
+        <!--VETOR UMUARAMA-->
+        <section id="ramal-vetor-umuarama" class="esconde-tabela">
+                      
+            <tbody>
+
+                <h1 class="titulo_tabela">Lista de Ramais<br> Vetor Hyundai Umuarama</h1>
+
+
+                <table id="table_vetorUmuarama">
+
+                    <!-- Criação do botão de pesquisa -->
+                    <div class="search">
+
+                        <!-- Ícone de lupa -->
+                        <button id="search-btnVetumuarama"><i class="fa fa-search"></i></button>
+
+                        <div id="search-boxVetumuarama" style="display:none">
+                            <!-- Caixa de seleção do filtro de pesquisa -->
+                            <select id="filtroumuarama">
+                                <option value="Nome">Nome</option>
+                                <option value="Setor">Setor</option>
+                                <option value="Ramal">Ramal</option>
+                            </select>
+                            <!-- Campo de pesquisa -->
+                            <input type="text" id="pesquisaumuarama" placeholder="Pesquisar">
+
+                        </div>
+
+                        
+                        
+                    </div>
+                    
+                    <tr id="titulo_ramal-vetor">
+                        <th>Nome</th>
+                        <th>Setor</th>
+                        <th>Ramal</th>
+                        <th>Email</th>
+                        <th>Loja</th>
+                    </tr>
+
+                    <tr>
+                        <td>Denise Cristina</td>
+                        <td> Recepção</td>
+                        <td>700</td>
+                        <td>recepcaoumu@hyundaiopen.com.br</td>
+                        <td>Vetor Umuarama</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cristiano Silva</td>
+                        <td>Consultor de Vendas</td>
+                        <td>701</td>
+                        <td>vendas11@hyundaiopen.com.br</td>
+                        <td>Vetor Umuarama</td>
+                    </tr>
+
+                    <tr>
+                        <td>Luciana Caliari </td>
+                        <td>Peças</td>
+                        <td>706</td>
+                        <td>pecasumu@hyundaiopen.com.br </td>
+                        <td>Vetor Umuarama</td>
+                    </tr>
+
+                    <tr>
+                        <td>Nathalia Galdino</td>
+                        <td>Financeiro</td>
+                        <td>705</td>
+                        <td>caixaumu@hyundaiopen.com.br</td>
+                        <td>Vetor Umuarama</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Pedro</td>
+                        <td>Auxiliar de Mecanica</td>
+                        <td>707</td>
+                        <td>---------------------------</td>
+                        <td>Vetor Umuarama</td>
+                    </tr>
+
+                    <tr>
+                        <td>Renaldo Fraquini</td>
+                        <td>Consultor de Vendas</td>
+                        <td>708</td>
+                        <td>vendas12@hyundaiopen.com.br</td>
+                        <td>Vetor Umuarama</td>
+                    </tr>
+
+                    <tr>
+                        <td>Roberto Flavio</td>
+                        <td>Gerente</td>
+                        <td>704</td>
+                        <td>roberto@hyundaiopen.com.br</td>
+                        <td>Vetor Umuarama</td>
+                    </tr>
+
+                </table>
+            </tbody>
+        </section>
         
-        <footer>
+        <!--BRIZZA CASCAVEL-->
+        <section id="ramal-brizza" class="esconde-tabela">
+            
+            <tbody>
+                <h1 class="titulo_tabela">Lista de Ramais<br> Brizza Mitsubishi Cascavel</h1>
 
-            <section id="contatos">
+                <table id="table_brizza">
+                    
+                    <!-- Criação do botão de pesquisa -->
+                <div class="search">
 
-              <p> Desenvolvido por Eduardo Souza </p>
+                    <!-- Ícone de lupa -->
+                    <button id="search-btnbrizza"><i class="fa fa-search"></i></button>
 
-              <div class="redes_sociais">
-                <article> Redes Sociais:</article>
+                   <div id="search-boxbrizza" style="display:none">
+                        <!-- Caixa de seleção do filtro de pesquisa -->
+                        <select id="filtrobrizza">
+                            <option value="Nome">Nome</option>
+                            <option value="Setor">Setor</option>
+                            <option value="Ramal">Ramal</option>
+                        </select>
+                        <!-- Campo de pesquisa -->
+                        <input type="text" id="pesquisabrizza" placeholder="Pesquisar">
+
+                    </div>
+
+                    
+                    
+                </div>
+                
+                    
+                    
+                    
+                    <tr id="titulo_ramal-briza">
+                        <th>Nome</th>
+                        <th>Setor</th>
+                        <th>Ramal</th>
+                        <th>Email</th>
+                        <th>Loja  </th>
+                    </tr>
+
+
+                    <tr>
+                        <td>Almir Soares</td>
+                        <td>Gestor pós Vendas</td>
+                        <td>414</td>
+                        <td>posvendas@brizza.com.br</td>
+                        <td>Brizza  </td>
+                    </tr>
+
+                    <tr>
+                        <td>Ana Carolina / Bruna Hening</td>
+                        <td>Financeiro</td>
+                        <td>404</td>
+                        <td>anafinanceiro@openveiculos.net.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Ana Moura</td>
+                        <td>Funilaria</td>
+                        <td>420</td>
+                        <td>funilaria@hyundaiopen.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td>Anderson Michel</td>
+                        <td>Consultor Vendas</td>
+                        <td>422</td>
+                        <td>vendas09@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Andressa Pinheiro</td>
+                        <td>Acessórios</td>
+                        <td>406</td>
+                        <td>acessorios@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bruna Wilnes</td>
+                        <td>consultora tecnica</td>
+                        <td>412</td>
+                        <td>consultor02@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Denilson Moreno</td>
+                        <td>Funilaria</td>
+                        <td>418</td>
+                        <td>consultor03@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Elias Taufer</td>
+                        <td>Consultor Vendas</td>
+                        <td>403</td>
+                        <td>vendas06@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Eloi Treter</td>
+                        <td>Gerente Vendas</td>
+                        <td>407</td>
+                        <td>eloi@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fabio Marques</td>
+                        <td>Consultor Vendas</td>
+                        <td>408</td>
+                        <td>fabio@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Gisely Ferreira</td>
+                        <td>Assistente de Vendas</td>
+                        <td>409</td>
+                        <td>vendas10@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>João Santana</td>
+                        <td>Consultor Pos Vendas</td>
+                        <td>416</td>
+                        <td>consultor01@brizza.com.br</td>
+                        <td class="Loja-briza"> Brizza </td>
+                    </tr>
+
+                    <tr>
+                        <td>João Taborda </td>
+                        <td>Consultor Vendas</td>
+                        <td>411</td>
+                        <td>vendas03@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lucas Olbermann</td>
+                        <td>Peças</td>
+                        <td>413</td>
+                        <td>balcao@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Marcelo Santos</td>
+                        <td>Peças</td>
+                        <td>417</td>
+                        <td>marcelo@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Marcos Romeu</td>
+                        <td>Chefe da Oficina</td>
+                        <td>410</td>
+                        <td>marcos@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Millena Lobo</td>
+                        <td>Recepção</td>
+                        <td>401</td>
+                        <td>telefonista@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Murilo Pavao</td>
+                        <td>Peças</td>
+                        <td>419</td>
+                        <td>pecas02@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rudiney Antonello</td>
+                        <td>Funilaria</td>
+                        <td>418</td>
+                        <td>funilaria@openveiculos.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sanderley Amaral</td>
+                        <td>Peças</td>
+                        <td>419</td>
+                        <td>------------------------</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Willian Bianco</td>
+                        <td>Consultor Vendas</td>
+                        <td>421</td>
+                        <td>vendas08@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+
+                </table>
+            </tbody>
+        </section>
+
+        <!--OPEN VEICULOS SEMI NOVOS-->
+        <section id="open-semiNovos" class="esconde-tabela">
+
+            <tbody>
+                <h1 class="titulo_tabela">Lista de Ramais<br> Open Renault Seminovos</h1>
+                <table id="table_openOpenSemiNovos" >
+                    
+                    
+                    <tr id="titulo_ramal-open">
+                        <th>Nome</th>
+                        <th>Setor</th>
+                        <th>Ramal</th>
+                        <th>Email</th>
+                        <th>Loja</th>
+                    </tr>
+
+                    <tr>
+                        <td>Bruno Wesley</td>
+                        <td>Consultor de Vendas</td>
+                        <td>624</td>
+                        <td>vendas12@openveiuclos.com.br</td>
+                        <td>Open Seminovos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Denivaldo Miguel</td>
+                        <td>Gerente Semi Novos</td>
+                        <td>620</td>
+                        <td>gerenciaseminovos@openveiuclos.net.br</td>
+                        <td>Open Seminovos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fabio Silva</td>
+                        <td>Consultor de Vendas</td>
+                        <td>623</td>
+                        <td>vendas13@openveiuclos.com.br</td>
+                        <td>Open Seminovos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Haltieres Carbolin</td>
+                        <td>Avaliador</td>
+                        <td>626</td>
+                        <td>avaliadorcvel@openveiculos.com.br</td>
+                        <td>Open SemiNovos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Helio de oliveira</td>
+                        <td>Consultor de Vendas</td>
+                        <td>621</td>
+                        <td>vendas13@openveiuclos.net.br</td>
+                        <td>Open Seminovos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rafael Augusto</td>
+                        <td>Consultor de Vendas</td>
+                        <td>622</td>
+                        <td>seminovos@brizza.com.br</td>
+                        <td>Open Seminovos</td>
+                    </tr>
+
+                </table>
+            </tbody>
+
+
+        </section>
+
+        <!--GERAL-->
+        <section id="geral" class="esconde-tabela">
+
+            
+
+            <tbody>
+                
+                <h1 class="titulo_tabela">Lista de Ramais<br> Geral Grupo Open</h1>
+
+                <table id="table_Geral">
+
+
+                    <!-- Criação do botão de pesquisa -->
+                    <div class="search">
+
+                        <!-- Ícone de lupa -->
+                        <button id="search-btngeral"><i class="fa fa-search"></i></button>
+
+                        <div id="search-boxgeral" style="display:none">
+                            <!-- Caixa de seleção do filtro de pesquisa -->
+                            <select id="filtrogeral">
+                                <option value="Nome">Nome</option>
+                                <option value="Setor">Setor</option>
+                                <option value="Ramal">Ramal</option>
+                            </select>
+                            <!-- Campo de pesquisa -->
+                            <input type="text" id="pesquisageral" placeholder="Pesquisar">
+
+                    </div>
+                    
+                </div>
+                    
+                    <tr id="titulo_ramal-open">
+                        <th>Nome</th>
+                        <th>Setor</th>
+                        <th>Ramal</th>
+                        <th>Email</th>
+                        <th>Loja</th>
+                    </tr>
+                    <!--OPEN SEMINOVOS-->
+                    <tr>
+                        <td>Bruno Wesley</td>
+                        <td>Consultor de Vendas</td>
+                        <td>624</td>
+                        <td>vendas12@openveiuclos.com.br</td>
+                        <td>Open Seminovos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Denivaldo Miguel</td>
+                        <td>Gerente Semi Novos</td>
+                        <td>620</td>
+                        <td>gerenciaseminovos@openveiuclos.net.br</td>
+                        <td>Open Seminovos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fabio Silva</td>
+                        <td>Consultor de Vendas</td>
+                        <td>623</td>
+                        <td>vendas13@openveiuclos.com.br</td>
+                        <td>Open Seminovos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Haltieres Carbolin</td>
+                        <td>Avaliador</td>
+                        <td>626</td>
+                        <td>avaliadorcvel@openveiculos.com.br</td>
+                        <td>Open SemiNovos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Helio de oliveira</td>
+                        <td>Consultor de Vendas</td>
+                        <td>621</td>
+                        <td>vendas13@openveiuclos.net.br</td>
+                        <td>Open Seminovos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rafael Augusto</td>
+                        <td>Consultor de Vendas</td>
+                        <td>622</td>
+                        <td>seminovos@brizza.com.br</td>
+                        <td>Open Seminovos</td>
+                    </tr>
+
+                    <!--BRIZZA-->
+
+                    <tr>
+                        <td>Almir Soares</td>
+                        <td>Gestor pós Vendas</td>
+                        <td>414</td>
+                        <td>posvendas@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ana Carolina / Bruna Hening</td>
+                        <td>Financeiro</td>
+                        <td>404</td>
+                        <td>anafinanceiro@openveiculos.net.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Ana Moura</td>
+                        <td>Funilaria</td>
+                        <td>420</td>
+                        <td>funilaria@hyundaiopen.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Anderson Michel</td>
+                        <td>Consultor Vendas</td>
+                        <td>422</td>
+                        <td>vendas09@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Andressa Pinheiro</td>
+                        <td>Acessórios</td>
+                        <td>406</td>
+                        <td>acessorios@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bruna Wilnes</td>
+                        <td>consultora tecnica</td>
+                        <td>412</td>
+                        <td>consultor02@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Denilson Moreno</td>
+                        <td>Funilaria</td>
+                        <td>418</td>
+                        <td>consultor03@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Elias Taufer</td>
+                        <td>Consultor Vendas</td>
+                        <td>403</td>
+                        <td>vendas06@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Eloi Treter</td>
+                        <td>Gerente Vendas</td>
+                        <td>407</td>
+                        <td>eloi@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fabio Marques</td>
+                        <td>Consultor Vendas</td>
+                        <td>408</td>
+                        <td>fabio@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Gisely Ferreira</td>
+                        <td>Assistente de Vendas</td>
+                        <td>409</td>
+                        <td>vendas10@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>João Santana</td>
+                        <td>Consultor Pos Vendas</td>
+                        <td>416</td>
+                        <td>consultor01@brizza.com.br</td>
+                        <td class="Loja-briza"> Brizza </td>
+                    </tr>
+
+                    <tr>
+                        <td>João Taborda </td>
+                        <td>Consultor Vendas</td>
+                        <td>411</td>
+                        <td>vendas03@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lucas Olbermann</td>
+                        <td>Peças</td>
+                        <td>413</td>
+                        <td>balcao@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Marcelo Santos</td>
+                        <td>Peças</td>
+                        <td>417</td>
+                        <td>marcelo@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Marcos Romeu</td>
+                        <td>Chefe da Oficina</td>
+                        <td>410</td>
+                        <td>marcos@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Millena Lobo</td>
+                        <td>Recepção</td>
+                        <td>401</td>
+                        <td>telefonista@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Murilo Pavao</td>
+                        <td>Peças</td>
+                        <td>419</td>
+                        <td>pecas02@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rudiney Antonello</td>
+                        <td>Funilaria</td>
+                        <td>418</td>
+                        <td>funilaria@openveiculos.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sanderley Amaral</td>
+                        <td>Peças</td>
+                        <td>419</td>
+                        <td>------------------------</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Willian Bianco</td>
+                        <td>Consultor Vendas</td>
+                        <td>421</td>
+                        <td>vendas08@brizza.com.br</td>
+                        <td class="Loja-briza">Brizza</td>
+                    </tr>
+
+
+                    <!--VETOR UMUARAMA-->
+                    <tr>
+                        <td>Denise Cristina</td>
+                        <td> Recepção</td>
+                        <td>700</td>
+                        <td>recepcaoumu@hyundaiopen.com.br</td>
+                        <td>Vetor Umuarama</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cristiano Silva</td>
+                        <td>Consultor de Vendas</td>
+                        <td>701</td>
+                        <td>vendas11@hyundaiopen.com.br</td>
+                        <td>Vetor Umuarama</td>
+                    </tr>
+
+                    <tr>
+                        <td>Luciana Caliari </td>
+                        <td>Peças</td>
+                        <td>706</td>
+                        <td>pecasumu@hyundaiopen.com.br </td>
+                        <td>Vetor Umuarama</td>
+                    </tr>
+
+                    <tr>
+                        <td>Nathalia Galdino</td>
+                        <td>Financeiro</td>
+                        <td>705</td>
+                        <td>caixaumu@hyundaiopen.com.br</td>
+                        <td>Vetor Umuarama</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Pedro</td>
+                        <td>Lavador</td>
+                        <td>707</td>
+                        <td>---------------------------</td>
+                        <td>Vetor Umuarama</td>
+                    </tr>
+
+                    <tr>
+                        <td>Renaldo Fraquini</td>
+                        <td>Consultor de Vendas</td>
+                        <td>708</td>
+                        <td>vendas12@hyundaiopen.com.br</td>
+                        <td>Vetor Umuarama</td>
+                    </tr>
+
+                    <tr>
+                        <td>Roberto Flavio</td>
+                        <td>Gerente</td>
+                        <td>704</td>
+                        <td>roberto@hyundaiopen.com.br</td>
+                        <td>Vetor Umuarama</td>
+                    </tr>
+
+                    <!--VETOR FOZ-->
+                    <tr>
+                        <td>Adriana Castanho</td>
+                        <td> Consultor de Vendas</td>
+                        <td>802</td>
+                        <td>vendas08@hyundaiopen.com.br</td>
+                        <td>Vetor Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Alisson Hunoff</td>
+                        <td>Peças</td>
+                        <td>806</td>
+                        <td>pecas03@hyundaiopen.com.br</td>
+                        <td>Vetor Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Deijan Schimdt</td>
+                        <td>Consultor de Vendas</td>
+                        <td>804</td>
+                        <td>vendas08@hyundaiopen.com.br</td>
+                        <td>Vetor Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fernando Santos</td>
+                        <td>Consultor Pos Vendas</td>
+                        <td>808</td>
+                        <td>consultor03@hyundaiopen.com.br</td>
+                        <td>Vetor Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Henrique Raldi</td>
+                        <td>Gerente</td>
+                        <td>801</td>
+                        <td>gerencia@hyundaiopen.com.br</td>
+                        <td>Vetor Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lohana Paixao</td>
+                        <td>Financeiro</td>
+                        <td>813</td>
+                        <td>caixafoz@hyundaiopen.com.br</td>
+                        <td>Vetor Foz</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Lucas Cristian</td>
+                        <td>Consultor de Pos Vendas</td>
+                        <td>809</td>
+                        <td>consultor04@hyundaiopen.com.br</td>
+                        <td>Vetor Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Nickolli Fernanda</td>
+                        <td>Recepção</td>
+                        <td>800</td>
+                        <td>recepcaofoz@vetor-hmb.com.br</td>
+                        <td>Vetor Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Verlainy Mascarenhas</td>
+                        <td>Consultor de Vendas</td>
+                        <td>803</td>
+                        <td>vendas16@hyundaiopen.com.br</td>
+                        <td>Vetor Foz</td>
+                    </tr>
+
+                    <!--VETOR CASCAVEL-->
+
+                    <tr>
+                        <td>Adriana Sohm</td>
+                        <td>Consultor de Vendas</td>
+                        <td>612</td>
+                        <td>vendas4@hyundaiopen.com.br</td>
+                        <td> Vetor Cascavel</td>
+                    </tr>
+
+                    <tr>
+                        <td>Alan Otavio</td>
+                        <td>Agendamento</td>
+                        <td>631</td>
+                        <td>agendamentocvel@hyundaiopen.com.br</td>
+                        <td> Vetor Cascavel</td>
+                    </tr>
+                    <tr>
+                        <td>Celso Hissao</td>
+                        <td>Controladoria</td>
+                        <td>126</td>
+                        <td>assistentecontro@openveiculos.net.br</td>
+                        <td> Vetor Cascavel</td>
+                    </tr>
+    
+
+                    <tr>
+                        <td>Agendamento</td>
+                        <td>Agendamento </td>
+                        <td>631</td>
+                        <td> agendamentocvel@hyundaiopen.com.br</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Alex Rech</td>
+                        <td> Gerente Pós Vendas</td>
+                        <td>619</td>
+                        <td>gerenciaposvendas@hyundaiopen.com.br</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Ana Lazzaretti</td>
+                        <td>Financeiro</td>
+                        <td>603</td>
+                        <td>financeiro@hyundaiopen.com.br</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Felipe Paiva</td>
+                        <td> Vendas Acessorios </td>
+                        <td>628</td>
+                        <td>entregatecnica@hyundaiopen.com.br</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Hiago Rauber </td>
+                        <td>Entrega Tecnica</td>
+                        <td>608</td>
+                        <td>Entregatecncvel@hyundaiopen.com.br</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Carla Fernanda</td>
+                        <td>Recepcionista</td>
+                        <td>600</td>
+                        <td>atendimento@hyundaiopen.com.br</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Jose Junior</td>
+                        <td> Consultor Pós Vendas</td>
+                        <td>611</td>
+                        <td>consultor10@hyundaiopen.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Elionai Rodrigues</td>
+                        <td>Consultor de Pos Vendas</td>
+                        <td>606</td>
+                        <td>consultor08@hyundaiopen.com.b</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Fernando Henrique</td>
+                        <td>Orçamentista</td>
+                        <td>616</td>
+                        <td>pecas5@hyundaiopen.com.br </td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+
+                    <tr>
+                        <td>Marcelo Baluta</td>
+                        <td>Peças</td>
+                        <td>616</td>
+                        <td>pecas5@hyundaiopen.com.br </td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vetor Subsolo Cascavel </td>
+                        <td>Estoque</td>
+                        <td>644</td>
+                        <td>------------------------</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Ellen Gonçalves </td>
+                        <td>Leads</td>
+                        <td>634</td>
+                        <td>crm@hyundaiopen.com.br</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Luiz Ramos </td>
+                        <td> Vendedor Peças</td>
+                        <td>605</td>
+                        <td>pecas01@hyundaiopen.com</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Joeverton Sousa</td>
+                        <td>Peças</td>
+                        <td>165</td>
+                        <td>pecas01@hyundaiopen.com.br</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+
+                    <tr>
+                        <td>Katia Turchato </td>
+                        <td>Consultor de Vendas</td>
+                        <td>607</td>
+                        <td>vendas03@hyundaiopen.com.br</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Rodrigo Patrick  </td>
+                        <td>Peças</td>
+                        <td>196</td>
+                        <td>pecas06@hyundaiopen.com.br</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Luiz Ghiggi</td>
+                        <td>Gerente de Novos</td>
+                        <td>610</td>
+                        <td>luiz@hyundaiopen.com.br</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+    
+    
+                    <tr>
+                        <td>Marcio Geiss</td>
+                        <td>Chefe Oficina</td>
+                        <td>606</td>
+                        <td>oficina@hyundaiopen.com.br</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+
+    
+                    <tr>
+                        <td>Marketing    </td>
+                        <td>Marketing </td>
+                        <td>636</td>
+                        <td>------------</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Maycon Mazzer </td>
+                        <td>Vendedor Novos </td>
+                        <td>615</td>
+                        <td>vendas01@hyundaiopen.com.br</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Paulo Monte </td>
+                        <td>Vendedor Novos </td>
+                        <td>614</td>
+                        <td> paulomonte@hyundaiopen.com.br</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Rafael Augusto</td>
+                        <td>Supervisor de Estoque</td>
+                        <td>640</td>
+                        <td> pecas@hyundaiopen.com.br </td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Rodolpho Castro</td>
+                        <td>Gerente Vendas </td>
+                        <td>601</td>
+                        <td> gerentevn@hyundaiopen.com.br</td>
+                        <td>Vetor Cascavel</td>
+                    </tr>
+    
+
+                    <!--OPEN TOLEDO-->
+                    
+                    <tr>
+                        <td>Amanda Maria</td>
+                        <td>Entrega Técnica</td>
+                        <td>214</td>
+                        <td>entregatecnicato@openveiculos.com.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+                    <tr>
+                        <td>Paulo Caramori</td>
+                        <td>Consultor de Vendas</td>
+                        <td>200</td>
+                        <td>vendas14@openveiculos.com.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Valderes Barbosa</td>
+                        <td>Agendamento</td>
+                        <td>632</td>
+                        <td>agendamento1@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+            
+                    <tr>
+                        <td>Rui Rodrigues</td>
+                        <td>Gerente de Novos</td>
+                        <td>201</td>
+                        <td>gerenciatoledo@openveiculos.com.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ana Caroline</td>
+                        <td>Recepção</td>
+                        <td>201</td>
+                        <td>recep-toledo@openveiculos.net.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Anderson Habitzreuter</td>
+                        <td>Peças</td>
+                        <td>211</td>
+                        <td>estoque01@openveiculos.net.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Clarice Byk</td>
+                        <td>Financeiro</td>
+                        <td>205</td>
+                        <td>claricefinanceirotoo@openveiculos.com.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Edson Pereira Pereira</td>
+                        <td>Consultor de Vendas</td>
+                        <td>202</td>
+                        <td>vendas08@openveiculos.com.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fermanda Luize</td>
+                        <td>Consultor de Vendas Pro+</td>
+                        <td>216</td>
+                        <td>vendadiretato@openveieculos.com.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Gabriel /<br>Jeziel</td>
+                        <td>Consultor Pos Vendas</td>
+                        <td>213</td>
+                        <td>consultortoo@openveiculos.net.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mauro Adriano</td>
+                        <td>Consultor de Vendas</td>
+                        <td>203</td>
+                        <td>vendas07@openveiculos.net.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vanderson Jose</td>
+                        <td>Peças</td>
+                        <td>200</td>
+                        <td>estoquetol@openveiculos.com.br</td>
+                        <td>Open Toledo</td>
+                    </tr>
+
+                    <!--OPEN FOZ-->
+                    <tr>
+                        <td>Raquel Ferreira </td>
+                        <td>Agendamento</td>
+                        <td>633</td>
+                        <td>agendamento02@openveiculos.com.br</td>
+                        <td> Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Polyana Francisca </td>
+                        <td>Agendamento</td>
+                        <td>630</td>
+                        <td>centralagm@openveiculos.com.br</td>
+                        <td> Open Foz</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Eduardo Souza</td>
+                        <td>TI</td>
+                        <td>309</td>
+                        <td>cpd@openveiculos.com.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Elisete Rocha</td>
+                        <td>Financeiro</td>
+                        <td>318</td>
+                        <td>caixafoz@openveiculos.net.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Elvis Xavier</td>
+                        <td>Gestor de Novos</td>
+                        <td>304</td>
+                        <td>gerentefoz@openveiculos.net.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Igor Cruz</td>
+                        <td>Peças</td>
+                        <td>316</td>
+                        <td>estoqueopenfoz@gmail.com</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Joao Paranhos</td>
+                        <td>Consultor de Pos vendas</td>
+                        <td>322</td>
+                        <td>consultor03@openveiculos.net.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Joao Vitor</td>
+                        <td>Consultor de vendas PRO +</td>
+                        <td>306</td>
+                        <td>vendas19@openveiculos.com.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Kairo Martim</td>
+                        <td>Cotech</td>
+                        <td>321</td>
+                        <td>cotech-foz@openveiculos.net.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Leia Rios</td>
+                        <td>Consultor de Pos vendas</td>
+                        <td>323</td>
+                        <td>leia.openveiculos@gmail.com</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Marcio Nering</td>
+                        <td>Consultor de vendas</td>
+                        <td>303</td>
+                        <td>vendas19@openveiculos.net.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Marina Ferreira</td>
+                        <td>Aprendiz Financeiro</td>
+                        <td>330</td>
+                        <td>aux.fin@openveiculos.com.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Monica/Everson</td>
+                        <td>Posto de Lavagem</td>
+                        <td>319</td>
+                        <td>-------------------------</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pedro Tamura</td>
+                        <td>Avaliador</td>
+                        <td>314</td>
+                        <td>avaliadorfoz@openveiculos.net.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Robson Ferguglia</td>
+                        <td>Peças</td>
+                        <td>320</td>
+                        <td>Robson@openveiculos.net.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sabrina This</td>
+                        <td>Consultor de Vendas</td>
+                        <td>305</td>
+                        <td>vendas20@openveiculos.net.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tatielen Sousa</td>
+                        <td>Consultor Pos Vendas</td>
+                        <td>326</td>
+                        <td>oficinafoz@brizza.com.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Victoria Tayna</td>
+                        <td>Recepção</td>
+                        <td>301</td>
+                        <td>telefonista@openveiculos.net.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vikthor Philippi</td>
+                        <td>Consultor de Vendas</td>
+                        <td>302</td>
+                        <td>vendas07@openveiculos.com.br</td>
+                        <td>Open Foz</td>
+                    </tr>
+
+                    <!--Open CASCAVEL Novos-->
+                    <tr>
+                        <td>Oficina </td>
+                        <td>Oficina</td>
+                        <td>172</td>
+                        <td>-----------------</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    <tr>
+                        <td>Adilson Vesohoski </td>
+                        <td>Consultor de Vendas PRO+</td>
+                        <td>143</td>
+                        <td>vendas17@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Alexandre Serra</td>
+                        <td>Diretoria</td>
+                        <td>111</td>
+                        <td>diretoria@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Aline Teixeira </td>
+                        <td>Garantia</td>
+                        <td>1096</td>
+                        <td>garantia05@hyundaiopen.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pablo Henrique </td>
+                        <td>Garantia</td>
+                        <td>184</td>
+                        <td>garantia03@brizza.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Amabily Vitoria </td>
+                        <td>Contabilidade</td>
+                        <td>167</td>
+                        <td>contabil05@hundaiopen.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ana Lazzaretti</td>
+                        <td>Financiero</td>
+                        <td>115</td>
+                        <td>caixaatendimento@brizza.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Andressa Bortolini</td>
+                        <td>RH</td>
+                        <td>110</td>
+                        <td>rh4@brizza.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Andressa </td>
+                        <td>Faturamento</td>
+                        <td>102</td>
+                        <td>faturamentocvel2@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Andrey Felipe</td>
+                        <td>DHO</td>
+                        <td>159</td>
+                        <td>rh3@brizza.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Angelica Martineli </td>
+                        <td>Contabilidade</td>
+                        <td>125</td>
+                        <td>contabil03@brizza.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bruna Iembo</td>
+                        <td>Financeiro</td>
+                        <td>115</td>
+                        <td>financeiro2@hyundaiopen.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Caroline Bernardon</td>
+                        <td>Marketing</td>
+                        <td>635</td>
+                        <td>mkt@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>                
+
+                    <tr>
+                        <td>Christopher Henrique </td>
+                        <td>Contabilidade</td>
+                        <td>112</td>
+                        <td>contabil04@hyundaiopen.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cristiane Rabel</td>
+                        <td>DHO</td>
+                        <td>156</td>
+                        <td>treinamento@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cleverlin Faustino</td>
+                        <td>Peças</td>
+                        <td>163</td>
+                        <td>pecascobrancas@openveiculos.net.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Divaldo Marques </td>
+                        <td>TI</td>
+                        <td>121 </td>
+                        <td>cpd02@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Dyohana Ferreira </td>
+                        <td>Faturamento</td>
+                        <td>101</td>
+                        <td>faturamentocvel1@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Edina Mayra </td>
+                        <td> Financeiro</td>
+                        <td>114</td>
+                        <td>caixacvl@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Elizandra Martins </td>
+                        <td>Faturamento</td>
+                        <td>108</td>
+                        <td>faturamento@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Elson Bertoldo </td>
+                        <td>Peças</td>
+                        <td>173</td>
+                        <td>pecasvendas5@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fernanda Daniel </td>
+                        <td>Garantia</td>
+                        <td>178</td>
+                        <td>fernanda@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Palmiere Frank </td>
+                        <td>Peças</td>
+                        <td>177</td>
+                        <td>pecasvendas2@openveiculos.net.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Hamilly Mariana </td>
+                        <td>Marketing</td>
+                        <td>636</td>
+                        <td>rh4@brizza.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Heverton Haensel </td>
+                        <td>Gestor Vendas Pro+</td>
+                        <td>190</td>
+                        <td>gerentevd@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fabio </td>
+                        <td>Gestor Peças</td>
+                        <td>177</td>
+                        <td>gerente.pecas@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>João Vitor</td>
+                        <td>Vendas PRO+</td>
+                        <td>107</td>
+                        <td>faturamentocvel4@hyundaiopen.com.br</td>
+                        <td> Open Novos</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Katia Zang </td>
+                        <td>Gestor F&I</td>
+                        <td>139</td>
+                        <td>centralfi@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Kellin Berno </td>
+                        <td>Consultora Pós Vendas</td>
+                        <td>185</td>
+                        <td> consultor01@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lavadores</td>
+                        <td>Pós Vendas</td>
+                        <td>1098</td>
+                        <td>-----------------</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Leonardo Antony </td>
+                        <td>Garantia</td>
+                        <td>1091</td>
+                        <td>garantia04@brizza.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Anne Veloso </td>
+                        <td>Entrega Técnica</td>
+                        <td>140</td>
+                        <td>entregatecnicacvel@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lincoln Henrique </td>
+                        <td>Contabilidade</td>
+                        <td>113</td>
+                        <td>fiscal02@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lucas Talevi </td>
+                        <td>Qualidade</td>
+                        <td>1093</td>
+                        <td>qualidade@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Lucas Antonio</td>
+                        <td>F&i</td>
+                        <td>158</td>
+                        <td>operacoesfi@brizza.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Luccas Arnone </td>
+                        <td>Gesto Vendas Novos</td>
+                        <td>122 </td>
+                        <td>gerenciacvel@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Maglo Carlos </td>
+                        <td>Consultor Vendas Novos</td>
+                        <td>128</td>
+                        <td>vendas15@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Marcos Urio</td>
+                        <td>Diretoria</td>
+                        <td>111</td>
+                        <td>marcos@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mario Andersen </td>
+                        <td>Preparador de Veiculos Novos</td>
+                        <td>182</td>
+                        <td>--------------------</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mateus Rocha </td>
+                        <td>F&I</td>
+                        <td>119</td>
+                        <td>centralfi2@hyundaiopen.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Roberto Lopes</td>
+                        <td>Consultor Vendas Novos</td>
+                        <td>146</td>
+                        <td>vendas15@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Nei Luiz </td>
+                        <td>Consultor de Pos vendas</td>
+                        <td>181</td>
+                        <td>consultor2@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Nicolas Eduardo </td>
+                        <td>TI</td>
+                        <td>141</td>
+                        <td>suporte03@hyundaiopen.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lupercio Pereira </td>
+                        <td>Gerente Pós Vendas</td>
+                        <td>189</td>
+                        <td> posvendas@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Priscila Frits </td>
+                        <td>Gerente Financeiro</td>
+                        <td>116</td>
+                        <td> priscila@brizza.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rafael </td>
+                        <td>Posto de Lavagem</td>
+                        <td>1098</td>
+                        <td></td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Estanis Selenko</td>
+                        <td>Recepção</td>
+                        <td>136</td>
+                        <td>recepcaocvel@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ricardo Moraes</td>
+                        <td>Gestor de Agendamento</td>
+                        <td>634 </td>
+                        <td> agendamento01@hyundaiopen.com.br <br> agendamento1@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Roberto Dagher</td>
+                        <td>Cotech</td>
+                        <td>175</td>
+                        <td>cotech1@openveiculos.net.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rosana Malaquias </td>
+                        <td>Financeiro</td>
+                        <td>106</td>
+                        <td>financeiro.cp@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Sandra Miguel </td>
+                        <td> Gestor RH</td>
+                        <td>151</td>
+                        <td>sandrarh@openveiculos.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Evelyn Karine</td>
+                        <td>Compras</td>
+                        <td>639</td>
+                        <td>cotacoes@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+                    <tr>
+                        <td>Silvana Lima </td>
+                        <td>Assistente de Pos Vendas</td>
+                        <td>149</td>
+                        <td>assispvcvel@brizza.com.br </td>
+                        <td> Open Novos</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Silvana Czoupynski</td>
+                        <td>RH</td>
+                        <td>150</td>
+                        <td>silvana.santos@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Susete Fatima</td>
+                        <td>Consultor Vendas Novos</td>
+                        <td>145</td>
+                        <td>susete@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thatyane Leida </td>
+                        <td>Gestor Contabilidade</td>
+                        <td>191</td>
+                        <td>contabilidade@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Valmir Jose </td>
+                        <td>Consultor Peças</td>
+                        <td>188</td>
+                        <td>vendaspecas@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vinicius Dubay </td>
+                        <td>Peças</td>
+                        <td>161</td>
+                        <td>vendasweb@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Douglas Oliveira </td>
+                        <td>Peças</td>
+                        <td>130</td>
+                        <td>pecasvendas6@openveiculos.net.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Viviane Morais </td>
+                        <td>Gestor Faturamento</td>
+                        <td>138</td>
+                        <td>viviane@openveiculos.com.br</td>
+                        <td> Open Novos</td>
+                    </tr>
+
+                </table>
+            </tbody>
+
+        </section>
+
+    </main>
+        
+    <footer>
+
+        <section id="contatos">
+
+            <div class="redes_sociais">
+            
                 <section class="contato_img">
                     <a href="https://www.linkedin.com/in/eduardo-souza-0b471a241/"><img class="rede_social" src="../img/Linkedin.png" alt="Linkedin"></a>
                     <a href="https://github.com/Eduardo-Souza2000"><img class="rede_social" src="../img/Git.png" alt="Linkedin"></a>
+                    
                 </section>
-              </div>
-          
-          </section>
-          
-        </footer>
+                
+                <p>&copy; 2023 Desenvolvido por Eduardo Souza. Todos os direitos reservados. </p>
+            </div>
+        
+        </section>
+        
+    </footer>
 
-    </section>
 
-    <script type="text/javascript" src="..js/index.js"></script>
+    
+    
+
+    <script type="text/javascript" src="../JS/ajudaRamal.js"></script>
+    <script type="text/javascript" src="../JS/vozRamal.js"></script>
+    <script type="text/javascript" src="../JS/selecionaRamal.js"></script>
+    <script type="text/javascript" src="../JS/pesquisaRamalBrizza.js"></script>
+    <script type="text/javascript" src="../JS/pesquisaRamalVetor.js"></script>
+    <script type="text/javascript" src="../JS/pesquisaRamalOpen.JS"></script>
+    <script type="text/javascript" src="../JS/pesquisaRamalGeral.js"></script>
+    <script type="text/javascript" src="../JS/organizaTabela.js"></script>
+   
 
 </body>
+
 </html>

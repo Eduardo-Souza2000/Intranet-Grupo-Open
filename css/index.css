@@ -1,19 +1,178 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family= Ropa + Sans:ital@0;1 & display=swap');
-/*ESTILIZAÇAO HOME*/
-body{
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* Importa a biblioteca do FontAwesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+  
+#estiliza-Historia{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    text-align: justify;
+    font-size: 4vw;
+    color: #f3f0e1;
+}
+
+.historia{
+    text-indent: 40px;
+    width: 50vw;
+    font-size: 1.5vw;
+    color: #fdfdfd;
+    margin: 3px;
+}
+
+.lista_historia{
+    list-style-type: disc;
+    padding-left: 30px;
+    color: #fdfdfd;
+    margin: 0px;
+}
+
+.lista-linha_historia{
+    margin-bottom: 10px;
+}
+
+.titulo-historia{
+    font-size: 3vw;
+}
+
+
+
+
+
+
+
+.esconde-tabela{
+    display: none;
+}
+
+.mostra-tabela{
+    display: unset;
+}
+
+
+/* ESTILIZAÇAO Pops*/
+.pop-up {
+    position: fixed;
+    width: 25vw;
+    left: 85%;
+    bottom: 2px;
+    transform: translate(-50%, -50%);
+    background-color:#ffba00; /*rgb(3, 17, 80);*/
+    border: 1px solid black;
+    display: none;
+    border-radius: 8px;
+    color: #141414;
+}
+  
+.pop-up-conteudo {
+    text-align: justify;
+    font-size: 1vw;
+    padding: 1vw;
+    color: #141414;
+    
+}
+  
+.pop-up-enunciado{
+    text-align: center;
+    font-size: 1vw;
+    color: #141414;
+
+}
+
+.pop-up-texto{
+    font-size: 1vw;
+    color: #141414;
+
+}
+
+#botao-fechar {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 2vw;
+    height: 20px;
+    border: 0px;
+    margin:0px;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.6);
+    font-weight: bolder;
+    color: #fc0404;
+
+  }
+
+  #botao-fechar:hover {
+    color: #ffffff;
+    background-color: #fc0404;
+
+  }
+
+
+.risco {
+    position: absolute;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+    left: 90%;
+    bottom: -6px;
+    margin-left: -6px;
+    background-color: #ffba00;
+    z-index: -1;
+  }
+
+/*ESTILIZAÇAO HOME*/
+.ajuda {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #022246;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px; 
+}
+
+
+.reconhecimento {
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #022246;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px; 
+}
+
+body{display: flex;
+    justify-items: center;
     justify-content: center;
-    background: #1D4F65;
+    align-items: center;
+    font-family: 'Karla';
+    flex-direction: column;
+    width: 100vw;
+    background: #466d7e;
 }
 
 #principal {
+
     display: flex;
     justify-items: center;
+    justify-content: center;
     align-items: center;
+    font-family: 'Karla';
     flex-direction: column;
     width: 100vw;
-    background:#1D4F65;
+    background: #466d7e;
+
 }
 
 .logo-grupo{
@@ -22,9 +181,11 @@ body{
 }
 
 .logo-grupo:hover{
-    background-color: #d3cacaec;
-    border-radius: 15px;
-
+    background-color: #809ba749; 
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    z-index: 1;
 }
 
 header{
@@ -36,8 +197,10 @@ header{
 
 
 h1{   
-    font-family: 'Rapa Sans';
+    display: flex;
+    font-family: 'Karla';
     font: bold;
+    text-align: center;
     font-size: 30px;
     color: #f8f8f8;
 }
@@ -48,39 +211,47 @@ button{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-family: 'Rapa Sans';
-    font-size:15px;
+    font-family: 'Karla';
+    font-size:1vw;
     width: 10vw;
     height: 70px;
     color: rgb(255, 255, 255);
     background: #0c408800;
     border-radius: 10px;
-    border: 2px solid #fdfdfd;
+    border: 1px solid #fdfdfd;
+    margin: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.6);
+    z-index: 1;
 
 }
 
 button:hover{
-    background-color:#05364b;
+    background-color:#045172b4;
    
 }
 
-#botoes {
+#botoes,#menu-opc, #estiliza_menu-ramal {
     cursor: pointer;
-    width: 40vw;
-    height: 350px;
+    width: 50vw;
+    height: 550px;
     margin-bottom: 20px;
     border-radius: 4px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #809ba749;  
+    background-color: #022331bd; 
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.4);
+    
 }
 
 #icone{
-    width: 20px;
-    height: 20px;
+    width: 2vw;
+    padding: 0.25vw;
 }
+
+
 
 .linha_01, .linha_02, .linha_03 {
     width: 40vw;
@@ -94,9 +265,9 @@ footer{
     justify-content: center;
     flex-direction: column;
     background: #1B1C1D;
-    height: 50px;
+    height: 60px;
     color: rgba(255, 255, 255, 1);
-    font-family: 'Inter';
+    font-family: 'Karla';
     font-size: 15px;  
     margin-top: 2vw;
 }
@@ -111,62 +282,35 @@ p {
     width: 100vw;
     height: 70px;
     align-items: center;
+    font-weight: normal;
     justify-content: space-evenly;
-    font-family: 'Inter';
+    font-family: 'Arial';
     font-size: 10px;
 }
 
 .redes_sociais {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 15vw;
+    width: 30vw;
 
 }
 
 .rede_social{
     cursor: pointer;
-    width: 60px;
+    width: 40px;
 }
 
 .rede_social:hover{
     cursor: pointer;
     background-color: #FFFFFF;
-    width: 80px;
+    width: 40px;
 }
 
 .contato_img{
     display: flex;
     align-items: center;
-}
-
-@media (min-width: 1400px){
-
-    h1{   
-        font-size: 80px;
-    }
-
-    button{  
-        font-size: 30px;
-        width: 300px;
-        height: 120px;
-    }
-    
-    #botoes {
-        width: 1000px;
-        height: 600px;
-    }
-
-    #icone{
-        width: 50px;
-        height: 50px;
-    }
-
-    .linha_01, .linha_02, .linha_03 {
-        width: 1000px;
-    }
-    
 }
 
 /* ESTILIZAÇAO PAGINA DE NORMAS*/
@@ -177,12 +321,13 @@ p {
     align-items: center;
     justify-content: space-between;
     width: 30vw;
+    
 }
 
 .bot_normas {
     cursor: pointer;
     display: flex;
-    font-family: 'Inter';
+    font-family: 'Karla';
     font-size: 10px;
     font-weight: bold;
     width: 25vw;
@@ -190,6 +335,7 @@ p {
     border-radius: 15px;
     border: 1px solid transparent;
     background: transparent;
+    color: rgb(255, 255, 255);
 
 }
 
@@ -248,7 +394,7 @@ a {
 .bot_conv {
     cursor: pointer;
     display: flex;
-    font-family: 'Inter';
+    font-family:  'San serif';
     font-size: 20px;
     font-weight: bold;
     width: 40vw;
@@ -265,95 +411,113 @@ a {
 }
 
 .titulo_convenio{
-    font-family:'Inter';
+    font-family: 'Karla';
     font: bold;
     font-size: 80px;
 }
 
 /* ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
 
-#estiliza_menu-ramal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40vw;
-    height: 900px;
-}
+
 
 .opc_ramal{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+    height: 450px;
+
 }
 
 .organiza_menu-ramal{
     display: flex;
     flex-direction: row;
-    margin: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40vw;
 }
 
-
-#open{
-    background: green;
-    border-radius: 15px;
-    border: 2px solid #063a1a;
-    box-shadow: 2px 4px 4px rgba(2, 92, 36, 0.75);
-    margin: 10px;
-    color: #000000;
+#iconeramal{
+    width: 2vw;
 }
 
-#open:hover{
-    font-size: 25px;
-    background-color: rgb(250, 246, 2);
-    box-shadow: 20px 30px 30px rgb(0, 255, 13);
-    color: #000000;
-}
-
-#vetor{
-    background: green;
-    border-radius: 15px;
-    border: 2px solid #063a1a;
-    box-shadow: 2px 4px 4px rgba(2, 92, 36, 0.75);
-    margin: 10px;
-    color: #000000;
-}
-
-#vetor:hover{
-    font-size: 25px;
-    background-color: #063372;
-    box-shadow: 20px 30px 30px rgb(0, 255, 13);
-    color: #f8f8f8;
-
-}
-
-#brizza{
-    background: green;
-    border-radius: 15px;
-    border: 2px solid #063a1a;
-    box-shadow: 2px 4px 4px rgba(2, 92, 36, 0.75);
-    margin: 10px;
-    color: #000000;
-}
-
-#brizza:hover{
-    font-size: 25px;
-    background-color: rgb(255, 0, 0);
-    color: #fffdfd;
-    box-shadow: 20px 30px 30px rgb(0, 255, 13);
-}
-
-/* ESTILIZAÇAO PAGINA DE LINK MITSUBISH*/
-
-#estiliza_LinkMit{
+#open,#vetor,#brizza{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1000px;
-    height: 800px;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Karla';
+    font-size:15px;
+    width: 10vw;
+    height: 87px;
+    color: rgb(255, 255, 255);
+    background: #0c408800;
+    border-radius: 10px;
+    border: 1px solid #fdfdfd;
+    margin: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.6);
+    z-index: 1;
 }
 
+#open:hover,#vetor:hover,#brizza:hover{
+    background-color:#045172b4;
+}
+
+#opc-Brizza{
+    display: none;
+}
+/* ESTILIZAÇAO PAGINA DE LINK hYUNDAI*/
+/* ESTILIZAÇAO PAGINA DE LINK MITSUBISH*/
 /* ESTILIZAÇAO PAGINA DE LINK RENAULT*/
 
-#estiliza_LinkRENAULT{
+
+.menu-opc-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40vw;
+
+}
+
+.organizaOpcs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+    height: 450px;
+}
+
+.selecionaOpc-favoritos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Karla';
+    font-size:1vw;
+    width: 10vw;
+    height: 70px;
+    color: rgb(255, 255, 255);
+    background: #0c408800;
+    border-radius: 10px;
+    border: 1px solid #fdfdfd;
+    margin: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.6);
+    z-index: 1;
+   
+}
+
+.selecionaOpc-favoritos:hover{
+    background-color:#045172b4;
+   
+}
+
+
+#estiliza_LinkRENAULT, #estiliza_LinkMit,#estiliza_LinkHYUNDAI{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -361,15 +525,41 @@ a {
     height: 800px;
 }
 
+.img_estrelaopc{
+    width: 1.5vw;
+}
 
-/* ESTILIZAÇAO PAGINA DE LINK hYUNDAI*/
+.pop-up-enunciadoLinks{
+    text-align:center;
+    font-size: 1vw;
+    color: #141414;
 
-#estiliza_LinkHYUNDAI{
+}
+
+.links{
+    margin-top: 30px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    width: 1000px;
-    height: 800px;
+    justify-content: center;
+    width: 100vw;
+}
+
+.titulo_link{
+    font-family: 'Karla';
+    justify-content: center;
+    color:#ececec;
+    font-weight: 900;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.esconde_link{
+    display: none;
+}
+
+.mostra_link{
+    display: 'flex';
 }
 
 .img_estrela{
@@ -378,27 +568,343 @@ a {
 }
 
 .img_estrela:hover{
-    width: 50px;
-    height: 50px;
-    background-color: #ffffff;
+    background-color: #022331bd; 
     border-radius: 5px;
 }
+
 
 .bot_link{
     cursor: pointer;
     display: flex;
-    font-family: 'Inter';
+    font-family: 'Karla';
     font-size: 25px;
-    font-weight: bold;
-    width: 25vw;
+    width: 35vw;
     height: 50px;
     border-radius: 15px;
     border: 1px solid transparent;
     background: transparent;
+    color: #ececec;
 }
 
 .bot_link:hover{
     cursor: pointer;
-    background-color:rgb(255, 255, 255);
+    background-color: #022331bd; 
+    margin: 5px;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.6);
+
 }
 
+
+@media (min-width:200px) and (max-width: 800px){
+.logo-grupo{
+    width: 60vw;
+}
+
+h1{   
+    font-size: 4vw;
+}
+
+.ajuda {
+    display: none;
+}
+
+button{  
+    font-size: 2vw;
+    width: 14vw;
+    height: 60px;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.6);
+    z-index: 1;
+}
+
+#botoes {
+    width: 70vw;
+    height: 450px;
+    border-radius: 5px;
+}
+
+#icone{
+    width: 2vw;
+    
+}
+
+.linha_01, .linha_02, .linha_03 {
+    width: 70vw;
+}
+
+footer{
+    height: 30px;
+    font-size: 1px;  
+    margin-top: 60vw;
+    clear: both;
+}
+
+#contatos{
+    width: 100vw;
+    height: 20px;
+    font-size: 5px;
+}
+
+.rede_social{
+    cursor: pointer;
+    width: 10px;
+}
+
+
+#menu-opc{
+    width: 70vw;
+    height: 450px;
+    border-radius: 5px;
+}
+
+.menu-opc-button{  
+    width: 60vw;  
+}
+
+.organizaOpcs{
+    width: 60vw;
+    height: 450px;
+}
+
+.selecionaOpc-favoritos{
+    font-size:2vw;
+    width: 15vw;
+    border-radius: 5px;
+    border: 1px solid #fdfdfd;
+    margin: 5px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.6);
+    z-index: 1;        
+    
+}   
+
+.img_estrelaopc{
+    width: 3vw;
+}
+
+.pop-up-enunciadoLinks{
+    text-align:center;
+    font-size: 1vw;
+    color: #141414;
+
+}
+
+.links{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.img_estrela{
+    width: 6vw;
+    height: 25px;
+}
+
+
+.bot_link{
+    font-size: 5vw;
+    width: 80vw;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.titulo_link{
+    font-family: 'Karla';
+    justify-content: center;
+    color:#ececec;
+    font-weight: 900;
+    text-align: center;
+    font-size: 6vw;
+}
+
+    /*ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
+
+#estiliza_menu-ramal{
+    width: 70vw;
+    height: 450px;
+    border-radius: 5px;
+}
+
+.opc_ramal{
+    width: 60vw;
+    height: 450px;
+}
+
+.organiza_menu-ramal{
+    width: 60vw;
+}
+
+#iconeramal{
+    width: 2vw;
+
+}
+
+
+.titulo_link{
+    justify-content: center;
+}
+
+#open, #vetor, #brizza{  
+    font-size: 2vw;
+    width: 14vw;
+    height: 60px;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.6);
+    z-index: 1;
+
+}
+
+    
+
+}
+
+
+
+@media (min-width: 1400px){
+
+.logo-grupo{
+    cursor: pointer;
+    width: 600px;
+}
+
+h1{   
+    font-size: 60px;
+}
+
+button{  
+    font-size: 22px;
+    width: 200px;
+    height: 120px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+#botoes,#menu-opc, #estiliza_menu-ramal {
+    width: 900px;
+    height: 850px;
+}
+
+#icone{
+    width: 30px;
+    height: 30px;
+}
+
+.linha_01, .linha_02, .linha_03 {
+    width: 750px;
+}
+
+footer{
+    font-size: 15px;  
+    margin-top: 2vw;
+}
+
+    /*ESTILIZAÇAO PAGINA DE MENU RAMAIS*/
+
+.opc_ramal{
+    width: 800px;
+    height: 600px;
+}
+
+.organiza_menu-ramal{
+    width: 800px;
+}
+
+
+#open, #vetor, #brizza {
+    font-size: 22px;
+    width: 200px;
+    height: 120px;
+    
+}
+
+
+
+
+/* LINKS RENAULT*/
+
+
+.menu-opc-button{
+    width: 100%;
+
+}
+
+.selecionaOpc-favoritos{
+    font-size: 22px;
+    width: 200px;
+    height: 100px; 
+}
+
+.organizaOpcs{
+    width: 750px;
+    height: 800px;
+}
+
+#estiliza_LinkRENAULT, #estiliza_LinkMit,#estiliza_LinkHYUNDAI{
+    width: 1000px;
+    height: 800px;
+}
+
+.img_estrelaopc{
+    width: 25px;
+}
+
+.pop-up-enunciadoLinks{
+    font-size: 20px;
+
+}
+
+.links{
+    width: 100vw;
+}
+
+.titulo_link{
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+}
+
+.img_estrela{
+    width: 40px;
+    height: 40px;
+}
+
+.img_estrela:hover{
+    background-color: #022331bd; 
+    border-radius: 5px;
+}
+
+
+.bot_link{
+    font-size: 25px;
+    width: 400px;
+    height: 60px;
+}
+
+#botao-fechar {
+    bottom: 200px;
+    left: 85%;
+    width: 3vw;
+    
+}
+
+.ajuda {
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+}
+
+.pop-up {
+    position: fixed;
+    width: 25vw;
+    left: 86%;
+    
+}
+
+}

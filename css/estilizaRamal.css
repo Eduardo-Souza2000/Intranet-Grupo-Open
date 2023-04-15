@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+.search {
+    position: relative;
+    
+}
+  
+#search-btn, #search-btnOpenFoz, #search-btnOpenToledo, 
+#search-btnVetCascavel, #search-btnVetCascavel, 
+#search-btnVetfoz, #search-btnVetumuarama, 
+#search-btnbrizza, #search-btngeral {
+    position: static;
+    top: 0;
+    right: 0;
+    width: 4vw;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+  
+#search-btn:hover, #search-btnOpenFoz:hover, #search-btnOpenToledo:hover, 
+#search-btnVetCascavel:hover, #search-btnVetCascavel:hover, 
+#search-btnVetfoz:hover, #search-btnVetumuarama:hover, 
+#search-btngeral:hover,  #search-btnbrizza:hover {
+    background-color:#01223d;
+   
+}
+
+  .fa-search {
+    color: #f8f8f8;
+    font-size: 24px;
+  }
+ 
+
+#search-box, #search-boxOpenFoz,
+#search-boxOpenToledo, #search-boxVetCascavel,
+#search-boxVetfoz,#search-boxVetumuarama, 
+#search-boxbrizza, #search-boxgeral  {
+    position: static;
+    display: flex;
+    width: 20vw;
+    align-items: center;
+    background-color:#011e2b;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2vw;
+}
+  
+  #filtroOpen, #filtroOpenFoz, 
+  #filtroOpenToledo,#filtroVetCascavel, 
+  #filtroFoz,#filtroumuarama, 
+  #filtrobrizza,#filtrogeral {
+    margin-right: 10px;
+    font-size: 16px;
+    background-color: #c7c7e0;
+    color: rgb(0, 0, 0);
+  }
+  
+  #pesquisaOpen, #pesquisaOpenFoz, 
+  #pesquisaOpenToledo, #pesquisaVetCascavel, 
+  #pesquisaFoz,#pesquisaumuarama
+  #pesquisabrizza, #pesquisageral {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: #c7d0e0;
+    font-size: 16px;
+    color:black;
+  }
+  
+  
+
+
+/* -------------------------------------------------------------------------------------------------------*/
+#titulo_ramal-open,#titulo_ramal-vetor, #titulo_ramal-briza{
+    width: 70vw;
+    background-color:  rgb(0, 4, 7);
+    color: #f8f8f8;
+    font-family: 'Karla';
+    font-size: 25px;
+}
+
+#table_vetor, #table_vetorFoz,
+#table_vetorUmuarama, #table_open,
+#table_openFoz, #table_openToledo,
+#table_brizza, #table_openOpenSemiNovos, #table_Geral{
+    width: 80vw;
+    border-spacing: 4px;
+}
+
+td{
+    align-items: center;
+    font-family: 'Karla';
+    color: #ffffff;
+    font-weight:normal;
+    font-size:1.5vw;
+    background-color: #809ba749;  
+    border-bottom: 1px solid #fffFff;
+    padding: 0.5%;  
+}
+
+
+tr:hover {
+    background-color:#011e2b;
+    color: #fffFff; 
+}
+
+.titulo_tabela {
+    display: flex;
+    font-family: 'Karla';
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 40px;
+    color: #fffFff;
+    justify-content: center;
+}
+
+
+
+@media  (min-width:320px ) and (max-width: 800px) {
+
+    .search {
+        margin-bottom: 2vw;
+    }
+        
+    #search-btn {
+        width: 5vw;
+        height: 20px;
+    }
+        
+    #search-box {
+    width: 60vw;
+    height: 20px;
+    }
+    
+    .fa-search {
+        color: #fffefe;
+        font-size: 16px;
+    }
+
+    #filtroOpen {
+    width: 30vw;
+    height: 20px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    }
+    
+    #pesquisaOpen {
+    width: 30vw;
+    height: 20px;
+    padding: 2px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 14px;
+    color:black;
+    }
+
+    #titulo_ramal-open,#titulo_ramal-vetor, #titulo_ramal-briza{
+        width: 6vw;
+        font-size: 10px;
+    }
+    
+    td{
+        width: 5vw;
+        font-size: 1.5vw;
+        
+    }
+
+    
+    caption{
+        font-size: 17px;
+    }
+        
+    #table_vetor, #table_vetorFoz,
+    #table_vetorUmuarama, #table_open,
+    #table_openFoz, #table_openToledo,
+    #table_brizza, #table_openOpenSemiNovos, #table_Geral{
+        width: 80vw;
+        border-spacing: 1px;
+    }
+    
+    
+}
