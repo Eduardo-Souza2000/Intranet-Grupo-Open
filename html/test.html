@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Intranet Grupo Open</title>
+    <link rel="icon" href="../img/logo-grupo.png">
+</head>
+<body>
+    <h1>Lista de Ramais</h1>
+    <form action="/ramais" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" name="numero" required>
+        <label for="departamento">Departamento:</label>
+        <input type="text" id="departamento" name="departamento" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="loja">Loja:</label>
+        <input type="text" id="loja" name="loja" required>
+        <button type="submit">Salvar</button>
+    </form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Número</th>
+                <th>Departamento</th>
+                <th>E-mail</th>
+                <th>Loja</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="ramal : ${ramais}">
+                <td th:text="${ramal.nome}"></td>
+                <td th:text="${ramal.numero}"></td>
+                <td th:text="${ramal.departamento}"></td>
+                <td th:text="${ramal.email}"></td>
+                <td th:text="${ramal.loja}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
