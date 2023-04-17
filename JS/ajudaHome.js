@@ -12,3 +12,8 @@ var botaoFechar = document.getElementById("botao-fechar");
 botaoFechar.addEventListener("click", function() {
   popUpAjuda.style.display = "none";
 });
+
+
+
+
+
