@@ -39,6 +39,7 @@ function ordenarTabela() {
 
   /* ORGANIZA TABELA EM ORDEM ALFABETICA, TABELA OPEN FOZ*/
   function ordenarTabelaopenFoz() {
+    window.alert("Olá, informamos que a concessionária Renault Foz está passando por reformas atualmente. Caso necessite falar com algum vendedor de veículos, por favor entre em contato pelos ramais 301 e 324. Agradecemos a compreensão.");
     var tabela, linhas, i, x, y, trocado;
     tabela = document.getElementById("table_openFoz");
     trocado = true;
