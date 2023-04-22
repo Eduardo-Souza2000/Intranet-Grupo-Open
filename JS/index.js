@@ -8,8 +8,7 @@ botinfoo.addEventListener("click", alerta);
 let botinfo = document.getElementById("informativo");
 botinfo.addEventListener("click", alerta);
 
-let bothyundai = document.getElementById("links-hyundai");
-bothyundai.addEventListener("click", alerta);
+
 
 let botmit = document.getElementById("links-mitsubich");
 botmit.addEventListener("click", alerta);
