@@ -549,10 +549,10 @@ a {
 .titulo_link{
     font-family: 'Karla';
     justify-content: center;
-    color:#ececec;
-    font-weight: 900;
     text-align: center;
     font-size: 2.5vw;
+    font: bold;
+    color: #f8f8f8;
 }
 
 .esconde_link{
