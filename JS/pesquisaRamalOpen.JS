@@ -85,6 +85,7 @@ const tableRowsOpen = document.getElementById("table_open").getElementsByTagName
 	});
 
 
+	
 
 /*
 	// adiciona um listener de eventos ao botão para limpar o filtro
