@@ -1,21 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 div{ width: 960px; height:600px; margin: 0 auto; position: relative; }
 
 .caixa{
-  width: 200px;
+  width: 150px;
   height: 100px; 
   background: #6b5cf3;
   margin: 0 auto;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 3px solid #575656;
 }
 
 #botao_organolista{
-    width: 200px;
-    height: 100px; 
+    width: 100px;
+    height: 50px; 
     background: #6b5cf3;
     margin: 0 auto;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 3px solid #575656;
 }
 
@@ -25,24 +26,140 @@ div{ width: 960px; height:600px; margin: 0 auto; position: relative; }
 
 
 p{
-  font-size: 5pt;
-  text-align: center;  
-  font-family:arial;
-  padding: 10px;
+  padding: 0%;
+  align-items: center;
 }
+
+
+.ceo{
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0%;
+  width: 120px;
+  height: 70px;
+  font-size: 10px;
+  background: #6b5cf3;
+}
+
 
 .financeiro{
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0%;
+  width: 120px;
+  height: 70px;
+  margin: 0%;
+  font-size: 10px;
+  background: #6b5cf3;
   position: absolute;
-  top: 150px;
-  left: 100px;
+  top: 200px;
+  left: 120px;
 }
 
-.contabilidade{
+.financeiro-garantia{
+  
   position: absolute;
-  top: -4px;
-  left: 515px;
-  z-index:1;
+  top: 150px;
+  left: -90px;
 }
+
+.financeiro-ti{
+  position: absolute;
+  top: 150px;
+  left:80px;
+}
+
+.financeiro-faturamento{
+  position: absolute;
+  top: 250px;
+  left:80px;
+}
+
+.financeiro-fei{
+  position: absolute;
+  top: 250px;
+  left: -90px;
+}
+
+.financeiro-financeiro{
+  position: absolute;
+  top: 350px;
+  left:-10px;
+}
+
+
+
+
+
+
+
+.contabilidade{
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0%;
+  width: 120px;
+  height: 70px;
+  margin: 0%;
+  font-size: 10px;
+  background: #6b5cf3;
+  position: absolute;
+  top: 200px;
+  left: 300px;
+}
+
+.rh{
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0%;
+  width: 120px;
+  height: 70px;
+  margin: 0%;
+  font-size: 10px;
+  background: #6b5cf3;
+  position: absolute;
+  top: 200px;
+  left: 460px;
+}
+
+.dho{
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0%;
+  width: 120px;
+  height: 70px;
+  margin: 0%;
+  font-size: 10px;
+  background: #6b5cf3;
+  position: absolute;
+  top: 200px;
+  left: 620px;
+}
+
+.marketing{
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  height: 70px;
+  font-size: 10px;
+  background: #6b5cf3;
+  position: absolute;
+  top: 200px;
+  left: 780px;
+}
+
+
 
 .ti-cont{
    position: absolute;
@@ -81,6 +198,7 @@ p{
   border-radius: 10px;
   margin: -10px auto;
 }
+
 
 
 
@@ -125,13 +243,24 @@ p{
 
 .linha_vertical{
   width: 6px;
-  height: 90px;
+  height: 80px;
   background-color: #b3b2b2;
   display: block;
-  margin: 10px auto;
+  margin: -0px auto;
   position: relative;
 }
 
+
+
+.linha_vertical-fin{
+  width: 6px;
+  height: 100px;
+  background-color: #b3b2b2;
+  display: block;
+  margin: 30px auto;
+  position: absolute;
+  left: 100px;
+}
 
 
 .v-line-small{
@@ -150,15 +279,18 @@ p{
 }
 
 .linha_horizantal{
-  width: 295px;
+  width: 600px;
   height: 6px;
   background-color: #b3b2b2;
   display: block;
   position: absolute;
   top: 44px;
-  left: 208px;
+  left: 100px;
   
 }
+
+
+
 
 .h-line-big{
   position: absolute;
@@ -177,7 +309,7 @@ p{
   display: block;
   border: 2px solid orange;
   border-radius: 10px;
-  margin: -0px auto;
+  margin: -10px auto;
   margin-top: 10px;
 }
 
@@ -189,3 +321,48 @@ p{
     margin: 0px auto;
     position: relative;
 }
+
+/* CEO*/
+
+.ponto_cima-ceo{
+  width: 10px;
+  height: 10px;
+  background-color: #ededed;
+  display: block;
+  border: 2px solid orange;
+  border-radius: 10px;
+  margin: 0px auto;
+}
+
+.linha_horizantal-ceo{
+  align-items: center;
+  width: 800px;
+  height: 6px;
+  background-color: #b3b2b2;
+  display: block;
+  position: absolute;
+  top: 250px;
+  left: 100px;
+}
+
+.linha_vertical-ceo--fin{
+  width: 6px;
+  height:120px;
+  background-color: #b3b2b2;
+  display: block;
+  margin: 0px auto;
+  position: absolute;
+  left: 100px;
+}
+
+.ponto_cima-ceo--financeiro{
+  width: 10px;
+  height: 10px;
+  background-color: #ededed;
+  display: block;
+  border: 2px solid orange;
+  border-radius: 10px;
+  margin: 84px auto;
+  position: absolute;
+  left: -4px;
+ }
