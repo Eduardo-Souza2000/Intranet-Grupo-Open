@@ -10,6 +10,7 @@ var data = {
         {
           id: "11",
           name: "Gerente 1",
+          children:[]
         },
         {
           id: "111",
@@ -17,11 +18,13 @@ var data = {
           children: [
             {
               id: "1111",
-              name: "Coordenador 1"
+              name: "Coordenador 1",
+              children:[]
             },
             {
               id: "1112",
-              name: "Coordenador 2"
+              name: "Coordenador 2",
+              children:[]
             }
           ]
         }
@@ -33,21 +36,25 @@ var data = {
       children: [
         {
           id: "21",
-          name: "Coordenador 3"
+          name: "Coordenador 3",
+          children:[]
         },
         {
           id: "22",
-          name: "Coordenador 4"
+          name: "Coordenador 4",
+          children:[]
         }
         ,
         {
           id: "23",
-          name: "Coordenador 4"
+          name: "Coordenador 4",
+          children:[]
         }
         ,
         {
           id: "24",
-          name: "Coordenador 4"
+          name: "Coordenador 4",
+          children:[]
         }
 
       ]
@@ -59,18 +66,22 @@ var data = {
         {
           id: "31",
           name: "Andressa",
+          children:[]
         },
         {
           id: "32",
           name: "Silvana",
+          children:[]
         },
         {
           id: "33",
           name: "Gerente 1",
+          children:[]
         },
         {
           id: "34",
           name: "Gerente 2",
+          children:[]
         },
 
         
@@ -83,6 +94,7 @@ var data = {
       {
         id: "41",
         name: "Gerente 1",
+        children:[]
       },
       {
         id: "42",
@@ -90,11 +102,13 @@ var data = {
         children: [
           {
             id: "421",
-            name: "Coordenador 1"
+            name: "Coordenador 1",
+            children:[]
           },
           {
             id: "422",
-            name: "Coordenador 2"
+            name: "Coordenador 2",
+            children:[]
           }
         ]
       }
@@ -117,11 +131,13 @@ var data = {
           children: [
             {
               id: "coordenador1",
-              name: "Coordenador 1"
+              name: "Coordenador 1",
+              children:[]
             },
             {
               id: "coordenador2",
-              name: "Coordenador 2"
+              name: "Coordenador 2",
+              children:[]
             }
           ]
         }
@@ -138,6 +154,17 @@ var data = {
 var st = new $jit.ST({
   // Define o container onde o organograma será criado
   injectInto: "organograma",
+
+  duration: 800,  
+
+  transition: $jit.Trans.Quart.easeInOut,
+
+  levelDistance: 50,  
+    //enable panning  
+    Navigation: {  
+      enable:true,  
+      panning:true  
+    },
   // Define os dados do organograma
   root: data,
   // Define o estilo dos nós
@@ -159,15 +186,7 @@ var st = new $jit.ST({
     type: "bezier",
     overridable: true
   },
-  // Define o estilo dos nós selecionados
-  // Nós selecionados terão um fundo branco e borda azul
-  NodeStyles: {
-    selected: {
-      lineWidth: 2,
-      fillColor: "#fff",
-      strokeColor: "#00f"
-    }
-  },
+  
   // Define o comportamento de seleção de nós
   // Quando um nó for selecionado, exibir seus filhos
   // Quando um nó for deselecionado, esconder seus filhos
@@ -205,14 +224,14 @@ var st = new $jit.ST({
     label.id = node.id;
     label.innerHTML = node.name;
     label.onclick = function() {
-      st.onClick(node.id);
+      if(normal.checked) {  
+        st.onClick(node.id);  
+      } else {  
+      st.setRoot(node.id, 'animate');  
+      }  
     };
-    label.onmouseover = function() {
-      if (node && node.children && node.children.length > 0) {
-        node.collapsed = false;
-        st.refresh();
-      }
-    };
+
+    
   }
 });
 
