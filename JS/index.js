@@ -9,10 +9,6 @@ let botinfo = document.getElementById("informativo");
 botinfo.addEventListener("click", alerta);
 
 
-
-let botmit = document.getElementById("links-mitsubich");
-botmit.addEventListener("click", alerta);
-
 let botnormas = document.getElementById("normas");
 botnormas.addEventListener("click", alerta);
 
