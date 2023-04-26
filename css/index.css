@@ -3,26 +3,6 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 
-#organograma {
-    width: 800px;
-    top: 0px;
-    height: 1000px;
-    margin: 0 auto;
-    
-}
-
- 
-
-
-
-
-
-
-
-
-
-
-
 /* ESTILIZA PAGINA SOOBRE NOS*/ 
 #estiliza-Historia{
     display: flex;
