@@ -252,6 +252,10 @@ button:hover{
     padding: 0.25vw;
 }
 
+#icone-organograma{
+    width: 2.5vw;
+    padding: 0.25vw;
+}
 
 
 .linha_01, .linha_02, .linha_03 {
