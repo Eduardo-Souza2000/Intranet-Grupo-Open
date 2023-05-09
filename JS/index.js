@@ -9,10 +9,10 @@ let botinfo = document.getElementById("informativo");
 botinfo.addEventListener("click", alerta);
 
 
-let botnormas = document.getElementById("normas");
-botnormas.addEventListener("click", alerta);
+//let botnormas = document.getElementById("normas");
+//botnormas.addEventListener("click", alerta);
 
-let botcon = document.getElementById("convenio");
+let botcon = document.getElementById("organograma");
 botcon.addEventListener("click", alerta);
 
 // Função que exibe uma janela de alerta com o texto "Em Desenvolvimento
@@ -25,7 +25,7 @@ function alerta(){
 // Cria um objeto com os IDs dos elementos HTML navegáveis
 const targetIds = {
     'ramal': 'ponto-mais',
-    'convenio': 'normas',
+    'organograma': 'normas',
     'sobre-Nos': 'section-contato'
   };
   
