@@ -8,10 +8,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 60vw;
     text-align: justify;
-    font-size: 4vw;
+    font-size: 3vw;
     color: #f3f0e1;
+    background-color: #022331bd; 
+    border-radius: 10PX;
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.4);
+    font-weight: 300;
 }
 
 .historia{
@@ -37,6 +41,9 @@
     font-size: 3vw;
 }
 
+video{
+    margin: 2vw;
+}
 
 
 
