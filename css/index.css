@@ -393,6 +393,37 @@ a {
 }
 
 /* ESTILIZAÇAO PAGINA DE organograma*/
+.titulo_intranet-organograma{
+    font-size: 2vw;
+    font-family: 'Karla';
+}
+
+
+#button_organograma{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Karla';
+    font-size:1vw;
+    width: 9vw;
+    height: 90px;
+    color: rgb(255, 255, 255);
+    background: #0c408800;
+    border-radius: 10px;
+    border: 1px solid #fdfdfd;
+    margin: 20px;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.6);
+    z-index: 1;
+
+}
+
+#button_organograma:hover{
+    background-color:#045172b4;
+   
+}
+
 
 .organograma{
     margin-top: 30px;
