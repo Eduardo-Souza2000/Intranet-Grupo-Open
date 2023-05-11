@@ -1,8 +1,8 @@
 // Seleciona os elementos HTML com os IDs correspondentes e adiciona um evento de clique a eles que executa a função 'alerta'
 
 
-let botinfoo = document.getElementById("sobre-nos");
-botinfoo.addEventListener("click", alerta);
+//let botinfoo = document.getElementById("sobre-nos");
+//botinfoo.addEventListener("click", alerta);
 
 
 let botinfo = document.getElementById("informativo");

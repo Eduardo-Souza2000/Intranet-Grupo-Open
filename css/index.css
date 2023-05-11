@@ -23,7 +23,7 @@
     width: 50vw;
     font-size: 1.5vw;
     color: #fdfdfd;
-    margin: 3px;
+    margin: 1px;
 }
 
 .lista_historia{
@@ -957,7 +957,7 @@ footer{
 
 .bot_link{
     font-size: 25px;
-    width: 400px;
+    width: 550px;
     height: 60px;
 }
 
