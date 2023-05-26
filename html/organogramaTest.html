@@ -44,109 +44,28 @@
     layout: new go.TreeLayout({ angle: 90, layerSpacing: 50 })
   });
 
-
-/*
-        var nodeDataArray = [
-            {key: "Conselho Diretor/Socios", collor: "line"}, 
-            {key: "Alexandre Serra", collor: "cyan"},
-            {key: "Viviane de Morais",collor: "cyan"},
-            {key: "Fernanda Daniel",collor: "cyan"},
-            {key: "Aline",collor: "cyan"},
-            {key: "Leonardo",collor: "cyan"},
-            {key: "Pablo",collor: "cyan"},
-            {key: "Katia",collor: "cyan"},
-            {key: "Matheus",collor: "cyan"},
-            {key:"Lucas",collor: "cyan"},
-            {key: "Priscila",collor: "cyan"},
-            {key: "Bruna Iembo",collor: "cyan"},
-            {key: "Rosana",collor: "cyan"},
-            {key: "Edina",collor: "cyan"},
-            {key: "Julia",collor: "cyan"},
-            {key: "Divaldo",collor: "cyan"},
-            {key: "Nicolas",collor: "cyan"},
-            {key: "Eduardo",collor: "cyan"},
-            {key: "Antonio",collor: "cyan"},
-            {key: "Elizandra",collor: "cyan"},
-            {key: "Dyohana",collor: "cyan"},
-            {key: "Andressa",collor: "cyan"},
-            {key: "Evelyn",collor: "cyan"},
-            {key: "julia",collor: "cyan"},
-            {key: "Claudimar",collor: "cyan"},
-
-        ];*/
-
-        /*
-        //usado para linkcar as pessoas uma com a outra
-        var linkDataArray = [
-            { to: "Conselho Diretor/Socios", from: "Alexandre Serra", collor: "red"},
-            { to: "Alexandre Serra", from: "Viviane de Morais"},
-            { to: "Viviane de Morais", from: "Fernanda Daniel"},
-            { to: "Fernanda Daniel", from: "Leonardo"},
-            { to: "Fernanda Daniel", from: "Aline"},
-            { to: "Fernanda Daniel", from: "Pablo"},
-            { to: "Viviane de Morais", from: "Katia"},
-            { to: "Katia", from: "Matheus"},
-            { to: "Katia", from: "Lucas"},
-            { to: "Viviane de Morais", from: "Priscila"},
-            { to: "Priscila", from: "Bruna Iembo"},
-            { to: "Priscila", from: "Rosana"},
-            { to: "Priscila", from: "Edina"},
-            { to: "Priscila", from: "Julia"},
-            { to: "Viviane de Morais", from: "Divaldo"},
-            { to: "Divaldo", from: "Eduardo"},
-            { to: "Divaldo", from: "Nicolas"},
-            { to: "Viviane de Morais", from: "Antonio"},
-            { to: "Antonio", from: "Elizandra"},
-            { to: "Antonio", from: "Dyohana"},
-            { to: "Antonio", from: "Andressa"},
-            { to: "Antonio", from: "Evelyn"},
-            { to: "Evelyn", from: "julia"},
-            { to: "Evelyn", from: "Claudimar"}
-
-        ];*/
-
-
-        //meuDiagrama.model = new go.GraphLinksModel(nodeDataArray,linkDataArray);
-
-        /*meuDiagrama.nodeTemplate = 
-            $(go.Node, "Auto",
-                $(go.Shape, "RoundedRectangle", { fill: "white"},
-                    new go.Binding("fill", "collor")),
-
-                $(go.TextBlock, "text", {margin: 10},
-                    new go.Binding("text", "key")
-                )
-        );*/
-
-        
             
 
+    meuDiagrama.nodeTemplate =
+    new go.Node("Horizontal",
+            $(go.Shape, "RoundedRectangle", { fill: "white"},
+                new go.Binding("background")))
+
+        .add(new go.Picture(
+            { margin: 10, width: 50, height: 50})
+            .bind("source"))
+        .add(new go.TextBlock("Default Text",
+            { margin: 12, stroke: "white", font: "bold 16px sans-serif" })
+            .bind("text", "name"));
+
+
+    meuDiagrama.linkTemplate = 
+        new go.Link(
+            { routing: go.Link.Orthogonal, corner: 5 })
+                // the link path, a Shape
+                .add(new go.Shape({ strokeWidth: 3, stroke: "#555" }));
             
-
-            meuDiagrama.nodeTemplate =
-            new go.Node("Horizontal",
-                    $(go.Shape, "RoundedRectangle", { fill: "white"},
-                        new go.Binding("background")))
-
-                .add(new go.Picture(
-                    { margin: 10, width: 50, height: 50})
-                    .bind("source"))
-                .add(new go.TextBlock("Default Text",
-                    { margin: 12, stroke: "white", font: "bold 16px sans-serif" })
-                    .bind("text", "name"));
-
-
-            meuDiagrama.linkTemplate = 
-                new go.Link(
-                    { routing: go.Link.Orthogonal, corner: 5 })
-                        // the link path, a Shape
-                        .add(new go.Shape({ strokeWidth: 3, stroke: "#555" }));
             
-            /*  $(go.Shape,{strokeWidth: 3},
-                new go.Binding("stroke", "color")),
-            $(go.Shape,{toArrow: "Standard", stroke: null},
-                new go.Binding("fill", "collor") )
-        );*/
 
         
 
