@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Intranet Grupo Open</title>
+    <link rel="icon" href="../img/logo-grupo.png">
+    <script src="/BibliotecaJS/site/release/go.js"></script>
+    <script src="/BibliotecaJS/site/release/go-debug-module.js"></script>
+    <script src="/BibliotecaJS/site/release/go-debug.js"></script>
+    <script src="/BibliotecaJS/site/release/go-module.js"></script>
+
+    <script>
+        function init(){
+            //atribuimos a $ para ficar mais simples de chamar depois 
+            var $ = go.GraphObject.make
+            meuDiagrama = $(go.Diagram,"meudiagrama");
+
+            var nodeDataArray = [
+                {key: "eduardo"}, 
+                {key: "Samuel"},
+                {key: "Mickelly"},
+                {key: "Aline"},
+            ];
+
+            
+            //usado para linkcar as pessoas uma com a outra
+            var linkDataArray = [
+                { to: "Samuel", from: "eduardo"},
+                { to: "Aline", from: "eduardo"},
+                { to: "Mickelly", from: "eduardo"}
+        
+            ];
+
+
+            meuDiagrama.model = new go.GraphLinksModel(nodeDataArray,linkDataArray)
+
+        }
+    </script>
+
+
+</head>
+
+<body id="principal" onload="init()">
+    <header>
+        <a href="../html/home.html"> <img class="logo-grupo" src="../img/logo-grupo.png" alt="Logo"></a>   
+    </header>
+
+
+    <main>
+        <div id="meudiagrama"></div>
+    </main>
+
+
+    <footer>
+
+        <section id="contatos">
+    
+            <div class="redes_sociais">
+            
+                <section class="contato_img">
+                    <a href="https://www.linkedin.com/in/eduardo-souza-0b471a241/"><img class="rede_social" src="../img/Linkedin.png" alt="Linkedin"></a>
+                    <a href="https://github.com/Eduardo-Souza2000"><img class="rede_social" src="../img/Git.png" alt="Linkedin"></a>
+                    
+                </section>
+                
+                <p>&copy; 2023 Desenvolvido por Eduardo Souza. Todos os direitos reservados. </p>
+            </div>
+        
+        </section>
+      
+    </footer>
+
+
+    
+    
+    
+</body>
