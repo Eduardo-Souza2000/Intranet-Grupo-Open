@@ -10,39 +10,12 @@
     <link rel="stylesheet" href="../css/index.css">
     <title>Intranet Grupo Open</title>
     <link rel="icon" href="../img/logo-grupo.png">
+    <script src="https://unpkg.com/gojs/release/go-debug.js"></script>
     <script src="/BibliotecaJS/site/release/go.js"></script>
     <script src="/BibliotecaJS/site/release/go-debug-module.js"></script>
     <script src="/BibliotecaJS/site/release/go-debug.js"></script>
     <script src="/BibliotecaJS/site/release/go-module.js"></script>
-
-    <script>
-        function init(){
-            //atribuimos a $ para ficar mais simples de chamar depois 
-            var $ = go.GraphObject.make
-            meuDiagrama = $(go.Diagram,"meudiagrama");
-
-            var nodeDataArray = [
-                {key: "eduardo"}, 
-                {key: "Samuel"},
-                {key: "Mickelly"},
-                {key: "Aline"},
-            ];
-
-            
-            //usado para linkcar as pessoas uma com a outra
-            var linkDataArray = [
-                { to: "Samuel", from: "eduardo"},
-                { to: "Aline", from: "eduardo"},
-                { to: "Mickelly", from: "eduardo"}
-        
-            ];
-
-
-            meuDiagrama.model = new go.GraphLinksModel(nodeDataArray,linkDataArray)
-
-        }
-    </script>
-
+    <script src="/BibliotecaJS/site/extensions/"></script>
 
 </head>
 
@@ -55,6 +28,154 @@
     <main>
         <div id="meudiagrama"></div>
     </main>
+
+
+    <script>
+
+        function init(){
+            //atribuimos a $ para ficar mais simples de chamar depois 
+        var $ = go.GraphObject.make
+            /*meuDiagrama = $(go.Diagram,"meudiagrama");*/
+        meuDiagrama = 
+            $(go.Diagram,"meudiagrama",{
+    "undoManager.isEnabled": true,
+    layout: new go.TreeLayout({ angle: 90, layerSpacing: 35 })
+  });
+
+
+/*
+        var nodeDataArray = [
+            {key: "Conselho Diretor/Socios", collor: "line"}, 
+            {key: "Alexandre Serra", collor: "cyan"},
+            {key: "Viviane de Morais",collor: "cyan"},
+            {key: "Fernanda Daniel",collor: "cyan"},
+            {key: "Aline",collor: "cyan"},
+            {key: "Leonardo",collor: "cyan"},
+            {key: "Pablo",collor: "cyan"},
+            {key: "Katia",collor: "cyan"},
+            {key: "Matheus",collor: "cyan"},
+            {key:"Lucas",collor: "cyan"},
+            {key: "Priscila",collor: "cyan"},
+            {key: "Bruna Iembo",collor: "cyan"},
+            {key: "Rosana",collor: "cyan"},
+            {key: "Edina",collor: "cyan"},
+            {key: "Julia",collor: "cyan"},
+            {key: "Divaldo",collor: "cyan"},
+            {key: "Nicolas",collor: "cyan"},
+            {key: "Eduardo",collor: "cyan"},
+            {key: "Antonio",collor: "cyan"},
+            {key: "Elizandra",collor: "cyan"},
+            {key: "Dyohana",collor: "cyan"},
+            {key: "Andressa",collor: "cyan"},
+            {key: "Evelyn",collor: "cyan"},
+            {key: "julia",collor: "cyan"},
+            {key: "Claudimar",collor: "cyan"},
+
+        ];*/
+
+        /*
+        //usado para linkcar as pessoas uma com a outra
+        var linkDataArray = [
+            { to: "Conselho Diretor/Socios", from: "Alexandre Serra", collor: "red"},
+            { to: "Alexandre Serra", from: "Viviane de Morais"},
+            { to: "Viviane de Morais", from: "Fernanda Daniel"},
+            { to: "Fernanda Daniel", from: "Leonardo"},
+            { to: "Fernanda Daniel", from: "Aline"},
+            { to: "Fernanda Daniel", from: "Pablo"},
+            { to: "Viviane de Morais", from: "Katia"},
+            { to: "Katia", from: "Matheus"},
+            { to: "Katia", from: "Lucas"},
+            { to: "Viviane de Morais", from: "Priscila"},
+            { to: "Priscila", from: "Bruna Iembo"},
+            { to: "Priscila", from: "Rosana"},
+            { to: "Priscila", from: "Edina"},
+            { to: "Priscila", from: "Julia"},
+            { to: "Viviane de Morais", from: "Divaldo"},
+            { to: "Divaldo", from: "Eduardo"},
+            { to: "Divaldo", from: "Nicolas"},
+            { to: "Viviane de Morais", from: "Antonio"},
+            { to: "Antonio", from: "Elizandra"},
+            { to: "Antonio", from: "Dyohana"},
+            { to: "Antonio", from: "Andressa"},
+            { to: "Antonio", from: "Evelyn"},
+            { to: "Evelyn", from: "julia"},
+            { to: "Evelyn", from: "Claudimar"}
+
+        ];*/
+
+
+        //meuDiagrama.model = new go.GraphLinksModel(nodeDataArray,linkDataArray);
+
+        /*meuDiagrama.nodeTemplate = 
+            $(go.Node, "Auto",
+                $(go.Shape, "RoundedRectangle", { fill: "white"},
+                    new go.Binding("fill", "collor")),
+
+                $(go.TextBlock, "text", {margin: 10},
+                    new go.Binding("text", "key")
+                )
+        );*/
+
+        
+            
+
+            
+
+            meuDiagrama.nodeTemplate =
+            new go.Node("Horizontal",
+                { background: "#44CCFF" })
+                .add(new go.TextBlock("Default Text",
+                    { margin: 12, stroke: "white", font: "bold 16px sans-serif" })
+                    .bind("text", "name"));
+
+
+            meuDiagrama.linkTemplate = 
+                new go.Link(
+                    { routing: go.Link.Orthogonal, corner: 5 })
+                        // the link path, a Shape
+                        .add(new go.Shape({ strokeWidth: 3, stroke: "#555" }));
+            
+            /*  $(go.Shape,{strokeWidth: 3},
+                new go.Binding("stroke", "color")),
+            $(go.Shape,{toArrow: "Standard", stroke: null},
+                new go.Binding("fill", "collor") )
+        );*/
+
+        meuDiagrama.model = new go.TreeModel(
+            [
+                { key: "1",              name: "Conselho Diretor/Socios" },
+                { key: "2", parent: "1", name: "Alexandre Serra",    source: "cat2.png" },
+                { key: "3", parent: "2", name: "Viviane de Moraes",   source: "cat3.png" },
+                { key: "4", parent: "3", name: "Fernanda", source: "cat4.png" },
+                { key: "4.1", parent: "4", name: "Aline", source: "cat4.png" },
+                { key: "4.1", parent: "4", name: "Leonardo", source: "cat4.png" },
+                { key: "4.1", parent: "4", name: "Pablo", source: "cat4.png" },
+                { key: "5", parent: "3", name: "Divaldo",     source: "cat5.png" },
+                { key: "5.1", parent: "5", name: "Eduardo",     source: "cat5.png" },
+                { key: "5.1", parent: "5", name: "Nicolas",     source: "cat5.png" },
+                { key: "6", parent: "3", name: "Priscila", source: "cat6.png" },
+                { key: "6.1", parent: "6", name: "Bruna Iembo", source: "cat6.png" },
+                { key: "6.1", parent: "6", name: "Edina", source: "cat6.png" },
+                { key: "6.1", parent: "6", name: "Rosana", source: "cat6.png" },
+                { key: "6.1", parent: "6", name: "Julia", source: "cat6.png" },
+                { key: "7", parent: "3", name: "Katia", source: "cat6.png" },
+                { key: "7.1", parent: "7", name: "Matheus", source: "cat6.png" },
+                { key: "7.1", parent: "7", name: "Lucas", source: "cat6.png" },
+                { key: "8", parent: "3", name: "Antonio", source: "cat6.png" },
+                { key: "8.1", parent: "8", name: "Elizandra", source: "cat6.png" },
+                { key: "8.1", parent: "8", name: "Dyohana", source: "cat6.png" },
+                { key: "8.1", parent: "8", name: "Andressa", source: "cat6.png" },
+                { key: "8.2", parent: "8", name: "Evelyn", source: "cat6.png" },
+                { key: "8.2.1", parent: "8.2", name: "Julia", source: "cat6.png" },
+                { key: "8.2.1", parent: "8.2", name: "Claudimar", source: "cat6.png" },
+                
+            ]);
+
+    }
+    
+    </script>
+
+
 
 
     <footer>
