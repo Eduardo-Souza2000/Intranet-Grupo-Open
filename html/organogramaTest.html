@@ -16,13 +16,14 @@
     <script src="/BibliotecaJS/site/release/go-debug.js"></script>
     <script src="/BibliotecaJS/site/release/go-module.js"></script>
     <script src="/BibliotecaJS/site/extensions/"></script>
+    <script src="https://unpkg.com/gojs/release/go.js"></script>
 
 </head>
 
 <body id="principal" onload="init()">
     <header>
         <a href="../html/home.html"> <img class="logo-grupo" src="../img/logo-grupo.png"  alt="Logo"></a>  
-        <h1> Organograma Administrativo Grupo Open</h1> 
+        <h1> Organograma administrativo Grupo Open</h1> 
     </header>
 
 
@@ -31,23 +32,36 @@
         <div id="meudiagrama"></div>
     </main>
 
-
+<!--
     <script>
+
+        /*
+        A go.GraphObject.makefunção é atribuída à variável $. 
+        Isso é feito para simplificar o uso da biblioteca GoJS.
+        Uma instância de go.Diagramé criada e atribuída à variável meuDiagrama. 
+        Está associado ao elemento HTML com o id "meudiagrama".
+        O diagrama é configurado com um gerenciador de desfazer e um layout de árvore.
+        */
 
         function init(){
             //atribuimos a $ para ficar mais simples de chamar depois 
         var $ = go.GraphObject.make
-            /*meuDiagrama = $(go.Diagram,"meudiagrama");*/
+    
         meuDiagrama = 
             $(go.Diagram,"meudiagrama",{
-    "undoManager.isEnabled": true,
-    layout: new go.TreeLayout({ angle: 90, layerSpacing: 50 })
-  });
+            "undoManager.isEnabled": true,
+            layout: new go.TreeLayout({ angle: 90, layerSpacing: 50 })
+        });
 
-            
+        /*
+        O modelo de nó do diagrama é definido.
+        Consiste em um layout horizontal com uma forma de retângulo arredondado, uma imagem e um bloco de texto.
+        A cor de preenchimento da forma está vinculada à propriedade "fundo" dos dados do nó.
+        A fonte da imagem está ligada à propriedade "source" dos dados do nó.
+        O texto do bloco de texto está vinculado à propriedade "nome" dos dados do nó.*/
 
-    meuDiagrama.nodeTemplate =
-    new go.Node("Horizontal",
+        meuDiagrama.nodeTemplate =
+        new go.Node("Horizontal",
             $(go.Shape, "RoundedRectangle", { fill: "white"},
                 new go.Binding("background")))
 
@@ -58,67 +72,171 @@
             { margin: 12, stroke: "white", font: "bold 16px sans-serif" })
             .bind("text", "name"));
 
+        /*
+        O modelo de link do diagrama é definido.
+        Consiste em um link ortogonal com cantos arredondados.
+        O caminho do link é definido usando uma forma com uma cor de traço de "#555".
+         */
 
-    meuDiagrama.linkTemplate = 
-        new go.Link(
-            { routing: go.Link.Orthogonal, corner: 5 })
+        meuDiagrama.linkTemplate = 
+            new go.Link(
+             { routing: go.Link.Orthogonal, corner: 5 })
                 // the link path, a Shape
                 .add(new go.Shape({ strokeWidth: 3, stroke: "#555" }));
             
             
 
-        
+        /*
+        O modelo do diagrama é definido como uma nova instância de go.TreeModel.
+        Os dados do modelo são fornecidos como uma matriz de objetos de nó com chaves, nomes, fontes e planos de fundo.
+        */
 
         meuDiagrama.model = new go.TreeModel(
             [
                 { key: "1",              name: "Conselho Diretor/Socios",source: "../img/testeGestor.png", background: "#024d27bd" },
-                { key: "2", parent: "1", name: "Alexandre Serra\nCargo: CEO",    source: "../img/testeGestor.png", background: "#024d27bd" },
-                { key: "3", parent: "2", name: "Viviane de Moraes\nCargo: Gerente Financeiro",   source: "../img/testeGestor.png", background: "#059b50bd" },
-                { key: "4", parent: "3", name: "Fernanda\nCargo: Sup. Garantia", background: "#0fcf6fbd"},
-                { key: "4.1", parent: "4", name: "Aline\nCargo: Aux. Garantia", background: "#06fa80bd"},
-                { key: "4.1", parent: "4", name: "Leonardo\nCargo: Aux. Garantia", background: "#06fa80bd" },
-                { key: "4.1", parent: "4", name: "Pablo\nCargo: Aprendiz", background: "#06fa80bd" },
-                { key: "5", parent: "3", name: "Divaldo\nCargo: Sup. TI", background: "#0fcf6fbd"},
-                { key: "5.1", parent: "5", name: "Eduardo\nCargo: Assist. TI", background: "#06fa80bd"},
-                { key: "5.1", parent: "5", name: "Nicolas\nCargo: Aux.TI", background: "#06fa80bd"},
-                { key: "6", parent: "3", name: "Priscila\nCargo: Sup. Financeiro", background: "#0fcf6fbd"},
-                { key: "6.1", parent: "6", name: "Bruna Iembo\nCargo: Contas a Receber", background: "#06fa80bd"},
-                { key: "6.1", parent: "6", name: "Edina\nCargo: Caixa Atendimento", background: "#06fa80bd"},
-                { key: "6.1", parent: "6", name: "Rosana\nCargo: Contas a Pagar", background: "#06fa80bd"},
-                { key: "6.1", parent: "6", name: "Julia\nCargo:Aprendiz", background: "#06fa80bd"},
-                { key: "7", parent: "3", name: "Katia\nCargo: Sup. F&I", background: "#0fcf6fbd"},
-                { key: "7.1", parent: "7", name: "Matheus\nCargo: Assist. F&I", background: "#06fa80bd" },
-                { key: "7.1", parent: "7", name: "Lucas\nCargo: Assist. F&I", background: "#06fa80bd" },
-                { key: "8", parent: "3", name: "Antonio\nCargo: Sup. Adm",background: "#0fcf6fbd"},
-                { key: "8.1", parent: "8", name: "Elizandra\nCargo: Analista Faturamento", background: "#06fa80bd"},
-                { key: "8.1", parent: "8", name: "Dyohana\nCargo: Assist. Faturamento", background: "#06fa80bd"},
-                { key: "8.1", parent: "8", name: "Andressa\nCargo: Aux. Faturamento", background: "#06fa80bd"},
-                { key: "8.2", parent: "8", name: "Evelyn\nCargo: Comprador", background: "#06fa80bd"},
-                { key: "8.2.1", parent: "8.2", name: "Julia\nCargo: Aprendiz Compras", background: "#06fa80bd"},
-                { key: "8.2.1", parent: "8.2", name: "Claudimar\nCargo: Aux. Compras", background: "#06fa80bd"},
-                { key: "9", parent: "2", name: "Sandra\nCargo: Sup. RH", source: "../img/testeGestor.png", background: "#878a04c4"},
-                { key: "9.1", parent: "9", name: "Andressa\nCargo:Assist. Junior",background: "#e1e437fa"},
-                { key: "9.1", parent: "9", name: "Silvana\nCargo: Assist. Senior", background: "#e1e437fa"},
-                { key: "9.1", parent: "9", name: "Antoninha\nCargo: Zeladora", background: "#e1e437fa" },
-                { key: "9.1", parent: "9", name: "Danielly Valter\nCargo: Aprendiz", background: "#e1e437fa"},
-                { key: "10", parent: "2", name: "Thatyane\nCargo: Enc. Contabilidade", source: "../img/testeGestor.png", background: "#0559f5fa" },
-                { key: "10.1", parent: "10", name: "Amabily\nCargo: Assist. Adm", background: "#4b85f1fa"},
-                { key: "10.1", parent: "10", name: "Christopher\nCargo: Aux. Contabilidade", background: "#4b85f1fa" },
-                { key: "10.1", parent: "10", name: "Lincoln\nCargo: Aux. Contabilidade", background: "#4b85f1fa" },
-                { key: "11", parent: "2", name: "Alex Sandro\nCargo: Sup. Marketing", source: "../img/testeGestor.png", background: "#8106e6fa" },
-                { key: "11.1", parent: "11", name: "Hamilly\nCargo: Assist. Marketing", background: "#b069ebfa"},
-                { key: "13", parent: "2", name: "Cristiane\nCargo: Coordenadora Adm", source: "../img/testeGestor.png", background: "#07a180fa" },
-                { key: "13.1", parent: "13", name: "Andrey\nCargo: Assist. DHO", background: "#08fdc8fa" },
-                { key: "13.1", parent: "13", name: "Lucas Talevi\nCargo: Analista Qualidade", background: "#08fdc8fa"},
-                { key: "13.1", parent: "13", name: "Celso\nCargo: Analista Qualidade", background: "#08fdc8fa" },
+                { key: "2", parent: "1", name: "Alexandre Serra\n CEO",    source: "../img/testeGestor.png", background: "#024d27bd" },
+                { key: "3", parent: "2", name: "Viviane de Moraes\n Gerente Financeiro",   source: "../img/testeGestor.png", background: "#059b50bd" },
+                { key: "4", parent: "3", name: "Fernanda\n Sup. Garantia", background: "#0fcf6fbd"},
+                { key: "4.1", parent: "4", name: "Aline\n Aux. Garantia", background: "#06fa80bd"},
+                { key: "4.1", parent: "4", name: "Leonardo\n Aux. Garantia", background: "#06fa80bd" },
+                { key: "4.1", parent: "4", name: "Pablo\n Aprendiz", background: "#06fa80bd" },
+                { key: "5", parent: "3", name: "Divaldo\n Sup. TI", background: "#0fcf6fbd"},
+                { key: "5.1", parent: "5", name: "Eduardo\n Assist. TI", background: "#06fa80bd"},
+                { key: "5.1", parent: "5", name: "Nicolas\n Aux.TI", background: "#06fa80bd"},
+                { key: "6", parent: "3", name: "Priscila\n Sup. Financeiro", background: "#0fcf6fbd"},
+                { key: "6.1", parent: "6", name: "Bruna Iembo\n Contas a Receber", background: "#06fa80bd"},
+                { key: "6.1", parent: "6", name: "Edina\n Caixa Atendimento", background: "#06fa80bd"},
+                { key: "6.1", parent: "6", name: "Rosana\n Contas a Pagar", background: "#06fa80bd"},
+                { key: "6.1", parent: "6", name: "Julia\nAprendiz", background: "#06fa80bd"},
+                { key: "7", parent: "3", name: "Katia\n Sup. F&I", background: "#0fcf6fbd"},
+                { key: "7.1", parent: "7", name: "Matheus\n Assist. F&I", background: "#06fa80bd" },
+                { key: "7.1", parent: "7", name: "Lucas\n Assist. F&I", background: "#06fa80bd" },
+                { key: "8", parent: "3", name: "Antonio\n Sup. Adm",background: "#0fcf6fbd"},
+                { key: "8.1", parent: "8", name: "Elizandra\n Analista Faturamento", background: "#06fa80bd"},
+                { key: "8.1", parent: "8", name: "Dyohana\n Assist. Faturamento", background: "#06fa80bd"},
+                { key: "8.1", parent: "8", name: "Andressa\n Aux. Faturamento", background: "#06fa80bd"},
+                { key: "8.2", parent: "8", name: "Evelyn\n Comprador", background: "#06fa80bd"},
+                { key: "8.2.1", parent: "8.2", name: "Julia\n Aprendiz Compras", background: "#06fa80bd"},
+                { key: "8.2.1", parent: "8.2", name: "Claudimar\n Aux. Compras", background: "#06fa80bd"},
+                { key: "9", parent: "2", name: "Sandra\n Sup. RH", source: "../img/testeGestor.png", background: "#878a04c4"},
+                { key: "9.1", parent: "9", name: "Andressa\nAssist. Junior",background: "#e1e437fa"},
+                { key: "9.1", parent: "9", name: "Silvana\n Assist. Senior", background: "#e1e437fa"},
+                { key: "9.1", parent: "9", name: "Antoninha\n Zeladora", background: "#e1e437fa" },
+                { key: "9.1", parent: "9", name: "Danielly Valter\n Aprendiz", background: "#e1e437fa"},
+                { key: "10", parent: "2", name: "Thatyane\n Enc. Contabilidade", source: "../img/testeGestor.png", background: "#0559f5fa" },
+                { key: "10.1", parent: "10", name: "Amabily\n Assist. Adm", background: "#4b85f1fa"},
+                { key: "10.1", parent: "10", name: "Christopher\n Aux. Contabilidade", background: "#4b85f1fa" },
+                { key: "10.1", parent: "10", name: "Lincoln\n Aux. Contabilidade", background: "#4b85f1fa" },
+                { key: "11", parent: "2", name: "Alex Sandro\n Sup. Marketing", source: "../img/testeGestor.png", background: "#8106e6fa" },
+                { key: "11.1", parent: "11", name: "Hamilly\n Assist. Marketing", background: "#b069ebfa"},
+                { key: "13", parent: "2", name: "Cristiane\n Coordenadora Adm", source: "../img/testeGestor.png", background: "#07a180fa" },
+                { key: "13.1", parent: "13", name: "Andrey\n Assist. DHO", background: "#08fdc8fa" },
+                { key: "13.1", parent: "13", name: "Lucas Talevi\n Analista Qualidade", background: "#08fdc8fa"},
+                { key: "13.1", parent: "13", name: "Celso\n Analista Qualidade", background: "#08fdc8fa" },
 
             ]);
 
     }
     
     </script>
+-->
 
+<script>
+    function init() {
+      
+   
+       
+           var $ = go.GraphObject.make;
 
+           meuDiagrama = $(go.Diagram, "meudiagrama", {
+               "undoManager.isEnabled": true,
+               layout: $(go.TreeLayout, { angle: 90, layerSpacing: 50 })
+           });
+
+         
+       
+         
+           meuDiagrama.nodeTemplate =
+               $(go.Node, "Horizontal",
+                   { click: function (e, node) { toggleChildren(node); } },
+                   $(go.Shape, "RoundedRectangle",
+                       {
+                           fill: "white",
+                           stretch: go.GraphObject.Fill, // Preencher o retângulo inteiro
+                           strokeWidth: 0, // Remover a borda do retângulo
+                           portId: "", // Desabilitar o uso de portas no Shape
+                           fromLinkable: false, // Desabilitar a conexão de links ao Shape
+                           toLinkable: false // Desabilitar a conexão de links ao Shape
+                       },
+                       new go.Binding("fill", "background")),
+                   $(go.Picture,
+                       { margin: 10, width: 50, height: 50 },
+                       new go.Binding("source")),
+                   $(go.TextBlock,
+                       { margin: 12, stroke: "white", font: "bold 16px sans-serif" },
+                       new go.Binding("text", "name"))
+               );
+
+           meuDiagrama.linkTemplate =
+               $(go.Link,
+                   { routing: go.Link.Orthogonal, corner: 5 },
+                   $(go.Shape, ({ strokeWidth: 3, stroke: "#555" }))
+               );
+
+               meuDiagrama.model = new go.TreeModel(
+           [
+               { key: "1",              name: "Conselho Diretor/Socios",source: "../img/testeGestor.png", background: "#024d27bd" },
+               { key: "2", parent: "1", name: "Alexandre Serra\n CEO",    source: "../img/testeGestor.png", background: "#024d27bd" },
+               { key: "3", parent: "2", name: "Viviane de Moraes\n Gerente Financeiro",   source: "../img/testeGestor.png", background: "#059b50bd" },
+               { key: "4", parent: "3", name: "Fernanda\n Sup. Garantia", background: "#0fcf6fbd"},
+               { key: "4.1", parent: "4", name: "Aline\n Aux. Garantia", background: "#06fa80bd"},
+               { key: "4.1", parent: "4", name: "Leonardo\n Aux. Garantia", background: "#06fa80bd" },
+               { key: "4.1", parent: "4", name: "Pablo\n Aprendiz", background: "#06fa80bd" },
+               { key: "5", parent: "3", name: "Divaldo\n Analista TI", background: "#0fcf6fbd"},
+               { key: "5.1", parent: "5", name: "Eduardo\n Assist. TI", background: "#06fa80bd"},
+               { key: "5.1", parent: "5", name: "Nicolas\n Aux.TI", background: "#06fa80bd"},
+               { key: "6", parent: "3", name: "Priscila\n Sup. Financeiro", background: "#0fcf6fbd"},
+               { key: "6.1", parent: "6", name: "Bruna Iembo\n Contas a Receber", background: "#06fa80bd"},
+               { key: "6.1", parent: "6", name: "Edina\n Caixa Atendimento", background: "#06fa80bd"},
+               { key: "6.1", parent: "6", name: "Rosana\n Contas a Pagar", background: "#06fa80bd"},
+               { key: "6.1", parent: "6", name: "Julia\nAprendiz", background: "#06fa80bd"},
+               { key: "7", parent: "3", name: "Katia\n Sup. F&I", background: "#0fcf6fbd"},
+               { key: "7.1", parent: "7", name: "Matheus\n Assist. F&I", background: "#06fa80bd" },
+               { key: "7.1", parent: "7", name: "Lucas\n Assist. F&I", background: "#06fa80bd" },
+               { key: "8", parent: "3", name: "Antonio\n Sup. Adm",background: "#0fcf6fbd"},
+               { key: "8.1", parent: "8", name: "Elizandra\n Analista Faturamento", background: "#06fa80bd"},
+               { key: "8.1", parent: "8", name: "Dyohana\n Assist. Faturamento", background: "#06fa80bd"},
+               { key: "8.1", parent: "8", name: "Andressa\n Aux. Faturamento", background: "#06fa80bd"},
+               { key: "8.2", parent: "8", name: "Evelyn\n Comprador", background: "#06fa80bd"},
+               { key: "8.2.1", parent: "8.2", name: "Julia\n Aprendiz Compras", background: "#06fa80bd"},
+               { key: "8.2.1", parent: "8.2", name: "Claudimar\n Aux. Compras", background: "#06fa80bd"},
+               { key: "9", parent: "2", name: "Sandra\n Sup. RH", source: "../img/testeGestor.png", background: "#878a04c4"},
+               { key: "9.1", parent: "9", name: "Andressa\nAssist. Junior",background: "#e1e437fa"},
+               { key: "9.1", parent: "9", name: "Silvana\n Assist. Senior", background: "#e1e437fa"},
+               { key: "9.1", parent: "9", name: "Antoninha\n Zeladora", background: "#e1e437fa" },
+               { key: "9.1", parent: "9", name: "Danielly Valter\n Aprendiz", background: "#e1e437fa"},
+               { key: "10", parent: "2", name: "Thatyane\n Enc. Contabilidade", source: "../img/testeGestor.png", background: "#0559f5fa" },
+               { key: "10.1", parent: "10", name: "Amabily\n Assist. Adm", background: "#4b85f1fa"},
+               { key: "10.1", parent: "10", name: "Christopher\n Aux. Contabilidade", background: "#4b85f1fa" },
+               { key: "10.1", parent: "10", name: "Lincoln\n Aux. Contabilidade", background: "#4b85f1fa" },
+               { key: "11", parent: "2", name: "Alex Sandro\n Sup. Marketing", source: "../img/testeGestor.png", background: "#8106e6fa" },
+               { key: "11.1", parent: "11", name: "Hamilly\n Assist. Marketing", background: "#b069ebfa"},
+               { key: "13", parent: "2", name: "Cristiane\n Coordenadora Adm", source: "../img/testeGestor.png", background: "#07a180fa" },
+               { key: "13.1", parent: "13", name: "Andrey\n Assist. DHO", background: "#08fdc8fa" },
+               { key: "13.1", parent: "13", name: "Lucas Talevi\n Analista Qualidade", background: "#08fdc8fa"},
+               { key: "13.1", parent: "13", name: "Celso\n Analista Qualidade", background: "#08fdc8fa" },
+
+           ]);
+       }
+
+       function toggleChildren(node) {
+           if (node.isTreeExpanded) {
+               meuDiagrama.commandHandler.collapseTree(node);
+           } else {
+               meuDiagrama.commandHandler.expandTree(node);
+           }
+       }
+</script>
 
 
     <footer>
