@@ -3,42 +3,6 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 
-
-#meudiagrama{
-    width: 90vw;
-    height: 1000px;
-    border: #141414 solid;
-    background: #2e4430;
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ESTILIZA PAGINA SOOBRE NOS*/ 
 #estiliza-Historia{
     display: flex;

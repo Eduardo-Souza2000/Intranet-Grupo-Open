@@ -5,8 +5,8 @@
 //botinfoo.addEventListener("click", alerta);
 
 
-let botinfo = document.getElementById("informativo");
-botinfo.addEventListener("click", alerta);
+//let botinfo = document.getElementById("informativo");
+//botinfo.addEventListener("click", alerta);
 
 
 //let botnormas = document.getElementById("normas");
