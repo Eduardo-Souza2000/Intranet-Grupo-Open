@@ -28,7 +28,7 @@ const targetIds = {
     'organograma': 'normas',
     'sobre-Nos': 'section-contato'
   };
-  
+  /*
   // Seleciona o elemento HTML com o ID 'reconhecimentoHome' e adiciona um evento de clique que executa uma função anônima
   document.getElementById('reconhecimentoHome').addEventListener('click', () => {
 
@@ -67,13 +67,27 @@ const targetIds = {
     // Começa a ouvir por comandos de voz
     recognition.start();
   });
+*/
 
 
 
+const modal = document.getElementById('myModal');
+const countdownElement = document.getElementById('countdown');
 
-  setTimeout(function() {
-    var div = document.getElementById("confetes");
-    div.style.display = "none";
-  }, 5000); // Remove o elemento após 5 segundos
+let secondsLeft = 10; // Defina o tempo inicial em segundos
 
+function updateCountdown() {
+    secondsLeft--;
+    countdownElement.textContent = secondsLeft + 's';
 
+    if (secondsLeft > 0) {
+        setTimeout(updateCountdown, 1000);
+    } else {
+        modal.style.display = 'none';
+    }
+}
+
+// Abre o modal automaticamente assim que a página for carregada
+modal.style.display = 'block';
+
+updateCountdown(); // Inicia a contagem regressiva

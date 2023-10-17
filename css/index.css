@@ -2,6 +2,63 @@
 /* Importa a biblioteca do FontAwesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.modal-content {
+    background: linear-gradient(to bottom, #042954, #0c3b9fc1);   
+    width: 80%;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff; /* Altere a cor do texto para branco (ou outra cor que você preferir) */
+}
+
+h3.subtitulo {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+p.missao {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+ul.valores {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+li {
+    margin: 5px 0;
+}
+
+.close{
+    color: white;
+}
+
 
 /* ESTILIZA PAGINA SOOBRE NOS*/ 
 #estiliza-Historia{
